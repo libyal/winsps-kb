@@ -1,0 +1,5130 @@
+# winsps-kb property definitions
+---
+format_identifier: 00000000-0000-0000-0000-000000000000
+name: System.Null
+property_identifier: 0
+shell_property_key: PKEY_Null
+---
+format_identifier: 000214a1-0000-0000-c000-000000000046
+name: System.Status
+property_identifier: 9
+shell_property_key: PKEY_Status
+---
+format_identifier: 00bc20a3-bd48-4085-872c-a88d77f5097e
+name: System.Music.ComposerSortOverride
+property_identifier: 105
+shell_property_key: PKEY_Music_ComposerSortOverride
+---
+format_identifier: 00f58a38-c54b-4c40-8696-97235980eae1
+name: System.Calendar.Resources
+property_identifier: 100
+shell_property_key: PKEY_Calendar_Resources
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo1YomiCompanyName
+property_identifier: 101
+shell_property_key: PKEY_Contact_JobInfo1YomiCompanyName
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo1CompanyName
+property_identifier: 102
+shell_property_key: PKEY_Contact_JobInfo1CompanyName
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo1Title
+property_identifier: 103
+shell_property_key: PKEY_Contact_JobInfo1Title
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo1OfficeLocation
+property_identifier: 104
+shell_property_key: PKEY_Contact_JobInfo1OfficeLocation
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo1Manager
+property_identifier: 105
+shell_property_key: PKEY_Contact_JobInfo1Manager
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo1Department
+property_identifier: 106
+shell_property_key: PKEY_Contact_JobInfo1Department
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo2YomiCompanyName
+property_identifier: 107
+shell_property_key: PKEY_Contact_JobInfo2YomiCompanyName
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo2CompanyName
+property_identifier: 108
+shell_property_key: PKEY_Contact_JobInfo2CompanyName
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo2Title
+property_identifier: 109
+shell_property_key: PKEY_Contact_JobInfo2Title
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo2OfficeLocation
+property_identifier: 110
+shell_property_key: PKEY_Contact_JobInfo2OfficeLocation
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo2Manager
+property_identifier: 112
+shell_property_key: PKEY_Contact_JobInfo2Manager
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo2Department
+property_identifier: 113
+shell_property_key: PKEY_Contact_JobInfo2Department
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo3YomiCompanyName
+property_identifier: 114
+shell_property_key: PKEY_Contact_JobInfo3YomiCompanyName
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo3CompanyName
+property_identifier: 115
+shell_property_key: PKEY_Contact_JobInfo3CompanyName
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo3Title
+property_identifier: 116
+shell_property_key: PKEY_Contact_JobInfo3Title
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo3OfficeLocation
+property_identifier: 117
+shell_property_key: PKEY_Contact_JobInfo3OfficeLocation
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo3Manager
+property_identifier: 118
+shell_property_key: PKEY_Contact_JobInfo3Manager
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo3Department
+property_identifier: 119
+shell_property_key: PKEY_Contact_JobInfo3Department
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo1CompanyAddress
+property_identifier: 120
+shell_property_key: PKEY_Contact_JobInfo1CompanyAddress
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo2CompanyAddress
+property_identifier: 121
+shell_property_key: PKEY_Contact_JobInfo2CompanyAddress
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.JobInfo3CompanyAddress
+property_identifier: 123
+shell_property_key: PKEY_Contact_JobInfo3CompanyAddress
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.Webpage2
+property_identifier: 124
+shell_property_key: PKEY_Contact_Webpage2
+---
+format_identifier: 00f63dd8-22bd-4a5d-ba34-5cb0b9bdcb03
+name: System.Contact.Webpage3
+property_identifier: 125
+shell_property_key: PKEY_Contact_Webpage3
+---
+format_identifier: 026e516e-b814-414b-83cd-856d6fef4822
+name: System.Devices.InterfaceEnabled
+property_identifier: 3
+shell_property_key: PKEY_Devices_InterfaceEnabled
+---
+format_identifier: 026e516e-b814-414b-83cd-856d6fef4822
+name: System.Devices.InterfaceClassGuid
+property_identifier: 4
+shell_property_key: PKEY_Devices_InterfaceClassGuid
+---
+format_identifier: 026e516e-b814-414b-83cd-856d6fef4822
+name: System.Devices.RestrictedInterface
+property_identifier: 6
+shell_property_key: PKEY_Devices_RestrictedInterface
+---
+format_identifier: 026e516e-b814-414b-83cd-856d6fef4822
+property_identifier: 9
+shell_property_key: PKEY_Devices_SchematicName
+---
+format_identifier: 029c0252-5b86-46c7-aca0-2769ffc8e3d4
+name: System.GPS.LatitudeRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_LatitudeRef
+---
+format_identifier: 02b0f689-a914-4e45-821d-1dda452ed2c4
+name: System.GPS.LongitudeNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_LongitudeNumerator
+---
+format_identifier: 03089873-8ee8-4191-bd60-d31f72b7900b
+name: System.Contact.DisplayOtherPhoneNumbers
+property_identifier: 100
+shell_property_key: PKEY_Contact_DisplayOtherPhoneNumbers
+---
+format_identifier: 0337ecec-39fb-4581-a0bd-4c4cc51e9914
+name: System.Photo.ApertureNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ApertureNumerator
+---
+format_identifier: 048658ad-2db8-41a4-bbb6-ac1ef1207eb1
+name: System.ItemClassType
+property_identifier: 100
+shell_property_key: PKEY_ItemClassType
+---
+format_identifier: 06704b0c-e830-4c81-9178-91e4e95a80a0
+name: System.Devices.NotificationStore
+property_identifier: 2
+shell_property_key: PKEY_Devices_NotificationStore
+---
+format_identifier: 06704b0c-e830-4c81-9178-91e4e95a80a0
+name: System.Devices.Notification
+property_identifier: 3
+shell_property_key: PKEY_Devices_Notification
+---
+format_identifier: 084d8a0a-e6d5-40de-bf1f-c8820e7c877c
+name: System.Task.CompletionStatus
+property_identifier: 100
+shell_property_key: PKEY_Task_CompletionStatus
+---
+format_identifier: 08a65aa1-f4c9-43dd-9ddf-a33d8e7ead85
+name: System.Contact.HomeAddressCountry
+property_identifier: 100
+shell_property_key: PKEY_Contact_HomeAddressCountry
+---
+format_identifier: 08c7cc5f-60f2-4494-ad75-55e3e0b5add0
+name: System.Task.Owner
+property_identifier: 100
+shell_property_key: PKEY_Task_Owner
+---
+format_identifier: 08f6d7c2-e3f2-44fc-af1e-5aa5c81a2d3e
+name: System.Photo.MaxAperture
+property_identifier: 100
+shell_property_key: PKEY_Photo_MaxAperture
+---
+format_identifier: 0933f3f5-4786-4f46-a8e8-d64dd37fa521
+name: System.Photo.FocalPlaneXResolutionDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FocalPlaneXResolutionDenominator
+---
+format_identifier: 09429607-582d-437f-84c3-de93a2b24c3c
+name: System.Calendar.OptionalAttendeeNames
+property_identifier: 100
+shell_property_key: PKEY_Calendar_OptionalAttendeeNames
+---
+format_identifier: 09edd5b6-b301-43c5-9990-d00302effd46
+name: System.Media.AverageLevel
+property_identifier: 100
+shell_property_key: PKEY_Media_AverageLevel
+---
+format_identifier: 0a7b84ef-0c27-463f-84ef-06c5070001be
+name: System.DeviceInterface.PrinterName
+property_identifier: 10
+shell_property_key: PKEY_DeviceInterface_PrinterName
+---
+format_identifier: 0adef160-db3f-4308-9a21-06237b16fa2a
+name: System.Contact.HomeAddressStreet
+property_identifier: 100
+shell_property_key: PKEY_Contact_HomeAddressStreet
+---
+format_identifier: 0b48f35a-be6e-4f17-b108-3c4073d1669a
+name: System.Device.PrinterURL
+property_identifier: 15
+shell_property_key: PKEY_Device_PrinterURL
+---
+format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
+name: System.Search.UrlToIndexWithModificationTime
+property_identifier: 12
+shell_property_key: PKEY_Search_UrlToIndexWithModificationTime
+---
+format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
+name: System.Search.UrlToIndex
+property_identifier: 2
+shell_property_key: PKEY_Search_UrlToIndex
+---
+format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
+name: System.Search.IsClosedDirectory
+property_identifier: 23
+shell_property_key: PKEY_Search_IsClosedDirectory
+---
+format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
+name: System.Search.IsFullyContained
+property_identifier: 24
+shell_property_key: PKEY_Search_IsFullyContained
+---
+format_identifier: 0b63e350-9ccc-11d0-bcdb-00805fccce04
+name: System.MIMEType
+property_identifier: 5
+shell_property_key: PKEY_MIMEType
+---
+format_identifier: 0b63e350-9ccc-11d0-bcdb-00805fccce04
+name: System.Search.GatherTime
+property_identifier: 8
+shell_property_key: PKEY_Search_GatherTime
+---
+format_identifier: 0b8bb018-2725-4b44-92ba-7933aeb2dde7
+name: System.Contact.AccountPictureDynamicVideo
+property_identifier: 2
+shell_property_key: PKEY_Contact_AccountPictureDynamicVideo
+---
+format_identifier: 0b8bb018-2725-4b44-92ba-7933aeb2dde7
+name: System.Contact.AccountPictureLarge
+property_identifier: 3
+shell_property_key: PKEY_Contact_AccountPictureLarge
+---
+format_identifier: 0b8bb018-2725-4b44-92ba-7933aeb2dde7
+name: System.Contact.AccountPictureSmall
+property_identifier: 4
+shell_property_key: PKEY_Contact_AccountPictureSmall
+---
+format_identifier: 0ba7d6c3-568d-4159-ab91-781a91fb71e5
+name: System.Calendar.RequiredAttendeeAddresses
+property_identifier: 100
+shell_property_key: PKEY_Calendar_RequiredAttendeeAddresses
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.IsPresent
+property_identifier: 11
+shell_property_key: PKEY_Devices_AepContainer_IsPresent
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.ContainerId
+property_identifier: 12
+shell_property_key: PKEY_Devices_AepContainer_ContainerId
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.ProtocolIds
+property_identifier: 13
+shell_property_key: PKEY_Devices_AepContainer_ProtocolIds
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.Children
+property_identifier: 2
+shell_property_key: PKEY_Devices_AepContainer_Children
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.CanPair
+property_identifier: 3
+shell_property_key: PKEY_Devices_AepContainer_CanPair
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.IsPaired
+property_identifier: 4
+shell_property_key: PKEY_Devices_AepContainer_IsPaired
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.Manufacturer
+property_identifier: 6
+shell_property_key: PKEY_Devices_AepContainer_Manufacturer
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.ModelName
+property_identifier: 7
+shell_property_key: PKEY_Devices_AepContainer_ModelName
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.ModelIds
+property_identifier: 8
+shell_property_key: PKEY_Devices_AepContainer_ModelIds
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.Categories
+property_identifier: 9
+shell_property_key: PKEY_Devices_AepContainer_Categories
+---
+format_identifier: 0be1c8e7-1981-4676-ae14-fdd78f05a6e7
+name: System.Message.SenderAddress
+property_identifier: 100
+shell_property_key: PKEY_Message_SenderAddress
+---
+format_identifier: 0c73b141-39d6-4653-a683-cab291eaf95b
+name: System.Supplemental.AlbumID
+property_identifier: 2
+shell_property_key: PKEY_Supplemental_AlbumID
+---
+format_identifier: 0c73b141-39d6-4653-a683-cab291eaf95b
+name: System.Supplemental.ResourceId
+property_identifier: 3
+shell_property_key: PKEY_Supplemental_ResourceId
+---
+format_identifier: 0c840a88-b043-466d-9766-d4b26da3fa77
+name: System.Photo.SubjectDistanceDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_SubjectDistanceDenominator
+---
+format_identifier: 0cb2bf5a-9ee7-4a86-8222-f01e07fdadaf
+name: System.PropGroup.PhotoAdvanced
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_PhotoAdvanced
+---
+format_identifier: 0cef7d53-fa64-11d1-a203-0000f81fedee
+name: System.FileDescription
+property_identifier: 3
+shell_property_key: PKEY_FileDescription
+---
+format_identifier: 0cef7d53-fa64-11d1-a203-0000f81fedee
+name: System.FileVersion
+property_identifier: 4
+shell_property_key: PKEY_FileVersion
+---
+format_identifier: 0cef7d53-fa64-11d1-a203-0000f81fedee
+name: System.InternalName
+property_identifier: 5
+shell_property_key: PKEY_InternalName
+---
+format_identifier: 0cef7d53-fa64-11d1-a203-0000f81fedee
+name: System.OriginalFileName
+property_identifier: 6
+shell_property_key: PKEY_OriginalFileName
+---
+format_identifier: 0cef7d53-fa64-11d1-a203-0000f81fedee
+name: System.Software.ProductName
+property_identifier: 7
+shell_property_key: PKEY_Software_ProductName
+---
+format_identifier: 0cef7d53-fa64-11d1-a203-0000f81fedee
+name: System.Trademarks
+property_identifier: 9
+shell_property_key: PKEY_Trademarks
+---
+format_identifier: 0cf8fb02-1837-42f1-a697-a7017aa289b9
+name: System.GPS.DOP
+property_identifier: 100
+shell_property_key: PKEY_GPS_DOP
+---
+format_identifier: 0da41cfa-d224-4a18-ae2f-596158db4b3a
+name: System.Message.SenderName
+property_identifier: 100
+shell_property_key: PKEY_Message_SenderName
+---
+format_identifier: 0f55cde2-4f49-450d-92c1-dcd16301b1b7
+name: System.GPS.LatitudeDecimal
+property_identifier: 100
+shell_property_key: PKEY_GPS_LatitudeDecimal
+---
+format_identifier: 10984e0a-f9f2-4321-b7ef-baf195af4319
+name: System.ParentalRatingReason
+property_identifier: 100
+shell_property_key: PKEY_ParentalRatingReason
+---
+format_identifier: 10b24595-41a2-4e20-93c2-5761c1395f32
+name: System.GPS.ImgDirectionDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_ImgDirectionDenominator
+---
+format_identifier: 10dabe05-32aa-4c29-bf1a-63e2d220587f
+name: System.Image.ImageID
+property_identifier: 100
+shell_property_key: PKEY_Image_ImageID
+---
+format_identifier: 11d6336b-38c4-4ec9-84d6-eb38d0b150af
+name: System.Contact.OtherEmailAddresses
+property_identifier: 100
+shell_property_key: PKEY_Contact_OtherEmailAddresses
+---
+format_identifier: 125491f4-818f-46b2-91b5-d537753617b2
+name: System.GPS.Status
+property_identifier: 100
+shell_property_key: PKEY_GPS_Status
+---
+format_identifier: 13673f42-a3d6-49f6-b4da-ae46e0c5237c
+name: System.Devices.DevObjectType
+property_identifier: 2
+shell_property_key: PKEY_Devices_DevObjectType
+---
+format_identifier: 13eb7ffc-ec89-4346-b19d-ccc6f1784223
+name: System.Music.AlbumTitleSortOverride
+property_identifier: 101
+shell_property_key: PKEY_Music_AlbumTitleSortOverride
+---
+format_identifier: 14977844-6b49-4aad-a714-a4513bf60460
+name: System.Contact.FirstName
+property_identifier: 100
+shell_property_key: PKEY_Contact_FirstName
+---
+format_identifier: 149c0b69-2c2d-48fc-808f-d318d78c4636
+name: System.Volume.IsMappedDrive
+property_identifier: 2
+shell_property_key: PKEY_Volume_IsMappedDrive
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.Event
+property_identifier: 18248
+shell_property_key: PKEY_Photo_Event
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.DateImported
+property_identifier: 18258
+shell_property_key: PKEY_DateImported
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Image.Compression
+property_identifier: 259
+shell_property_key: PKEY_Image_Compression
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.CameraManufacturer
+property_identifier: 271
+shell_property_key: PKEY_Photo_CameraManufacturer
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.CameraModel
+property_identifier: 272
+shell_property_key: PKEY_Photo_CameraModel
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.CameraSerialNumber
+property_identifier: 273
+shell_property_key: PKEY_Photo_CameraSerialNumber
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.Orientation
+property_identifier: 274
+shell_property_key: PKEY_Photo_Orientation
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.SoftwareUsed
+property_identifier: 305
+shell_property_key: PKEY_SoftwareUsed
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.ExposureTime
+property_identifier: 33434
+shell_property_key: PKEY_Photo_ExposureTime
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.FNumber
+property_identifier: 33437
+shell_property_key: PKEY_Photo_FNumber
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.ExposureProgram
+property_identifier: 34850
+shell_property_key: PKEY_Photo_ExposureProgram
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.ISOSpeed
+property_identifier: 34855
+shell_property_key: PKEY_Photo_ISOSpeed
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.DateTaken
+property_identifier: 36867
+shell_property_key: PKEY_Photo_DateTaken
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.ShutterSpeed
+property_identifier: 37377
+shell_property_key: PKEY_Photo_ShutterSpeed
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.Aperture
+property_identifier: 37378
+shell_property_key: PKEY_Photo_Aperture
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.ExposureBias
+property_identifier: 37380
+shell_property_key: PKEY_Photo_ExposureBias
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.SubjectDistance
+property_identifier: 37382
+shell_property_key: PKEY_Photo_SubjectDistance
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.MeteringMode
+property_identifier: 37383
+shell_property_key: PKEY_Photo_MeteringMode
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.LightSource
+property_identifier: 37384
+shell_property_key: PKEY_Photo_LightSource
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.Flash
+property_identifier: 37385
+shell_property_key: PKEY_Photo_Flash
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.FocalLength
+property_identifier: 37386
+shell_property_key: PKEY_Photo_FocalLength
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Image.ColorSpace
+property_identifier: 40961
+shell_property_key: PKEY_Image_ColorSpace
+---
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.FlashEnergy
+property_identifier: 41483
+shell_property_key: PKEY_Photo_FlashEnergy
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.Services
+property_identifier: 10
+shell_property_key: PKEY_Devices_WiFiDirect_Services
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.SupportedChannelList
+property_identifier: 11
+shell_property_key: PKEY_Devices_WiFiDirect_SupportedChannelList
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.InformationElements
+property_identifier: 12
+shell_property_key: PKEY_Devices_WiFiDirect_InformationElements
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.DeviceAddress
+property_identifier: 13
+shell_property_key: PKEY_Devices_WiFiDirect_DeviceAddress
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.InterfaceAddress
+property_identifier: 2
+shell_property_key: PKEY_Devices_WiFiDirect_InterfaceAddress
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.InterfaceGuid
+property_identifier: 3
+shell_property_key: PKEY_Devices_WiFiDirect_InterfaceGuid
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.GroupId
+property_identifier: 4
+shell_property_key: PKEY_Devices_WiFiDirect_GroupId
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.IsConnected
+property_identifier: 5
+shell_property_key: PKEY_Devices_WiFiDirect_IsConnected
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.IsVisible
+property_identifier: 6
+shell_property_key: PKEY_Devices_WiFiDirect_IsVisible
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.IsLegacyDevice
+property_identifier: 7
+shell_property_key: PKEY_Devices_WiFiDirect_IsLegacyDevice
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.MiracastVersion
+property_identifier: 8
+shell_property_key: PKEY_Devices_WiFiDirect_MiracastVersion
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.IsMiracastLcpSupported
+property_identifier: 9
+shell_property_key: PKEY_Devices_WiFiDirect_IsMiracastLcpSupported
+---
+format_identifier: 16473c91-d017-4ed9-ba4d-b6baa55dbcf8
+name: System.GPS.ImgDirection
+property_identifier: 100
+shell_property_key: PKEY_GPS_ImgDirection
+---
+format_identifier: 16cbb924-6500-473b-a5be-f1599bcbe413
+name: System.Photo.DigitalZoomNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_DigitalZoomNumerator
+---
+format_identifier: 16e634ee-2bff-497b-bd8a-4341ad39eeb9
+name: System.GPS.LatitudeDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_LatitudeDenominator
+---
+format_identifier: 16ea4042-d6f4-4bca-8349-7c78d30fb333
+name: System.Photo.ShutterSpeedNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ShutterSpeedNumerator
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.HomeTelephone
+property_identifier: 20
+shell_property_key: PKEY_Contact_HomeTelephone
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.PrimaryTelephone
+property_identifier: 25
+shell_property_key: PKEY_Contact_PrimaryTelephone
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.MobileTelephone
+property_identifier: 35
+shell_property_key: PKEY_Contact_MobileTelephone
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.Birthday
+property_identifier: 47
+shell_property_key: PKEY_Contact_Birthday
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.PrimaryEmailAddress
+property_identifier: 48
+shell_property_key: PKEY_Contact_PrimaryEmailAddress
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.JobTitle
+property_identifier: 6
+shell_property_key: PKEY_Contact_JobTitle
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.HomeAddressCity
+property_identifier: 65
+shell_property_key: PKEY_Contact_HomeAddressCity
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.PersonalTitle
+property_identifier: 69
+shell_property_key: PKEY_Contact_PersonalTitle
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.OfficeLocation
+property_identifier: 7
+shell_property_key: PKEY_Contact_OfficeLocation
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.MiddleName
+property_identifier: 71
+shell_property_key: PKEY_Contact_MiddleName
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.Suffix
+property_identifier: 73
+shell_property_key: PKEY_Contact_Suffix
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.NickName
+property_identifier: 74
+shell_property_key: PKEY_Contact_NickName
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.Prefix
+property_identifier: 75
+shell_property_key: PKEY_Contact_Prefix
+---
+format_identifier: 182c1ea6-7c1c-4083-ab4b-ac6c9f4ed128
+name: System.GPS.DestLongitudeRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestLongitudeRef
+---
+format_identifier: 188c1f91-3c40-4132-9ec5-d8b03b72a8a2
+name: System.Calendar.ResponseStatus
+property_identifier: 100
+shell_property_key: PKEY_Calendar_ResponseStatus
+---
+format_identifier: 18bbd425-ecfd-46ef-b612-7b4a6034eda0
+name: System.Contact.PrimaryAddressPostalCode
+property_identifier: 100
+shell_property_key: PKEY_Contact_PrimaryAddressPostalCode
+---
+format_identifier: 19b51fa6-1f92-4a5c-ab48-7df0abd67444
+name: System.Image.ResolutionUnit
+property_identifier: 100
+shell_property_key: PKEY_Image_ResolutionUnit
+---
+format_identifier: 1a701bf6-478c-4361-83ab-3701bb053c58
+name: System.Photo.Brightness
+property_identifier: 100
+shell_property_key: PKEY_Photo_Brightness
+---
+format_identifier: 1a9ba605-8e7c-4d11-ad7d-a50ada18ba1b
+name: System.Message.Participants
+property_identifier: 2
+shell_property_key: PKEY_Message_Participants
+---
+format_identifier: 1b5439e7-eba1-4af8-bdd7-7af1d4549493
+name: System.RecordedTV.StationName
+property_identifier: 100
+shell_property_key: PKEY_RecordedTV_StationName
+---
+format_identifier: 1b97738a-fdfc-462f-9d93-1957e08be90c
+name: System.Photo.FNumberNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FNumberNumerator
+---
+format_identifier: 1ce0d6bc-536c-4600-b0dd-7e0c66b350d5
+name: System.History.SelectionCount
+property_identifier: 8
+shell_property_key: PKEY_History_SelectionCount
+---
+format_identifier: 1ce0d6bc-536c-4600-b0dd-7e0c66b350d5
+name: System.History.TargetUrlHostName
+property_identifier: 9
+shell_property_key: PKEY_History_TargetUrlHostName
+---
+format_identifier: 1d6179a6-a876-4031-b013-3347b2b64dc8
+name: System.Photo.FocalPlaneYResolutionDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FocalPlaneYResolutionDenominator
+---
+format_identifier: 1e005ee6-bf27-428b-b01c-79676acd2870
+name: System.Document.Division
+property_identifier: 100
+shell_property_key: PKEY_Document_Division
+---
+format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+name: System.Kind
+property_identifier: 3
+shell_property_key: PKEY_Kind
+---
+format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+name: System.FullText
+property_identifier: 6
+shell_property_key: PKEY_FullText
+---
+format_identifier: 1e81a3f8-a30f-4247-b9ee-1d0368a9425c
+name: System.DataObjectFormat
+property_identifier: 2
+shell_property_key: PKEY_DataObjectFormat
+---
+format_identifier: 1f856a9f-6900-4aba-9505-2d5f1b4d66cb
+name: System.Message.ToDoFlags
+property_identifier: 100
+shell_property_key: PKEY_Message_ToDoFlags
+---
+format_identifier: 1f8844e1-24ad-4508-9dfd-5326a415ce02
+name: System.Image.CompressedBitsPerPixelDenominator
+property_identifier: 100
+shell_property_key: PKEY_Image_CompressedBitsPerPixelDenominator
+---
+format_identifier: 22704da4-c6b2-4a99-8e56-f16df8c92599
+name: System.GPS.VersionID
+property_identifier: 100
+shell_property_key: PKEY_GPS_VersionID
+---
+format_identifier: 2425166f-5642-4864-992f-98fd98f294c3
+name: System.IdentityProvider.Picture
+property_identifier: 100
+shell_property_key: PKEY_IdentityProvider_Picture
+---
+format_identifier: 2579e5d0-1116-4084-bd9a-9b4f7cb4df5e
+name: System.Audio.PeakValue
+property_identifier: 100
+shell_property_key: PKEY_Audio_PeakValue
+---
+format_identifier: 257e44e2-9031-4323-ac38-85c552871b2e
+name: System.Photo.ExposureTimeNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ExposureTimeNumerator
+---
+format_identifier: 2598d2fb-5569-4367-95df-5cd3a177e1a5
+name: System.PropGroup.Origin
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Origin
+---
+format_identifier: 26dc287c-6e3d-4bd3-b2b0-6a26ba2e346d
+name: System.StatusBarViewItemCount
+property_identifier: 2
+shell_property_key: PKEY_StatusBarViewItemCount
+---
+format_identifier: 26dc287c-6e3d-4bd3-b2b0-6a26ba2e346d
+name: System.StatusBarSelectedItemCount
+property_identifier: 3
+shell_property_key: PKEY_StatusBarSelectedItemCount
+---
+format_identifier: 276d7bb0-5b34-4fb0-aa4b-158ed12a1809
+name: System.Document.ClientID
+property_identifier: 100
+shell_property_key: PKEY_Document_ClientID
+---
+format_identifier: 2804d469-788f-48aa-8570-71b9c187e138
+name: System.PropGroup.Audio
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Audio
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.FindData
+property_identifier: 0
+shell_property_key: PKEY_FindData
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ItemType
+property_identifier: 11
+shell_property_key: PKEY_ItemType
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.FileCount
+property_identifier: 12
+shell_property_key: PKEY_FileCount
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.TotalFileSize
+property_identifier: 14
+shell_property_key: PKEY_TotalFileSize
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.DescriptionID
+property_identifier: 2
+shell_property_key: PKEY_DescriptionID
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ParsingName
+property_identifier: 24
+shell_property_key: PKEY_ParsingName
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.SFGAOFlags
+property_identifier: 25
+shell_property_key: PKEY_SFGAOFlags
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ContainedItems
+property_identifier: 29
+shell_property_key: PKEY_ContainedItems
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ParsingPath
+property_identifier: 30
+shell_property_key: PKEY_ParsingPath
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.IsSendToTarget
+property_identifier: 33
+shell_property_key: PKEY_IsSendToTarget
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ItemSubType
+property_identifier: 37
+shell_property_key: PKEY_ItemSubType
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ComputerName
+property_identifier: 5
+shell_property_key: PKEY_ComputerName
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.NamespaceCLSID
+property_identifier: 6
+shell_property_key: PKEY_NamespaceCLSID
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ItemPathDisplayNarrow
+property_identifier: 8
+shell_property_key: PKEY_ItemPathDisplayNarrow
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.PerceivedType
+property_identifier: 9
+shell_property_key: PKEY_PerceivedType
+---
+format_identifier: 293ca35a-09aa-4dd2-b180-1fe245728a52
+name: System.Calendar.Duration
+property_identifier: 100
+shell_property_key: PKEY_Calendar_Duration
+---
+format_identifier: 2a785ba9-8d23-4ded-82e6-60a350c86a10
+name: System.Photo.Contrast
+property_identifier: 100
+shell_property_key: PKEY_Photo_Contrast
+---
+format_identifier: 2b1b801e-c0c1-4987-9ec5-72fa89814787
+name: System.Identity.PrimarySid
+property_identifier: 100
+shell_property_key: PKEY_Identity_PrimarySid
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.DeviceInterface.Bluetooth.DeviceAddress
+property_identifier: 1
+shell_property_key: PKEY_DeviceInterface_Bluetooth_DeviceAddress
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.DeviceInterface.Bluetooth.LastConnectedTime
+property_identifier: 11
+shell_property_key: PKEY_DeviceInterface_Bluetooth_LastConnectedTime
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+property_identifier: 12
+shell_property_key: PKEY_Devices_Aep_Bluetooth_LastSeenTime
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.DeviceInterface.Bluetooth.ServiceGuid
+property_identifier: 2
+shell_property_key: PKEY_DeviceInterface_Bluetooth_ServiceGuid
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.DeviceInterface.Bluetooth.Flags
+property_identifier: 3
+shell_property_key: PKEY_DeviceInterface_Bluetooth_Flags
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.DeviceInterface.Bluetooth.Manufacturer
+property_identifier: 4
+shell_property_key: PKEY_DeviceInterface_Bluetooth_Manufacturer
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.DeviceInterface.Bluetooth.ModelNumber
+property_identifier: 5
+shell_property_key: PKEY_DeviceInterface_Bluetooth_ModelNumber
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: [System.DeviceInterface.Bluetooth.VendorId, System.DeviceInterface.Bluetooth.VendorIdSource]
+property_identifier: 6
+shell_property_key: [PKEY_DeviceInterface_Bluetooth_VendorId, PKEY_DeviceInterface_Bluetooth_VendorIdSource]
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: [System.DeviceInterface.Bluetooth.ProductId, System.DeviceInterface.Bluetooth.VendorId]
+property_identifier: 7
+shell_property_key: [PKEY_DeviceInterface_Bluetooth_ProductId, PKEY_DeviceInterface_Bluetooth_VendorId]
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.DeviceInterface.Bluetooth.ProductId
+property_identifier: 8
+shell_property_key: PKEY_DeviceInterface_Bluetooth_ProductId
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.DeviceInterface.Bluetooth.ProductVersion
+property_identifier: 9
+shell_property_key: PKEY_DeviceInterface_Bluetooth_ProductVersion
+---
+format_identifier: 2bda47da-08c6-4fe1-80bc-a72fc517c5d0
+name: System.GPS.DestDistanceNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestDistanceNumerator
+---
+format_identifier: 2be9260a-2012-4742-a555-f41b638b7dcb
+name: System.Devices.Notifications.NewMessage
+property_identifier: 2
+shell_property_key: [PKEY_Devices_Notification_NewMessage, PKEY_Devices_Notifications_NewMessage]
+---
+format_identifier: 2c53c813-fb63-4e22-a1ab-0b331ca1e273
+name: System.RecordedTV.NetworkAffiliation
+property_identifier: 100
+shell_property_key: PKEY_RecordedTV_NetworkAffiliation
+---
+format_identifier: 2ca2dae6-eddc-407d-bef1-773942abfa95
+name: System.GPS.MapDatum
+property_identifier: 100
+shell_property_key: PKEY_GPS_MapDatum
+---
+format_identifier: 2cbaa8f5-d81f-47ca-b17a-f8d822300131
+name: System.DateAcquired
+property_identifier: 100
+shell_property_key: PKEY_DateAcquired
+---
+format_identifier: 2dad1eb7-816d-40d3-9ec3-c9773be2aade
+name: System.GPS.AltitudeNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_AltitudeNumerator
+---
+format_identifier: 2e4b640d-5019-46d8-8881-55414cc5caa0
+name: System.Media.DateEncoded
+property_identifier: 100
+shell_property_key: PKEY_Media_DateEncoded
+---
+format_identifier: 305bc615-dca1-44a5-9fd4-10c0ba79412e
+name: System.Photo.FocalLengthDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FocalLengthDenominator
+---
+format_identifier: 3143bf7c-80a8-4854-8880-e2e40189bdd0
+name: System.Message.AttachmentContents
+property_identifier: 100
+shell_property_key: PKEY_Message_AttachmentContents
+---
+format_identifier: 315b9c8d-80a9-4ef9-ae16-8e746da51d70
+name: System.Calendar.IsRecurring
+property_identifier: 100
+shell_property_key: PKEY_Calendar_IsRecurring
+---
+format_identifier: 318a6b45-087f-4dc2-b8cc-05359551fc9e
+name: System.Photo.RelatedSoundFile
+property_identifier: 100
+shell_property_key: PKEY_Photo_RelatedSoundFile
+---
+format_identifier: 31b37743-7c5e-4005-93e6-e953f92b82e9
+name: System.Devices.WiFiDirectServices.ServiceAddress
+property_identifier: 2
+shell_property_key: PKEY_Devices_WiFiDirectServices_ServiceAddress
+---
+format_identifier: 31b37743-7c5e-4005-93e6-e953f92b82e9
+name: System.Devices.WiFiDirectServices.ServiceName
+property_identifier: 3
+shell_property_key: PKEY_Devices_WiFiDirectServices_ServiceName
+---
+format_identifier: 31b37743-7c5e-4005-93e6-e953f92b82e9
+name: System.Devices.WiFiDirectServices.ServiceInformation
+property_identifier: 4
+shell_property_key: PKEY_Devices_WiFiDirectServices_ServiceInformation
+---
+format_identifier: 31b37743-7c5e-4005-93e6-e953f92b82e9
+name: System.Devices.WiFiDirectServices.AdvertisementId
+property_identifier: 5
+shell_property_key: PKEY_Devices_WiFiDirectServices_AdvertisementId
+---
+format_identifier: 31b37743-7c5e-4005-93e6-e953f92b82e9
+name: System.Devices.WiFiDirectServices.ServiceConfigMethods
+property_identifier: 6
+shell_property_key: PKEY_Devices_WiFiDirectServices_ServiceConfigMethods
+---
+format_identifier: 31b37743-7c5e-4005-93e6-e953f92b82e9
+name: System.Devices.WiFiDirectServices.RequestServiceInformation
+property_identifier: 7
+shell_property_key: PKEY_Devices_WiFiDirectServices_RequestServiceInformation
+---
+format_identifier: 32ce38b2-2c9a-41b1-9bc5-b3784394aa44
+name: System.EdgeGesture.DisableTouchWhenFullscreen
+property_identifier: 2
+shell_property_key: PKEY_EdgeGesture_DisableTouchWhenFullscreen
+---
+format_identifier: 33dcf22b-28d5-464c-8035-1ee9efd25278
+name: System.GPS.LongitudeRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_LongitudeRef
+---
+format_identifier: 341796f1-1df9-4b1c-a564-91bdefa43877
+name: System.Photo.PhotometricInterpretation
+property_identifier: 100
+shell_property_key: PKEY_Photo_PhotometricInterpretation
+---
+format_identifier: 346c8bd1-2e6a-4c45-89a4-61b78e8e700f
+name: System.IsIncomplete
+property_identifier: 100
+shell_property_key: PKEY_IsIncomplete
+---
+format_identifier: 35dbe6fe-44c3-4400-aaae-d2c799c407e8
+name: System.GPS.TrackRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_TrackRef
+---
+format_identifier: 3602c812-0f3b-45f0-85ad-603468d69423
+name: System.GPS.Date
+property_identifier: 100
+shell_property_key: PKEY_GPS_Date
+---
+format_identifier: 3633de59-6825-4381-a49b-9f6ba13a1471
+name: System.Devices.PlaybackState
+property_identifier: 2
+shell_property_key: PKEY_Devices_PlaybackState
+---
+format_identifier: 3633de59-6825-4381-a49b-9f6ba13a1471
+name: System.Devices.PlaybackTitle
+property_identifier: 3
+shell_property_key: PKEY_Devices_PlaybackTitle
+---
+format_identifier: 3633de59-6825-4381-a49b-9f6ba13a1471
+name: System.Devices.RemainingDuration
+property_identifier: 4
+shell_property_key: PKEY_Devices_RemainingDuration
+---
+format_identifier: 3633de59-6825-4381-a49b-9f6ba13a1471
+name: System.Devices.PlaybackPositionPercent
+property_identifier: 5
+shell_property_key: PKEY_Devices_PlaybackPositionPercent
+---
+format_identifier: 364028da-d895-41fe-a584-302b1bb70a76
+name: System.Contact.DisplayBusinessPhoneNumbers
+property_identifier: 100
+shell_property_key: PKEY_Contact_DisplayBusinessPhoneNumbers
+---
+format_identifier: 364b6fa9-37ab-482a-be2b-ae02f60d4318
+name: System.Image.CompressedBitsPerPixel
+property_identifier: 100
+shell_property_key: PKEY_Image_CompressedBitsPerPixel
+---
+format_identifier: 38965063-edc8-4268-8491-b7723172cf29
+name: System.Contact.EmailAddress2
+property_identifier: 100
+shell_property_key: PKEY_Contact_EmailAddress2
+---
+format_identifier: 38d43380-d418-4830-84d5-46935a81c5c6
+name: System.Security.AllowedEnterpriseDataProtectionIdentities
+property_identifier: 32
+shell_property_key: PKEY_Security_AllowedEnterpriseDataProtectionIdentities
+---
+format_identifier: 39a7f922-477c-48de-8bc8-b28441e342e3
+name: System.Project
+property_identifier: 100
+shell_property_key: PKEY_Project
+---
+format_identifier: 39b77f4f-a104-4863-b395-2db2ad8f7bc1
+name: System.Contact.ConnectedServiceDisplayName
+property_identifier: 100
+shell_property_key: PKEY_Contact_ConnectedServiceDisplayName
+---
+format_identifier: 3a372292-7fca-49a7-99d5-e47bb2d4e7ab
+name: System.GPS.DestLatitudeDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestLatitudeDenominator
+---
+format_identifier: 3b2ce006-5e61-4fde-bab8-9b8aac9b26df
+name: System.Devices.Aep.ProtocolId
+property_identifier: 5
+shell_property_key: PKEY_Devices_Aep_ProtocolId
+---
+format_identifier: 3b2ce006-5e61-4fde-bab8-9b8aac9b26df
+name: System.Devices.Aep.AepId
+property_identifier: 8
+shell_property_key: PKEY_Devices_Aep_AepId
+---
+format_identifier: 3c8cee58-d4f0-4cf9-b756-4e5d24447bcd
+name: System.Contact.Gender
+property_identifier: 100
+shell_property_key: PKEY_Contact_Gender
+---
+format_identifier: 3c8cee58-d4f0-4cf9-b756-4e5d24447bcd
+name: System.Contact.GenderValue
+property_identifier: 101
+shell_property_key: PKEY_Contact_GenderValue
+---
+format_identifier: 3f08e66f-2f44-4bb9-a682-ac35d2562322
+name: System.Image.CompressionText
+property_identifier: 100
+shell_property_key: PKEY_Image_CompressionText
+---
+format_identifier: 3f8472b5-e0af-4db2-8071-c53fe76ae7ce
+name: System.DueDate
+property_identifier: 100
+shell_property_key: PKEY_DueDate
+---
+format_identifier: 402b5934-ec5a-48c3-93e6-85e86a2d934e
+name: System.Contact.BusinessAddressCity
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessAddressCity
+---
+format_identifier: 41cf5ae0-f75a-4806-bd87-59c7d9248eb9
+name: System.FileName
+property_identifier: 100
+shell_property_key: PKEY_FileName
+---
+format_identifier: 425d69e5-48ad-4900-8d80-6eb6b8d0ac86
+name: System.GPS.DestLongitudeDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestLongitudeDenominator
+---
+format_identifier: 428040ac-a177-4c8a-9760-f6f761227f9a
+name: System.Communication.DateItemExpires
+property_identifier: 100
+shell_property_key: PKEY_Communication_DateItemExpires
+---
+format_identifier: 42864dfd-9da4-4f77-bded-4aad7b256735
+name: System.Photo.GainControlDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_GainControlDenominator
+---
+format_identifier: 4340a6c5-93fa-4706-972c-7b648008a5a7
+name: System.Devices.Parent
+property_identifier: 8
+shell_property_key: PKEY_Devices_Parent
+---
+format_identifier: 4340a6c5-93fa-4706-972c-7b648008a5a7
+name: System.Devices.Children
+property_identifier: 9
+shell_property_key: PKEY_Devices_Children
+---
+format_identifier: 436f2667-14e2-4feb-b30a-146c53b5b674
+name: System.Link.Arguments
+property_identifier: 100
+shell_property_key: PKEY_Link_Arguments
+---
+format_identifier: 43f8d7b7-a444-4f87-9383-52271c9b915c
+name: System.DateArchived
+property_identifier: 100
+shell_property_key: PKEY_DateArchived
+---
+format_identifier: 446d16b1-8dad-4870-a748-402ea43d788c
+name: System.ThumbnailCacheId
+property_identifier: 100
+shell_property_key: PKEY_ThumbnailCacheId
+---
+format_identifier: 446d16b1-8dad-4870-a748-402ea43d788c
+name: System.VolumeId
+property_identifier: 104
+shell_property_key: PKEY_VolumeId
+---
+format_identifier: 446f787f-10c4-41cb-a6c4-4d0343551597
+name: System.Contact.BusinessAddressState
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessAddressState
+---
+format_identifier: 45eae747-8e2a-40ae-8cbf-ca52aba6152a
+name: System.FlagColorText
+property_identifier: 100
+shell_property_key: PKEY_FlagColorText
+---
+format_identifier: 4679c1b5-844d-4590-baf5-f322231f1b81
+name: System.GPS.LongitudeDecimal
+property_identifier: 100
+shell_property_key: PKEY_GPS_LongitudeDecimal
+---
+format_identifier: 467ee575-1f25-4557-ad4e-b8b58b0d9c15
+name: System.GPS.Satellites
+property_identifier: 100
+shell_property_key: PKEY_GPS_Satellites
+---
+format_identifier: 4684fe97-8765-4842-9c13-f006447b178c
+name: System.RecordedTV.OriginalBroadcastDate
+property_identifier: 100
+shell_property_key: PKEY_RecordedTV_OriginalBroadcastDate
+---
+format_identifier: 46ac629d-75ea-4515-867f-6dc4321c5844
+name: System.GPS.AltitudeRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_AltitudeRef
+---
+format_identifier: 46b4e8de-cdb2-440d-885c-1658eb65b914
+name: System.Note.ColorText
+property_identifier: 100
+shell_property_key: PKEY_Note_ColorText
+---
+format_identifier: 47166b16-364f-4aa0-9f31-e2ab3df449c3
+name: System.GPS.DOPNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DOPNumerator
+---
+format_identifier: 4776cafa-bce4-4cb1-a23e-265e76d8eb11
+name: System.Note.Color
+property_identifier: 100
+shell_property_key: PKEY_Note_Color
+---
+format_identifier: 47a96261-cb4c-4807-8ad3-40b9d9dbc6bc
+name: System.GPS.DestLongitude
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestLongitude
+---
+format_identifier: 48fd6ec8-8a12-4cdf-a03e-4ec5a511edde
+name: System.StartDate
+property_identifier: 100
+shell_property_key: PKEY_StartDate
+---
+format_identifier: 49237325-a95a-4f67-b211-816b2d45d2e0
+name: System.Photo.Saturation
+property_identifier: 100
+shell_property_key: PKEY_Photo_Saturation
+---
+format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
+name: System.Search.QueryPropertyHits
+property_identifier: 21
+shell_property_key: PKEY_Search_QueryPropertyHits
+---
+format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
+name: System.Search.Rank
+property_identifier: 3
+shell_property_key: PKEY_Search_Rank
+---
+format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
+name: System.Search.HitCount
+property_identifier: 4
+shell_property_key: PKEY_Search_HitCount
+---
+format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
+name: System.Search.EntryID
+property_identifier: 5
+shell_property_key: PKEY_Search_EntryID
+---
+format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
+name: System.ItemUrl
+property_identifier: 9
+shell_property_key: PKEY_ItemUrl
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.BatteryLife
+property_identifier: 10
+shell_property_key: PKEY_Devices_BatteryLife
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.ChargingState
+property_identifier: 11
+shell_property_key: PKEY_Devices_ChargingState
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.StorageCapacity
+property_identifier: 12
+shell_property_key: PKEY_Devices_StorageCapacity
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.StorageFreeSpace
+property_identifier: 13
+shell_property_key: PKEY_Devices_StorageFreeSpace
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.StorageFreeSpacePercent
+property_identifier: 14
+shell_property_key: PKEY_Devices_StorageFreeSpacePercent
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.SignalStrength
+property_identifier: 2
+shell_property_key: PKEY_Devices_SignalStrength
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.BatteryPlusCharging
+property_identifier: 22
+shell_property_key: PKEY_Devices_BatteryPlusCharging
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.BatteryPlusChargingText
+property_identifier: 23
+shell_property_key: PKEY_Devices_BatteryPlusChargingText
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.TextMessages
+property_identifier: 3
+shell_property_key: PKEY_Devices_TextMessages
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.NewPictures
+property_identifier: 4
+shell_property_key: PKEY_Devices_NewPictures
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.MissedCalls
+property_identifier: 5
+shell_property_key: PKEY_Devices_MissedCalls
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.Voicemail
+property_identifier: 6
+shell_property_key: PKEY_Devices_Voicemail
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.NetworkName
+property_identifier: 7
+shell_property_key: PKEY_Devices_NetworkName
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.NetworkType
+property_identifier: 8
+shell_property_key: PKEY_Devices_NetworkType
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.Roaming
+property_identifier: 9
+shell_property_key: PKEY_Devices_Roaming
+---
+format_identifier: 49d1091f-082e-493f-b23f-d2308aa9668c
+name: System.PropList.NonPersonal
+property_identifier: 100
+shell_property_key: PKEY_PropList_NonPersonal
+---
+format_identifier: 4c6bf15c-4c03-4aac-91f5-64c0f852bcf4
+name: System.DeviceInterface.Serial.UsbVendorId
+property_identifier: 2
+shell_property_key: PKEY_DeviceInterface_Serial_UsbVendorId
+---
+format_identifier: 4c6bf15c-4c03-4aac-91f5-64c0f852bcf4
+name: System.DeviceInterface.Serial.UsbProductId
+property_identifier: 3
+shell_property_key: PKEY_DeviceInterface_Serial_UsbProductId
+---
+format_identifier: 4c6bf15c-4c03-4aac-91f5-64c0f852bcf4
+name: System.DeviceInterface.Serial.PortName
+property_identifier: 4
+shell_property_key: PKEY_DeviceInterface_Serial_PortName
+---
+format_identifier: 4d1ebee8-0803-4774-9842-b77db50265e9
+name: System.Storage.Portable
+property_identifier: 2
+shell_property_key: PKEY_Storage_Portable
+---
+format_identifier: 4d1ebee8-0803-4774-9842-b77db50265e9
+name: System.Storage.RemovableMedia
+property_identifier: 3
+shell_property_key: PKEY_Storage_RemovableMedia
+---
+format_identifier: 4d1ebee8-0803-4774-9842-b77db50265e9
+name: System.Storage.SystemCritical
+property_identifier: 4
+shell_property_key: PKEY_Storage_SystemCritical
+---
+format_identifier: 4fffe4d0-914f-4ac4-8d6f-c9c61de169b1
+name: System.Photo.FocalPlaneYResolution
+property_identifier: 100
+shell_property_key: PKEY_Photo_FocalPlaneYResolution
+---
+format_identifier: 502cfeab-47eb-459c-b960-e6d8728f7701
+name: System.ZoneIdentifier
+property_identifier: 100
+shell_property_key: PKEY_ZoneIdentifier
+---
+format_identifier: 502cfeab-47eb-459c-b960-e6d8728f7701
+name: System.LastWriterPackageFamilyName
+property_identifier: 101
+shell_property_key: PKEY_LastWriterPackageFamilyName
+---
+format_identifier: 502cfeab-47eb-459c-b960-e6d8728f7701
+name: System.AppZoneIdentifier
+property_identifier: 102
+shell_property_key: PKEY_AppZoneIdentifier
+---
+format_identifier: 5068bcdf-d697-4d85-8c53-1f1cdab01763
+name: System.Contact.DisplayHomePhoneNumbers
+property_identifier: 100
+shell_property_key: PKEY_Contact_DisplayHomePhoneNumbers
+---
+format_identifier: 508161fa-313b-43d5-83a1-c1accf68622c
+name: System.Contact.OtherAddress
+property_identifier: 100
+shell_property_key: PKEY_Contact_OtherAddress
+---
+format_identifier: 51236583-0c4a-4fe8-b81f-166aec13f510
+name: System.Devices.AppPackageFamilyName
+property_identifier: 100
+shell_property_key: PKEY_Devices_AppPackageFamilyName
+---
+format_identifier: 51236583-0c4a-4fe8-b81f-166aec13f510
+name: System.Devices.GlyphIcon
+property_identifier: 123
+shell_property_key: PKEY_Devices_GlyphIcon
+---
+format_identifier: 51ec3f47-dd50-421d-8769-334f50424b1e
+name: System.Photo.SharpnessText
+property_identifier: 100
+shell_property_key: PKEY_Photo_SharpnessText
+---
+format_identifier: 53da57cf-62c0-45c4-81de-7610bcefd7f5
+name: System.Calendar.ShowTimeAsText
+property_identifier: 100
+shell_property_key: PKEY_Calendar_ShowTimeAsText
+---
+format_identifier: 540b947e-8b40-45bc-a8a2-6a0b894cbda2
+name: System.Devices.Present
+property_identifier: 5
+shell_property_key: PKEY_Devices_Present
+---
+format_identifier: 540b947e-8b40-45bc-a8a2-6a0b894cbda2
+name: System.Devices.DeviceHasProblem
+property_identifier: 6
+shell_property_key: PKEY_Devices_DeviceHasProblem
+---
+format_identifier: 540b947e-8b40-45bc-a8a2-6a0b894cbda2
+name: System.Devices.PhysicalDeviceLocation
+property_identifier: 9
+shell_property_key: PKEY_Devices_PhysicalDeviceLocation
+---
+format_identifier: 55e98597-ad16-42e0-b624-21599a199838
+name: System.Photo.ExposureTimeDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ExposureTimeDenominator
+---
+format_identifier: 560c36c0-503a-11cf-baa1-00004c752a9a
+name: System.Search.AutoSummary
+property_identifier: 2
+shell_property_key: PKEY_Search_AutoSummary
+---
+format_identifier: 560c36c0-503a-11cf-baa1-00004c752a9a
+name: System.Search.QueryFocusedSummary
+property_identifier: 3
+shell_property_key: PKEY_Search_QueryFocusedSummary
+---
+format_identifier: 560c36c0-503a-11cf-baa1-00004c752a9a
+name: System.Search.QueryFocusedSummaryWithFallback
+property_identifier: 4
+shell_property_key: PKEY_Search_QueryFocusedSummaryWithFallback
+---
+format_identifier: 56310920-2491-4919-99ce-eadb06fafdb2
+name: System.Contact.BusinessHomePage
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessHomePage
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.AlbumID
+property_identifier: 100
+shell_property_key: PKEY_Music_AlbumID
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.Genre
+property_identifier: 11
+shell_property_key: PKEY_Music_Genre
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.Lyrics
+property_identifier: 12
+shell_property_key: PKEY_Music_Lyrics
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.AlbumArtist
+property_identifier: 13
+shell_property_key: PKEY_Music_AlbumArtist
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.Artist
+property_identifier: 2
+shell_property_key: PKEY_Music_Artist
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.ContentGroupDescription
+property_identifier: 33
+shell_property_key: PKEY_Music_ContentGroupDescription
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.InitialKey
+property_identifier: 34
+shell_property_key: PKEY_Music_InitialKey
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.BeatsPerMinute
+property_identifier: 35
+shell_property_key: PKEY_Music_BeatsPerMinute
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.Conductor
+property_identifier: 36
+shell_property_key: PKEY_Music_Conductor
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.PartOfSet
+property_identifier: 37
+shell_property_key: PKEY_Music_PartOfSet
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Media.SubTitle
+property_identifier: 38
+shell_property_key: PKEY_Media_SubTitle
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.Mood
+property_identifier: 39
+shell_property_key: PKEY_Music_Mood
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.AlbumTitle
+property_identifier: 4
+shell_property_key: PKEY_Music_AlbumTitle
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Media.Year
+property_identifier: 5
+shell_property_key: PKEY_Media_Year
+---
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.TrackNumber
+property_identifier: 7
+shell_property_key: PKEY_Music_TrackNumber
+---
+format_identifier: 56c90e9d-9d46-4963-886f-2e1cd9a694ef
+name: System.Contact.HomeEmailAddresses
+property_identifier: 100
+shell_property_key: PKEY_Contact_HomeEmailAddresses
+---
+format_identifier: 59569556-0a08-4212-95b9-fae2ad6413db
+name: System.Devices.Notifications.NewVoicemail
+property_identifier: 2
+shell_property_key: [PKEY_Devices_Notification_NewVoicemail, PKEY_Devices_Notifications_NewVoicemail]
+---
+format_identifier: 59d49e61-840f-4aa9-a939-e2099b7f6399
+name: System.GPS.ProcessingMethod
+property_identifier: 100
+shell_property_key: PKEY_GPS_ProcessingMethod
+---
+format_identifier: 59dde9f2-5253-40ea-9a8b-479e96c6249a
+name: System.Photo.ContrastText
+property_identifier: 100
+shell_property_key: PKEY_Photo_ContrastText
+---
+format_identifier: 5bf396d4-5eb2-466f-bde9-2fb3f2361d6e
+name: System.Calendar.ShowTimeAs
+property_identifier: 100
+shell_property_key: PKEY_Calendar_ShowTimeAs
+---
+format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
+name: System.Link.TargetUrl
+property_identifier: 2
+shell_property_key: PKEY_Link_TargetUrl
+---
+format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
+name: System.Link.Description
+property_identifier: 21
+shell_property_key: PKEY_Link_Description
+---
+format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
+name: System.Link.DateVisited
+property_identifier: 23
+shell_property_key: PKEY_Link_DateVisited
+---
+format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
+name: System.History.VisitCount
+property_identifier: 7
+shell_property_key: PKEY_History_VisitCount
+---
+format_identifier: 5cda5fc8-33ee-4ff3-9094-ae7bd8868c4d
+name: System.IsDeleted
+property_identifier: 100
+shell_property_key: PKEY_IsDeleted
+---
+format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
+name: System.DefaultSaveLocationDisplay
+property_identifier: 10
+shell_property_key: PKEY_DefaultSaveLocationDisplay
+---
+format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
+name: System.IsPinnedToNameSpaceTree
+property_identifier: 2
+shell_property_key: PKEY_IsPinnedToNameSpaceTree
+---
+format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
+name: System.IsDefaultSaveLocation
+property_identifier: 3
+shell_property_key: PKEY_IsDefaultSaveLocation
+---
+format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
+name: System.IsSearchOnlyItem
+property_identifier: 4
+shell_property_key: PKEY_IsSearchOnlyItem
+---
+format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
+name: System.IsDefaultNonOwnerSaveLocation
+property_identifier: 5
+shell_property_key: PKEY_IsDefaultNonOwnerSaveLocation
+---
+format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
+name: System.OwnerSID
+property_identifier: 6
+shell_property_key: PKEY_OwnerSID
+---
+format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
+name: System.IsLocationSupported
+property_identifier: 8
+shell_property_key: PKEY_IsLocationSupported
+---
+format_identifier: 5da84765-e3ff-4278-86b0-a27967fbdd03
+name: System.IsFlagged
+property_identifier: 100
+shell_property_key: PKEY_IsFlagged
+---
+format_identifier: 5dc2253f-5e11-4adf-9cfe-910dd01e3e70
+name: System.Contact.Hobbies
+property_identifier: 100
+shell_property_key: PKEY_Contact_Hobbies
+---
+format_identifier: 5f5aff6a-37e5-4780-97ea-80c7565cf535
+name: System.Security.EncryptionOwners
+property_identifier: 34
+shell_property_key: PKEY_Security_EncryptionOwners
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Audio
+property_identifier: 10
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Audio
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Telephony
+property_identifier: 11
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Telephony
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Information
+property_identifier: 12
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Information
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Major
+property_identifier: 2
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Major
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Minor
+property_identifier: 3
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Minor
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.LimitedDiscovery
+property_identifier: 4
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_LimitedDiscovery
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Positioning
+property_identifier: 5
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Positioning
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Networking
+property_identifier: 6
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Networking
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Rendering
+property_identifier: 7
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Rendering
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Capturing
+property_identifier: 8
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Capturing
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.ObjectXfer
+property_identifier: 9
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_ObjectXfer
+---
+format_identifier: 61478c08-b600-4a84-bbe4-e99c45f0a072
+name: System.Photo.SaturationText
+property_identifier: 100
+shell_property_key: PKEY_Photo_SaturationText
+---
+format_identifier: 61872cf7-6b5e-4b4b-ac2d-59da84459248
+name: System.PropGroup.Media
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Media
+---
+format_identifier: 6336b95e-c7a7-426d-86fd-7ae3d39c84b4
+name: System.Photo.WhiteBalanceText
+property_identifier: 100
+shell_property_key: PKEY_Photo_WhiteBalanceText
+---
+format_identifier: 635e9051-50a5-4ba2-b9db-4ed056c77296
+name: System.Contact.FullName
+property_identifier: 100
+shell_property_key: PKEY_Contact_FullName
+---
+format_identifier: 63c25b20-96be-488f-8788-c09c407ad812
+name: System.Contact.PrimaryAddressStreet
+property_identifier: 100
+shell_property_key: PKEY_Contact_PrimaryAddressStreet
+---
+format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
+name: System.Media.FrameCount
+property_identifier: 12
+shell_property_key: PKEY_Media_FrameCount
+---
+format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
+name: System.Image.Dimensions
+property_identifier: 13
+shell_property_key: PKEY_Image_Dimensions
+---
+format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
+name: System.Image.HorizontalSize
+property_identifier: 3
+shell_property_key: PKEY_Image_HorizontalSize
+---
+format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
+name: System.Image.VerticalSize
+property_identifier: 4
+shell_property_key: PKEY_Image_VerticalSize
+---
+format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
+name: System.Image.HorizontalResolution
+property_identifier: 5
+shell_property_key: PKEY_Image_HorizontalResolution
+---
+format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
+name: System.Image.VerticalResolution
+property_identifier: 6
+shell_property_key: PKEY_Image_VerticalResolution
+---
+format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
+name: System.Image.BitDepth
+property_identifier: 7
+shell_property_key: PKEY_Image_BitDepth
+---
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Audio.Compression
+property_identifier: 10
+shell_property_key: PKEY_Audio_Compression
+---
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Audio.Format
+property_identifier: 2
+shell_property_key: PKEY_Audio_Format
+---
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Media.Duration
+property_identifier: 3
+shell_property_key: PKEY_Media_Duration
+---
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Audio.EncodingBitrate
+property_identifier: 4
+shell_property_key: PKEY_Audio_EncodingBitrate
+---
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Audio.SampleRate
+property_identifier: 5
+shell_property_key: PKEY_Audio_SampleRate
+---
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Audio.SampleSize
+property_identifier: 6
+shell_property_key: PKEY_Audio_SampleSize
+---
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Audio.ChannelCount
+property_identifier: 7
+shell_property_key: PKEY_Audio_ChannelCount
+---
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Audio.StreamNumber
+property_identifier: 8
+shell_property_key: PKEY_Audio_StreamNumber
+---
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Audio.StreamName
+property_identifier: 9
+shell_property_key: PKEY_Audio_StreamName
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.Compression
+property_identifier: 10
+shell_property_key: PKEY_Video_Compression
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.IsSpherical
+property_identifier: 100
+shell_property_key: PKEY_Video_IsSpherical
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.StreamNumber
+property_identifier: 11
+shell_property_key: PKEY_Video_StreamNumber
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.StreamName
+property_identifier: 2
+shell_property_key: PKEY_Video_StreamName
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.FrameWidth
+property_identifier: 3
+shell_property_key: PKEY_Video_FrameWidth
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.FrameHeight
+property_identifier: 4
+shell_property_key: PKEY_Video_FrameHeight
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.HorizontalAspectRatio
+property_identifier: 42
+shell_property_key: PKEY_Video_HorizontalAspectRatio
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.TotalBitrate
+property_identifier: 43
+shell_property_key: PKEY_Video_TotalBitrate
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.FourCC
+property_identifier: 44
+shell_property_key: PKEY_Video_FourCC
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.VerticalAspectRatio
+property_identifier: 45
+shell_property_key: PKEY_Video_VerticalAspectRatio
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.TranscodedForSync
+property_identifier: 46
+shell_property_key: PKEY_Video_TranscodedForSync
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.FrameRate
+property_identifier: 6
+shell_property_key: PKEY_Video_FrameRate
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.EncodingBitrate
+property_identifier: 8
+shell_property_key: PKEY_Video_EncodingBitrate
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.SampleSize
+property_identifier: 9
+shell_property_key: PKEY_Video_SampleSize
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.IsStereo
+property_identifier: 98
+shell_property_key: PKEY_Video_IsStereo
+---
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.Orientation
+property_identifier: 99
+shell_property_key: PKEY_Video_Orientation
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.EpisodeNumber
+property_identifier: 100
+shell_property_key: PKEY_Media_EpisodeNumber
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.SeasonNumber
+property_identifier: 101
+shell_property_key: PKEY_Media_SeasonNumber
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Copyright
+property_identifier: 11
+shell_property_key: PKEY_Copyright
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.ShareUserRating
+property_identifier: 12
+shell_property_key: PKEY_ShareUserRating
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ClassPrimaryID
+property_identifier: 13
+shell_property_key: PKEY_Media_ClassPrimaryID
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ClassSecondaryID
+property_identifier: 14
+shell_property_key: PKEY_Media_ClassSecondaryID
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.DVDID
+property_identifier: 15
+shell_property_key: PKEY_Media_DVDID
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.MCDI
+property_identifier: 16
+shell_property_key: PKEY_Media_MCDI
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.MetadataContentProvider
+property_identifier: 17
+shell_property_key: PKEY_Media_MetadataContentProvider
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ContentDistributor
+property_identifier: 18
+shell_property_key: PKEY_Media_ContentDistributor
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Music.Composer
+property_identifier: 19
+shell_property_key: PKEY_Music_Composer
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Video.Director
+property_identifier: 20
+shell_property_key: PKEY_Video_Director
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.ParentalRating
+property_identifier: 21
+shell_property_key: PKEY_ParentalRating
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.Producer
+property_identifier: 22
+shell_property_key: PKEY_Media_Producer
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.Writer
+property_identifier: 23
+shell_property_key: PKEY_Media_Writer
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.CollectionGroupID
+property_identifier: 24
+shell_property_key: PKEY_Media_CollectionGroupID
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.CollectionID
+property_identifier: 25
+shell_property_key: PKEY_Media_CollectionID
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ContentID
+property_identifier: 26
+shell_property_key: PKEY_Media_ContentID
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.CreatorApplication
+property_identifier: 27
+shell_property_key: PKEY_Media_CreatorApplication
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.CreatorApplicationVersion
+property_identifier: 28
+shell_property_key: PKEY_Media_CreatorApplicationVersion
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.Publisher
+property_identifier: 30
+shell_property_key: PKEY_Media_Publisher
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Music.Period
+property_identifier: 31
+shell_property_key: PKEY_Music_Period
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.AuthorUrl
+property_identifier: 32
+shell_property_key: PKEY_Media_AuthorUrl
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.PromotionUrl
+property_identifier: 33
+shell_property_key: PKEY_Media_PromotionUrl
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.UserWebUrl
+property_identifier: 34
+shell_property_key: PKEY_Media_UserWebUrl
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.UniqueFileIdentifier
+property_identifier: 35
+shell_property_key: PKEY_Media_UniqueFileIdentifier
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.EncodedBy
+property_identifier: 36
+shell_property_key: PKEY_Media_EncodedBy
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.EncodingSettings
+property_identifier: 37
+shell_property_key: PKEY_Media_EncodingSettings
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ProtectionType
+property_identifier: 38
+shell_property_key: PKEY_Media_ProtectionType
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ProviderRating
+property_identifier: 39
+shell_property_key: PKEY_Media_ProviderRating
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ProviderStyle
+property_identifier: 40
+shell_property_key: PKEY_Media_ProviderStyle
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.UserNoAutoInfo
+property_identifier: 41
+shell_property_key: PKEY_Media_UserNoAutoInfo
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.SeriesName
+property_identifier: 42
+shell_property_key: PKEY_Media_SeriesName
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ThumbnailLargePath
+property_identifier: 47
+shell_property_key: PKEY_Media_ThumbnailLargePath
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ThumbnailLargeUri
+property_identifier: 48
+shell_property_key: PKEY_Media_ThumbnailLargeUri
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ThumbnailSmallPath
+property_identifier: 49
+shell_property_key: PKEY_Media_ThumbnailSmallPath
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.ThumbnailSmallUri
+property_identifier: 50
+shell_property_key: PKEY_Media_ThumbnailSmallUri
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Rating
+property_identifier: 9
+shell_property_key: PKEY_Rating
+---
+format_identifier: 644d37b4-e1b3-4bad-b099-7e7c04966aca
+name: System.Contact.EmailAddress3
+property_identifier: 100
+shell_property_key: PKEY_Contact_EmailAddress3
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.FriendlyName
+property_identifier: 12288
+shell_property_key: PKEY_Devices_FriendlyName
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.IpAddress
+property_identifier: 12297
+shell_property_key: PKEY_Devices_IpAddress
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.ServiceAddress
+property_identifier: 16384
+shell_property_key: PKEY_Devices_ServiceAddress
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.ServiceId
+property_identifier: 16385
+shell_property_key: PKEY_Devices_ServiceId
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.Manufacturer
+property_identifier: 8192
+shell_property_key: PKEY_Devices_Manufacturer
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.ModelName
+property_identifier: 8194
+shell_property_key: PKEY_Devices_ModelName
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.ModelNumber
+property_identifier: 8195
+shell_property_key: PKEY_Devices_ModelNumber
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.PresentationUrl
+property_identifier: 8198
+shell_property_key: PKEY_Devices_PresentationUrl
+---
+format_identifier: 65a98875-3c80-40ab-abbc-efdaf77dbee2
+name: System.AcquisitionID
+property_identifier: 100
+shell_property_key: PKEY_AcquisitionID
+---
+format_identifier: 660e04d6-81ab-4977-a09f-82313113ab26
+name: System.Contact.HomeFaxNumber
+property_identifier: 100
+shell_property_key: PKEY_Contact_HomeFaxNumber
+---
+format_identifier: 6614ef48-4efe-4424-9eda-c79f404edf3e
+name: System.Devices.Notifications.MissedCall
+property_identifier: 2
+shell_property_key: [PKEY_Devices_Notification_MissedCall, PKEY_Devices_Notifications_MissedCall]
+---
+format_identifier: 668cdfa5-7a1b-4323-ae4b-e527393a1d81
+name: System.SourceItem
+property_identifier: 100
+shell_property_key: PKEY_SourceItem
+---
+format_identifier: 67df94de-0ca7-4d6f-b792-053a3e4f03cf
+name: System.FlagColor
+property_identifier: 100
+shell_property_key: PKEY_FlagColor
+---
+format_identifier: 6845cc72-1b71-48c3-af86-b09171a19b14
+name: System.Devices.DialProtocol.InstalledApplications
+property_identifier: 3
+shell_property_key: PKEY_Devices_DialProtocol_InstalledApplications
+---
+format_identifier: 68dd6094-7216-40f1-a029-43fe7127043f
+name: System.PropGroup.Music
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Music
+---
+format_identifier: 6a15e5a0-0a1e-4cd7-bb8c-d2f1b0c929bc
+name: System.Contact.BusinessTelephone
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessTelephone
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsRendering
+property_identifier: 10
+shell_property_key: PKEY_Devices_AepContainer_SupportsRendering
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsCapturing
+property_identifier: 11
+shell_property_key: PKEY_Devices_AepContainer_SupportsCapturing
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsObjectTransfer
+property_identifier: 12
+shell_property_key: PKEY_Devices_AepContainer_SupportsObjectTransfer
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsTelephony
+property_identifier: 13
+shell_property_key: PKEY_Devices_AepContainer_SupportsTelephony
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsInformation
+property_identifier: 14
+shell_property_key: PKEY_Devices_AepContainer_SupportsInformation
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsAudio
+property_identifier: 2
+shell_property_key: PKEY_Devices_AepContainer_SupportsAudio
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsVideo
+property_identifier: 3
+shell_property_key: PKEY_Devices_AepContainer_SupportsVideo
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsImages
+property_identifier: 4
+shell_property_key: PKEY_Devices_AepContainer_SupportsImages
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportedUriSchemes
+property_identifier: 5
+shell_property_key: PKEY_Devices_AepContainer_SupportedUriSchemes
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.DialProtocol.InstalledApplications
+property_identifier: 6
+shell_property_key: PKEY_Devices_AepContainer_DialProtocol_InstalledApplications
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsLimitedDiscovery
+property_identifier: 7
+shell_property_key: PKEY_Devices_AepContainer_SupportsLimitedDiscovery
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsPositioning
+property_identifier: 8
+shell_property_key: PKEY_Devices_AepContainer_SupportsPositioning
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsNetworking
+property_identifier: 9
+shell_property_key: PKEY_Devices_AepContainer_SupportsNetworking
+---
+format_identifier: 6afe7437-9bcd-49c7-80fe-4a5c65fa5874
+name: System.Music.DiscNumber
+property_identifier: 104
+shell_property_key: PKEY_Music_DiscNumber
+---
+format_identifier: 6b223b6a-162e-4aa9-b39f-05d678fc6d77
+name: System.Music.SynchronizedLyrics
+property_identifier: 100
+shell_property_key: PKEY_Music_SynchronizedLyrics
+---
+format_identifier: 6b8b68f6-200b-47ea-8d25-d8050f57339f
+name: System.Photo.FlashText
+property_identifier: 100
+shell_property_key: PKEY_Photo_FlashText
+---
+format_identifier: 6b8da074-3b5c-43bc-886f-0a2cdce00b6f
+name: System.ItemName
+property_identifier: 100
+shell_property_key: PKEY_ItemName
+---
+format_identifier: 6bdd1fc6-810f-11d0-bec7-08002be2092f
+name: System.Devices.WiaDeviceType
+property_identifier: 2
+shell_property_key: PKEY_Devices_WiaDeviceType
+---
+format_identifier: 6d217f6d-3f6a-4825-b470-5f03ca2fbe9b
+name: System.Photo.ProgramMode
+property_identifier: 100
+shell_property_key: PKEY_Photo_ProgramMode
+---
+format_identifier: 6d24888f-4718-4bda-afed-ea0fb4386cd8
+name: System.OfflineStatus
+property_identifier: 100
+shell_property_key: PKEY_OfflineStatus
+---
+format_identifier: 6d6d5d49-265d-4688-9f4e-1fdd33e7cc83
+name: System.Identity.InternetSid
+property_identifier: 100
+shell_property_key: PKEY_Identity_InternetSid
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.IsClosedCaptioningAvailable
+property_identifier: 12
+shell_property_key: PKEY_RecordedTV_IsClosedCaptioningAvailable
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.IsRepeatBroadcast
+property_identifier: 13
+shell_property_key: PKEY_RecordedTV_IsRepeatBroadcast
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.IsSAP
+property_identifier: 14
+shell_property_key: PKEY_RecordedTV_IsSAP
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.DateContentExpires
+property_identifier: 15
+shell_property_key: PKEY_RecordedTV_DateContentExpires
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.IsATSCContent
+property_identifier: 16
+shell_property_key: PKEY_RecordedTV_IsATSCContent
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.IsDTVContent
+property_identifier: 17
+shell_property_key: PKEY_RecordedTV_IsDTVContent
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.IsHDContent
+property_identifier: 18
+shell_property_key: PKEY_RecordedTV_IsHDContent
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.EpisodeName
+property_identifier: 2
+shell_property_key: PKEY_RecordedTV_EpisodeName
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.ProgramDescription
+property_identifier: 3
+shell_property_key: PKEY_RecordedTV_ProgramDescription
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.Credits
+property_identifier: 4
+shell_property_key: PKEY_RecordedTV_Credits
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.StationCallSign
+property_identifier: 5
+shell_property_key: PKEY_RecordedTV_StationCallSign
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.ChannelNumber
+property_identifier: 7
+shell_property_key: PKEY_RecordedTV_ChannelNumber
+---
+format_identifier: 6e682923-7f7b-4f0c-a337-cfca296687bf
+name: System.Contact.OtherAddressCity
+property_identifier: 100
+shell_property_key: PKEY_Contact_OtherAddressCity
+---
+format_identifier: 6ebe6946-2321-440a-90f0-c043efd32476
+name: System.Photo.BrightnessDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_BrightnessDenominator
+---
+format_identifier: 6fa20de6-d11c-4d9d-a154-64317628c12d
+name: System.ExpandoProperties
+property_identifier: 100
+shell_property_key: PKEY_ExpandoProperties
+---
+format_identifier: 702926f4-44a6-43e1-ae71-45627116893b
+name: System.GPS.TrackNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_TrackNumerator
+---
+format_identifier: 71724756-3e74-4432-9b59-e7b2f668a593
+name: System.Devices.AepService.FriendlyName
+property_identifier: 2
+shell_property_key: PKEY_Devices_AepService_FriendlyName
+---
+format_identifier: 71724756-3e74-4432-9b59-e7b2f668a593
+name: System.Devices.AepService.ServiceClassId
+property_identifier: 3
+shell_property_key: PKEY_Devices_AepService_ServiceClassId
+---
+format_identifier: 71724756-3e74-4432-9b59-e7b2f668a593
+name: System.Devices.AepService.ContainerId
+property_identifier: 4
+shell_property_key: PKEY_Devices_AepService_ContainerId
+---
+format_identifier: 71b377d6-e570-425f-a170-809fae73e54e
+name: System.Contact.OtherAddressState
+property_identifier: 100
+shell_property_key: PKEY_Contact_OtherAddressState
+---
+format_identifier: 7268af55-1ce4-4f6e-a41f-b6e4ef10e4a9
+name: System.Contact.Profession
+property_identifier: 100
+shell_property_key: PKEY_Contact_Profession
+---
+format_identifier: 72fab781-acda-43e5-b155-b2434f85e678
+name: System.DateCompleted
+property_identifier: 100
+shell_property_key: PKEY_DateCompleted
+---
+format_identifier: 72fc5ba4-24f9-4011-9f3f-add27afad818
+name: System.Calendar.ReminderTime
+property_identifier: 100
+shell_property_key: PKEY_Calendar_ReminderTime
+---
+format_identifier: 730fb6dd-cf7c-426b-a03f-bd166cc9ee24
+name: System.Contact.BusinessAddress
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessAddress
+---
+format_identifier: 738bf284-1d87-420b-92cf-5834bf6ef9ed
+name: System.Photo.ExposureBiasNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ExposureBiasNumerator
+---
+format_identifier: 744c8242-4df5-456c-ab9e-014efb9021e3
+name: System.Calendar.OrganizerAddress
+property_identifier: 100
+shell_property_key: PKEY_Calendar_OrganizerAddress
+---
+format_identifier: 745baf0e-e5c1-4cfb-8a1b-d031a0a52393
+name: System.Photo.DigitalZoomDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_DigitalZoomDenominator
+---
+format_identifier: 74a7de49-fa11-4d3d-a006-db7e08675916
+name: System.Identity.ProviderID
+property_identifier: 100
+shell_property_key: PKEY_Identity_ProviderID
+---
+format_identifier: 76c09943-7c33-49e3-9e7e-cdba872cfada
+name: System.GPS.Track
+property_identifier: 100
+shell_property_key: PKEY_GPS_Track
+---
+format_identifier: 776b6b3b-1e3d-4b0c-9a0e-8fbaf2a8492a
+name: System.Photo.FocalLengthNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FocalLengthNumerator
+---
+format_identifier: 78342dcb-e358-4145-ae9a-6bfe4e0f9f51
+name: System.GPS.AltitudeDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_AltitudeDenominator
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.DeviceInstanceId
+property_identifier: 256
+shell_property_key: PKEY_Devices_DeviceInstanceId
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.DiscoveryMethod
+property_identifier: 52
+shell_property_key: PKEY_Devices_DiscoveryMethod
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.Connected
+property_identifier: 55
+shell_property_key: [PKEY_Devices_Connected, PKEY_Devices_IsConnected]
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.Paired
+property_identifier: 56
+shell_property_key: [PKEY_Devices_IsPaired, PKEY_Devices_Paired]
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.Icon
+property_identifier: 57
+shell_property_key: PKEY_Devices_Icon
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.LocalMachine
+property_identifier: 70
+shell_property_key: [PKEY_Devices_IsLocalMachine, PKEY_Devices_LocalMachine]
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.MetadataPath
+property_identifier: 71
+shell_property_key: PKEY_Devices_MetadataPath
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.LaunchDeviceStageFromExplorer
+property_identifier: 77
+shell_property_key: PKEY_Devices_LaunchDeviceStageFromExplorer
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.DeviceDescription1
+property_identifier: 81
+shell_property_key: PKEY_Devices_DeviceDescription1
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.DeviceDescription2
+property_identifier: 82
+shell_property_key: PKEY_Devices_DeviceDescription2
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.NotWorkingProperly
+property_identifier: 83
+shell_property_key: [PKEY_Devices_IsNotWorkingProperly, PKEY_Devices_NotWorkingProperly]
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.IsShared
+property_identifier: 84
+shell_property_key: [PKEY_Devices_IsShared, PKEY_Devices_IsSharedDevice]
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.IsNetworkConnected
+property_identifier: 85
+shell_property_key: [PKEY_Devices_IsNetworkConnected, PKEY_Devices_IsNetworkDevice]
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.IsDefault
+property_identifier: 86
+shell_property_key: [PKEY_Devices_IsDefault, PKEY_Devices_IsDefaultDevice]
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.CategoryIds
+property_identifier: 90
+shell_property_key: PKEY_Devices_CategoryIds
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.Category
+property_identifier: 91
+shell_property_key: [PKEY_Devices_Category, PKEY_Devices_Category_Desc_Singular]
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.CategoryPlural
+property_identifier: 92
+shell_property_key: [PKEY_Devices_CategoryPlural, PKEY_Devices_Category_Desc_Plural]
+---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.CategoryGroup
+property_identifier: 94
+shell_property_key: [PKEY_Devices_CategoryGroup, PKEY_Devices_CategoryGroup_Desc]
+---
+format_identifier: 79d94e82-4d79-45aa-821a-74858b4e4ca6
+name: System.Devices.AepService.IoT.ServiceInterfaces
+property_identifier: 2
+shell_property_key: PKEY_Devices_AepService_IoT_ServiceInterfaces
+---
+format_identifier: 7a7d76f4-b630-4bd7-95ff-37cc51a975c9
+name: System.Link.TargetExtension
+property_identifier: 2
+shell_property_key: PKEY_Link_TargetExtension
+---
+format_identifier: 7abcf4f8-7c3f-4988-ac91-8d2c2e97eca5
+name: System.GPS.DestBearingDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestBearingDenominator
+---
+format_identifier: 7b03b546-fa4f-4a52-a2fe-03d5311e5865
+name: System.Search.ExtendedProperties
+property_identifier: 100
+shell_property_key: PKEY_Search_ExtendedProperties
+---
+format_identifier: 7b9f6399-0a3f-4b12-89bd-4adc51c918af
+name: System.Contact.HomeAddressPostOfficeBox
+property_identifier: 100
+shell_property_key: PKEY_Contact_HomeAddressPostOfficeBox
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.Status
+property_identifier: 10
+shell_property_key: PKEY_Sync_Status
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.Comments
+property_identifier: 13
+shell_property_key: PKEY_Sync_Comments
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.HandlerCollectionID
+property_identifier: 2
+shell_property_key: PKEY_Sync_HandlerCollectionID
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.ProgressPercentage
+property_identifier: 23
+shell_property_key: PKEY_Sync_ProgressPercentage
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.State
+property_identifier: 24
+shell_property_key: PKEY_Sync_State
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.HandlerID
+property_identifier: 3
+shell_property_key: PKEY_Sync_HandlerID
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.ItemID
+property_identifier: 6
+shell_property_key: PKEY_Sync_ItemID
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.HandlerType
+property_identifier: 8
+shell_property_key: PKEY_Sync_HandlerType
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.HandlerTypeLabel
+property_identifier: 9
+shell_property_key: PKEY_Sync_HandlerTypeLabel
+---
+format_identifier: 7d122d5a-ae5e-4335-8841-d71e7ce72f53
+name: System.GPS.SpeedDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_SpeedDenominator
+---
+format_identifier: 7d683fc9-d155-45a8-bb1f-89d19bcb792f
+name: System.Identity.DisplayName
+property_identifier: 100
+shell_property_key: PKEY_Identity_DisplayName
+---
+format_identifier: 7ddaaad1-ccc8-41ae-b750-b2cb8031aea2
+name: System.GPS.LatitudeNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_LatitudeNumerator
+---
+format_identifier: 7fd7259d-16b4-4135-9f97-7c96ecd2fa9e
+name: System.PropGroup.Message
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Message
+---
+format_identifier: 7fe3aa27-2648-42f3-89b0-454e5cb150c3
+name: System.Photo.ProgramModeText
+property_identifier: 100
+shell_property_key: PKEY_Photo_ProgramModeText
+---
+format_identifier: 807b653a-9e91-43ef-8f97-11ce04ee20c5
+name: System.Communication.Suffix
+property_identifier: 100
+shell_property_key: PKEY_Communication_Suffix
+---
+format_identifier: 80d81ea6-7473-4b0c-8216-efc11a2c4c8b
+name: System.Devices.ModelId
+property_identifier: 2
+shell_property_key: PKEY_Devices_ModelId
+---
+format_identifier: 80f41eb8-afc4-4208-aa5f-cce21a627281
+name: System.Contact.ConnectedServiceIdentities
+property_identifier: 100
+shell_property_key: PKEY_Contact_ConnectedServiceIdentities
+---
+format_identifier: 813f4124-34e6-4d17-ab3e-6b1f3c2247a1
+name: System.Photo.MakerNoteOffset
+property_identifier: 100
+shell_property_key: PKEY_Photo_MakerNoteOffset
+---
+format_identifier: 821437d6-9eab-4765-a589-3b1cbbd22a61
+name: System.Photo.PhotometricInterpretationText
+property_identifier: 100
+shell_property_key: PKEY_Photo_PhotometricInterpretationText
+---
+format_identifier: 827edb4f-5b73-44a7-891d-fdffabea35ca
+name: System.GPS.Altitude
+property_identifier: 100
+shell_property_key: PKEY_GPS_Altitude
+---
+format_identifier: 83a6347e-6fe4-4f40-ba9c-c4865240d1f4
+name: System.Communication.FollowupIconIndex
+property_identifier: 100
+shell_property_key: PKEY_Communication_FollowupIconIndex
+---
+format_identifier: 83da6326-97a6-4088-9453-a1923f573b29
+name: System.Devices.IsSoftwareInstalling
+property_identifier: 9
+shell_property_key: PKEY_Devices_IsSoftwareInstalling
+---
+format_identifier: 841e4f90-ff59-4d16-8947-e81bbffab36d
+name: System.Software.DateLastUsed
+property_identifier: 16
+shell_property_key: PKEY_Software_DateLastUsed
+---
+format_identifier: 847c66de-b8d6-4af9-abc3-6f4f926bc039
+name: System.DeviceInterface.PrinterDriverDirectory
+property_identifier: 14
+shell_property_key: PKEY_DeviceInterface_PrinterDriverDirectory
+---
+format_identifier: 84d8f337-981d-44b3-9615-c7596dba17e3
+name: System.Contact.EmailAddresses
+property_identifier: 100
+shell_property_key: PKEY_Contact_EmailAddresses
+---
+format_identifier: 8589e481-6040-473d-b171-7fa89c2708ed
+name: System.Contact.CompanyMainTelephone
+property_identifier: 100
+shell_property_key: PKEY_Contact_CompanyMainTelephone
+---
+format_identifier: 8619a4b6-9f4d-4429-8c0f-b996ca59e335
+name: System.Communication.SecurityFlags
+property_identifier: 100
+shell_property_key: PKEY_Communication_SecurityFlags
+---
+format_identifier: 8727cfff-4868-4ec6-ad5b-81b98521d1ab
+name: System.GPS.Latitude
+property_identifier: 100
+shell_property_key: PKEY_GPS_Latitude
+---
+format_identifier: 880f70a2-6082-47ac-8aab-a739d1a300c3
+name: System.Devices.SharedTooltip
+property_identifier: 151
+shell_property_key: PKEY_Devices_SharedTooltip
+---
+format_identifier: 880f70a2-6082-47ac-8aab-a739d1a300c3
+name: System.Devices.NetworkedTooltip
+property_identifier: 152
+shell_property_key: PKEY_Devices_NetworkedTooltip
+---
+format_identifier: 880f70a2-6082-47ac-8aab-a739d1a300c3
+name: System.Devices.DefaultTooltip
+property_identifier: 153
+shell_property_key: PKEY_Devices_DefaultTooltip
+---
+format_identifier: 8859a284-de7e-4642-99ba-d431d044b1ec
+name: System.PropGroup.MediaAdvanced
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_MediaAdvanced
+---
+format_identifier: 8943b373-388c-4395-b557-bc6dbaffafdb
+name: System.Devices.AudioDevice.RawProcessingSupported
+property_identifier: 2
+shell_property_key: PKEY_Devices_AudioDevice_RawProcessingSupported
+---
+format_identifier: 8943b373-388c-4395-b557-bc6dbaffafdb
+name: System.Devices.AudioDevice.Microphone.SensitivityInDbfs
+property_identifier: 3
+shell_property_key: PKEY_Devices_AudioDevice_Microphone_SensitivityInDbfs
+---
+format_identifier: 8943b373-388c-4395-b557-bc6dbaffafdb
+name: System.Devices.AudioDevice.Microphone.SignalToNoiseRatioInDb
+property_identifier: 4
+shell_property_key: PKEY_Devices_AudioDevice_Microphone_SignalToNoiseRatioInDb
+---
+format_identifier: 8943b373-388c-4395-b557-bc6dbaffafdb
+name: System.Devices.AudioDevice.Microphone.SensitivityInDbfs2
+property_identifier: 5
+shell_property_key: PKEY_Devices_AudioDevice_Microphone_SensitivityInDbfs2
+---
+format_identifier: 8969b275-9475-4e00-a887-ff93b8b41e44
+name: System.PropGroup.Description
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Description
+---
+format_identifier: 897b3694-fe9e-43e6-8066-260f590c0100
+name: System.Contact.JA.CompanyNamePhonetic
+property_identifier: 2
+shell_property_key: PKEY_Contact_JA_CompanyNamePhonetic
+---
+format_identifier: 897b3694-fe9e-43e6-8066-260f590c0100
+name: System.Contact.JA.FirstNamePhonetic
+property_identifier: 3
+shell_property_key: PKEY_Contact_JA_FirstNamePhonetic
+---
+format_identifier: 897b3694-fe9e-43e6-8066-260f590c0100
+name: System.Contact.JA.LastNamePhonetic
+property_identifier: 4
+shell_property_key: PKEY_Contact_JA_LastNamePhonetic
+---
+format_identifier: 8a2f99f9-3c37-465d-a8d7-69777a246d0c
+name: System.Link.FeedItemLocalId
+property_identifier: 2
+shell_property_key: PKEY_Link_FeedItemLocalId
+---
+format_identifier: 8a2f99f9-3c37-465d-a8d7-69777a246d0c
+name: System.Link.TargetUrlHostName
+property_identifier: 5
+shell_property_key: PKEY_Link_TargetUrlHostName
+---
+format_identifier: 8a2f99f9-3c37-465d-a8d7-69777a246d0c
+name: System.Link.TargetUrlPath
+property_identifier: 6
+shell_property_key: PKEY_Link_TargetUrlPath
+---
+format_identifier: 8af4961c-f526-43e5-aa81-db768219178d
+name: System.Photo.SubjectDistanceNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_SubjectDistanceNumerator
+---
+format_identifier: 8afcc170-8a46-4b53-9eee-90bae7151e62
+name: System.Contact.HomeAddressPostalCode
+property_identifier: 100
+shell_property_key: PKEY_Contact_HomeAddressPostalCode
+---
+format_identifier: 8b26ea41-058f-43f6-aecc-4035681ce977
+name: System.Contact.OtherAddressPostOfficeBox
+property_identifier: 100
+shell_property_key: PKEY_Contact_OtherAddressPostOfficeBox
+---
+format_identifier: 8c3b93a4-baed-1a83-9a32-102ee313f6eb
+name: System.Identity.Blob
+property_identifier: 100
+shell_property_key: PKEY_Identity_Blob
+---
+format_identifier: 8c7ed206-3f8a-4827-b3ab-ae9e1faefc6c
+name: System.Devices.ContainerId
+property_identifier: 2
+shell_property_key: PKEY_Devices_ContainerId
+---
+format_identifier: 8c7ed206-3f8a-4827-b3ab-ae9e1faefc6c
+name: System.Devices.InLocalMachineContainer
+property_identifier: 4
+shell_property_key: PKEY_Devices_InLocalMachineContainer
+---
+format_identifier: 8e531030-b960-4346-ae0d-66bc9a86fb94
+name: System.Communication.Direction
+property_identifier: 100
+shell_property_key: PKEY_Communication_Direction
+---
+format_identifier: 8e8ecf7c-b7b8-4eb8-a63f-0ee715c96f9e
+name: System.Photo.GainControlNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_GainControlNumerator
+---
+format_identifier: 8f167568-0aae-4322-8ed9-6055b7b0e398
+name: System.Contact.OtherAddressCountry
+property_identifier: 100
+shell_property_key: PKEY_Contact_OtherAddressCountry
+---
+format_identifier: 8f367200-c270-457c-b1d4-e07c5bcd90c7
+name: System.Contact.LastName
+property_identifier: 100
+shell_property_key: PKEY_Contact_LastName
+---
+format_identifier: 8fdc6dea-b929-412b-ba90-397a257465fe
+name: System.Contact.CarTelephone
+property_identifier: 100
+shell_property_key: PKEY_Contact_CarTelephone
+---
+format_identifier: 900a403b-097b-4b95-8ae2-071fdaeeb118
+name: System.PropGroup.Advanced
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Advanced
+---
+format_identifier: 90197ca7-fd8f-4e8c-9da3-b57e1e609295
+name: System.RatingText
+property_identifier: 100
+shell_property_key: PKEY_RatingText
+---
+format_identifier: 908696c7-8f87-44f2-80ed-a8c1c6894575
+name: System.LibraryLocationsCount
+property_identifier: 2
+shell_property_key: PKEY_LibraryLocationsCount
+---
+format_identifier: 9098f33c-9a7d-48a8-8de5-2e1227a64e91
+name: System.Message.ProofInProgress
+property_identifier: 100
+shell_property_key: PKEY_Message_ProofInProgress
+---
+format_identifier: 90e5e14e-648b-4826-b2aa-acaf790e3513
+name: System.IsEncrypted
+property_identifier: 10
+shell_property_key: PKEY_IsEncrypted
+---
+format_identifier: 91eff6f3-2e27-42ca-933e-7c999fbe310b
+name: System.Contact.BusinessFaxNumber
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessFaxNumber
+---
+format_identifier: 93112f89-c28b-492f-8a9d-4be2062cee8a
+name: System.Photo.ExposureIndexDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ExposureIndexDenominator
+---
+format_identifier: 95beb1fc-326d-4644-b396-cd3ed90e6ddf
+name: System.Journal.EntryType
+property_identifier: 100
+shell_property_key: PKEY_Journal_EntryType
+---
+format_identifier: 95c656c1-2abf-4148-9ed3-9ec602e3b7cd
+name: System.Contact.OtherAddressPostalCode
+property_identifier: 100
+shell_property_key: PKEY_Contact_OtherAddressPostalCode
+---
+format_identifier: 95e127b5-79cc-4e83-9c9e-8422187b3e0e
+name: System.DeviceInterface.WinUsb.UsbVendorId
+property_identifier: 2
+shell_property_key: PKEY_DeviceInterface_WinUsb_UsbVendorId
+---
+format_identifier: 95e127b5-79cc-4e83-9c9e-8422187b3e0e
+name: System.DeviceInterface.WinUsb.UsbProductId
+property_identifier: 3
+shell_property_key: PKEY_DeviceInterface_WinUsb_UsbProductId
+---
+format_identifier: 95e127b5-79cc-4e83-9c9e-8422187b3e0e
+name: System.DeviceInterface.WinUsb.UsbClass
+property_identifier: 4
+shell_property_key: PKEY_DeviceInterface_WinUsb_UsbClass
+---
+format_identifier: 95e127b5-79cc-4e83-9c9e-8422187b3e0e
+name: System.DeviceInterface.WinUsb.UsbSubClass
+property_identifier: 5
+shell_property_key: PKEY_DeviceInterface_WinUsb_UsbSubClass
+---
+format_identifier: 95e127b5-79cc-4e83-9c9e-8422187b3e0e
+name: System.DeviceInterface.WinUsb.UsbProtocol
+property_identifier: 6
+shell_property_key: PKEY_DeviceInterface_WinUsb_UsbProtocol
+---
+format_identifier: 95e127b5-79cc-4e83-9c9e-8422187b3e0e
+name: System.DeviceInterface.WinUsb.DeviceInterfaceClasses
+property_identifier: 7
+shell_property_key: PKEY_DeviceInterface_WinUsb_DeviceInterfaceClasses
+---
+format_identifier: 9660c283-fc3a-4a08-a096-eed3aac46da2
+name: System.Contact.DataSuppliers
+property_identifier: 100
+shell_property_key: PKEY_Contact_DataSuppliers
+---
+format_identifier: 967b5af8-995a-46ed-9e11-35b3c5b9782d
+name: System.Photo.ExposureIndex
+property_identifier: 100
+shell_property_key: PKEY_Photo_ExposureIndex
+---
+format_identifier: 972e333e-ac7e-49f1-8adf-a70d07a9bcab
+name: System.GPS.AreaInformation
+property_identifier: 100
+shell_property_key: PKEY_GPS_AreaInformation
+---
+format_identifier: 9744311e-7951-4b2e-b6f0-ecb293cac119
+name: [System.Devices.AepService.Bluetooth.CacheMode, System.Devices.AepService.Bluetooth.GattService.CacheMode]
+property_identifier: 5
+shell_property_key: [PKEY_Devices_AepService_Bluetooth_CacheMode, PKEY_Devices_AepService_Bluetooth_GattService_CacheMode]
+---
+format_identifier: 9744311e-7951-4b2e-b6f0-ecb293cac119
+name: [System.Devices.AepService.Bluetooth.GattService.Device, System.Devices.AepService.Bluetooth.TargetDevice]
+property_identifier: 6
+shell_property_key: [PKEY_Devices_AepService_Bluetooth_GattService_Device, PKEY_Devices_AepService_Bluetooth_TargetDevice]
+---
+format_identifier: 9744311e-7951-4b2e-b6f0-ecb293cac119
+name: System.Devices.AepService.Bluetooth.RfcommService.CacheMode
+property_identifier: 7
+shell_property_key: PKEY_Devices_AepService_Bluetooth_RfcommService_CacheMode
+---
+format_identifier: 9744311e-7951-4b2e-b6f0-ecb293cac119
+name: System.Devices.AepService.Bluetooth.RfcommService.Device
+property_identifier: 8
+shell_property_key: PKEY_Devices_AepService_Bluetooth_RfcommService_Device
+---
+format_identifier: 97b0ad89-df49-49cc-834e-660974fd755b
+name: System.Contact.Label
+property_identifier: 100
+shell_property_key: PKEY_Contact_Label
+---
+format_identifier: 98f98354-617a-46b8-8560-5b1b64bf1f89
+name: System.Contact.HomeAddress
+property_identifier: 100
+shell_property_key: PKEY_Contact_HomeAddress
+---
+format_identifier: 995ef0b0-7eb3-4a8b-b9ce-068bb3f4af69
+name: System.Devices.Aep.Bluetooth.Le.Appearance
+property_identifier: 1
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Le_Appearance
+---
+format_identifier: 995ef0b0-7eb3-4a8b-b9ce-068bb3f4af69
+name: System.Devices.Aep.Bluetooth.Le.AddressType
+property_identifier: 4
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Le_AddressType
+---
+format_identifier: 995ef0b0-7eb3-4a8b-b9ce-068bb3f4af69
+name: System.Devices.Aep.Bluetooth.Le.Appearance.Category
+property_identifier: 5
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Le_Appearance_Category
+---
+format_identifier: 995ef0b0-7eb3-4a8b-b9ce-068bb3f4af69
+name: System.Devices.Aep.Bluetooth.Le.Appearance.Subcategory
+property_identifier: 6
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Le_Appearance_Subcategory
+---
+format_identifier: 995ef0b0-7eb3-4a8b-b9ce-068bb3f4af69
+name: System.Devices.Aep.Bluetooth.Le.IsConnectable
+property_identifier: 8
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Le_IsConnectable
+---
+format_identifier: 9973d2b5-bfd8-438a-ba94-5349b293181a
+name: System.PropGroup.Calendar
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Calendar
+---
+format_identifier: 9a8ebb75-6458-4e82-bacb-35c0095b03bb
+name: System.Photo.TranscodedForSync
+property_identifier: 100
+shell_property_key: PKEY_Photo_TranscodedForSync
+---
+format_identifier: 9a93244d-a7ad-4ff8-9b99-45ee4cc09af6
+name: System.Contact.AssistantTelephone
+property_identifier: 100
+shell_property_key: PKEY_Contact_AssistantTelephone
+---
+format_identifier: 9a9bc088-4f6d-469e-9919-e705412040f9
+name: System.Message.IsFwdOrReply
+property_identifier: 100
+shell_property_key: PKEY_Message_IsFwdOrReply
+---
+format_identifier: 9ab84393-2a0f-4b75-bb22-7279786977cb
+name: System.GPS.DestBearingRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestBearingRef
+---
+format_identifier: 9ad5badb-cea7-4470-a03d-b84e51b9949e
+name: System.Contact.Anniversary
+property_identifier: 100
+shell_property_key: PKEY_Contact_Anniversary
+---
+format_identifier: 9aebae7a-9644-487d-a92c-657585ed751a
+name: System.Media.SubscriptionContentId
+property_identifier: 100
+shell_property_key: PKEY_Media_SubscriptionContentId
+---
+format_identifier: 9b174b34-40ff-11d2-a27e-00c04fc30871
+name: System.FileOwner
+property_identifier: 4
+shell_property_key: PKEY_FileOwner
+---
+format_identifier: 9b174b35-40ff-11d2-a27e-00c04fc30871
+name: System.Volume.IsRoot
+property_identifier: 10
+shell_property_key: PKEY_Volume_IsRoot
+---
+format_identifier: 9b174b35-40ff-11d2-a27e-00c04fc30871
+name: System.FreeSpace
+property_identifier: 2
+shell_property_key: PKEY_FreeSpace
+---
+format_identifier: 9b174b35-40ff-11d2-a27e-00c04fc30871
+name: System.Capacity
+property_identifier: 3
+shell_property_key: PKEY_Capacity
+---
+format_identifier: 9b174b35-40ff-11d2-a27e-00c04fc30871
+name: System.Volume.FileSystem
+property_identifier: 4
+shell_property_key: PKEY_Volume_FileSystem
+---
+format_identifier: 9b174b35-40ff-11d2-a27e-00c04fc30871
+name: System.PercentFull
+property_identifier: 5
+shell_property_key: PKEY_PercentFull
+---
+format_identifier: 9b174b35-40ff-11d2-a27e-00c04fc30871
+name: System.Computer.DecoratedFreeSpace
+property_identifier: 7
+shell_property_key: PKEY_Computer_DecoratedFreeSpace
+---
+format_identifier: 9bc2c99b-ac71-4127-9d1c-2596d0d7dcb7
+name: System.GPS.DestDistanceDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestDistanceDenominator
+---
+format_identifier: 9c1fcf74-2d97-41ba-b4ae-cb2e3661a6e4
+name: System.Priority
+property_identifier: 5
+shell_property_key: PKEY_Priority
+---
+format_identifier: 9c1fcf74-2d97-41ba-b4ae-cb2e3661a6e4
+name: System.Message.HasAttachments
+property_identifier: 8
+shell_property_key: PKEY_Message_HasAttachments
+---
+format_identifier: 9cb0c358-9d7a-46b1-b466-dcc6f1a3d93d
+name: System.Contact.DisplayMobilePhoneNumbers
+property_identifier: 100
+shell_property_key: PKEY_Contact_DisplayMobilePhoneNumbers
+---
+format_identifier: 9d1d7cc5-5c39-451c-86b3-928e2d18cc47
+name: System.GPS.DestLatitude
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestLatitude
+---
+format_identifier: 9d2408b6-3167-422b-82b0-f583b7a7cfe3
+name: System.Contact.SpouseName
+property_identifier: 100
+shell_property_key: PKEY_Contact_SpouseName
+---
+format_identifier: 9e7d118f-b314-45a0-8cfb-d654b917c9e9
+name: System.Photo.BrightnessNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_BrightnessNumerator
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.IsDualMode
+property_identifier: 11
+shell_property_key: PKEY_AppUserModel_IsDualMode
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.StartPinOption
+property_identifier: 12
+shell_property_key: PKEY_AppUserModel_StartPinOption
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.RelaunchCommand
+property_identifier: 2
+shell_property_key: PKEY_AppUserModel_RelaunchCommand
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ActivationContext
+property_identifier: 20
+shell_property_key: PKEY_AppUserModel_ActivationContext
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ToastActivatorCLSID
+property_identifier: 26
+shell_property_key: PKEY_AppUserModel_ToastActivatorCLSID
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.RelaunchIconResource
+property_identifier: 3
+shell_property_key: PKEY_AppUserModel_RelaunchIconResource
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.RelaunchDisplayNameResource
+property_identifier: 4
+shell_property_key: PKEY_AppUserModel_RelaunchDisplayNameResource
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ID
+property_identifier: 5
+shell_property_key: PKEY_AppUserModel_ID
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.IsDestListSeparator
+property_identifier: 6
+shell_property_key: PKEY_AppUserModel_IsDestListSeparator
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ExcludeFromShowInNewInstall
+property_identifier: 8
+shell_property_key: PKEY_AppUserModel_ExcludeFromShowInNewInstall
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.PreventPinning
+property_identifier: 9
+shell_property_key: PKEY_AppUserModel_PreventPinning
+---
+format_identifier: a00742a1-cd8c-4b37-95ab-70755587767a
+name: System.DeviceInterface.PrinterEnumerationFlag
+property_identifier: 3
+shell_property_key: PKEY_DeviceInterface_PrinterEnumerationFlag
+---
+format_identifier: a015ed5d-aaea-4d58-8a86-3c586920ea0b
+name: System.GPS.MeasureMode
+property_identifier: 100
+shell_property_key: PKEY_GPS_MeasureMode
+---
+format_identifier: a06992b3-8caf-4ed7-a547-b259e32ac9fc
+name: System.Search.Store
+property_identifier: 100
+shell_property_key: PKEY_Search_Store
+---
+format_identifier: a09f084e-ad41-489f-8076-aa5be3082bca
+name: System.SimpleRating
+property_identifier: 100
+shell_property_key: PKEY_SimpleRating
+---
+format_identifier: a0be94c5-50ba-487b-bd35-0654be8881ed
+name: System.GPS.DOPDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DOPDenominator
+---
+format_identifier: a0e00ee1-f0c7-4d41-b8e7-26a7bd8d38b0
+name: System.Devices.Notifications.StorageFull
+property_identifier: 2
+shell_property_key: [PKEY_Devices_Notification_StorageFull, PKEY_Devices_Notifications_StorageFull]
+---
+format_identifier: a0e00ee1-f0c7-4d41-b8e7-26a7bd8d38b0
+name: System.Devices.Notifications.StorageFullLinkText
+property_identifier: 3
+shell_property_key: [PKEY_Devices_Notification_StorageFullLinkText, PKEY_Devices_Notifications_StorageFullLinkText]
+---
+format_identifier: a0e74609-b84d-4f49-b860-462bd9971f98
+name: System.Photo.FocalLengthInFilm
+property_identifier: 100
+shell_property_key: PKEY_Photo_FocalLengthInFilm
+---
+format_identifier: a1829ea2-27eb-459e-935d-b2fad7b07762
+name: System.Devices.MicrophoneArray.Geometry
+property_identifier: 2
+shell_property_key: PKEY_Devices_MicrophoneArray_Geometry
+---
+format_identifier: a19fb7a9-024b-4371-a8bf-4d29c3e4e9c9
+name: System.Contact.ConnectedServiceSupportedActions
+property_identifier: 100
+shell_property_key: PKEY_Contact_ConnectedServiceSupportedActions
+---
+format_identifier: a26f4afc-7346-4299-be47-eb1ae613139f
+name: System.Identity
+property_identifier: 100
+shell_property_key: PKEY_Identity
+---
+format_identifier: a26f4afc-7346-4299-be47-eb1ae613139f
+name: System.Identity.KeyProviderName
+property_identifier: 16
+shell_property_key: PKEY_Identity_KeyProviderName
+---
+format_identifier: a26f4afc-7346-4299-be47-eb1ae613139f
+name: System.Identity.KeyProviderContext
+property_identifier: 17
+shell_property_key: PKEY_Identity_KeyProviderContext
+---
+format_identifier: a2e541c5-4440-4ba8-867e-75cfc06828cd
+name: System.Photo.FocalPlaneYResolutionNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FocalPlaneYResolutionNumerator
+---
+format_identifier: a3250282-fb6d-48d5-9a89-dbcace75cccf
+name: System.GPS.DestLongitudeNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestLongitudeNumerator
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.DeviceAddress
+property_identifier: 12
+shell_property_key: PKEY_Devices_Aep_DeviceAddress
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.IsPaired
+property_identifier: 16
+shell_property_key: PKEY_Devices_Aep_IsPaired
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.Category
+property_identifier: 17
+shell_property_key: PKEY_Devices_Aep_Category
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.ModelName
+property_identifier: 3
+shell_property_key: PKEY_Devices_Aep_ModelName
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.ModelId
+property_identifier: 4
+shell_property_key: PKEY_Devices_Aep_ModelId
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.Manufacturer
+property_identifier: 5
+shell_property_key: PKEY_Devices_Aep_Manufacturer
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.SignalStrength
+property_identifier: 6
+shell_property_key: PKEY_Devices_Aep_SignalStrength
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.IsConnected
+property_identifier: 7
+shell_property_key: PKEY_Devices_Aep_IsConnected
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.IsPresent
+property_identifier: 9
+shell_property_key: PKEY_Devices_Aep_IsPresent
+---
+format_identifier: a399aac7-c265-474e-b073-ffce57721716
+name: System.Devices.AepService.Bluetooth.ServiceGuid
+property_identifier: 2
+shell_property_key: PKEY_Devices_AepService_Bluetooth_ServiceGuid
+---
+format_identifier: a3b29791-7713-4e1d-bb40-17db85f01831
+name: System.ImportanceText
+property_identifier: 100
+shell_property_key: PKEY_ImportanceText
+---
+format_identifier: a4108708-09df-4377-9dfc-6d99986d5a67
+name: System.Identity.IsMeIdentity
+property_identifier: 100
+shell_property_key: PKEY_Identity_IsMeIdentity
+---
+format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
+name: System.Devices.ClassGuid
+property_identifier: 10
+shell_property_key: PKEY_Devices_ClassGuid
+---
+format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
+name: System.Devices.DeviceManufacturer
+property_identifier: 13
+shell_property_key: PKEY_Devices_DeviceManufacturer
+---
+format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
+name: System.Devices.DeviceCapabilities
+property_identifier: 17
+shell_property_key: PKEY_Devices_DeviceCapabilities
+---
+format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
+name: System.Devices.DeviceCharacteristics
+property_identifier: 29
+shell_property_key: PKEY_Devices_DeviceCharacteristics
+---
+format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
+name: System.Devices.HardwareIds
+property_identifier: 3
+shell_property_key: PKEY_Devices_HardwareIds
+---
+format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
+name: System.Devices.LocationPaths
+property_identifier: 37
+shell_property_key: PKEY_Devices_LocationPaths
+---
+format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
+name: System.Devices.CompatibleIds
+property_identifier: 4
+shell_property_key: PKEY_Devices_CompatibleIds
+---
+format_identifier: a4aaa5b7-1ad0-445f-811a-0f8f6e67f6b5
+name: System.GPS.ImgDirectionRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_ImgDirectionRef
+---
+format_identifier: a5477f61-7a82-4eca-9dde-98b69b2479b3
+name: System.RecordedTV.RecordingTime
+property_identifier: 100
+shell_property_key: PKEY_RecordedTV_RecordingTime
+---
+format_identifier: a6744477-c237-475b-a075-54f34498292a
+name: System.Communication.TaskStatusText
+property_identifier: 100
+shell_property_key: PKEY_Communication_TaskStatusText
+---
+format_identifier: a6f360d2-55f9-48de-b909-620e090a647c
+name: System.IsFlaggedComplete
+property_identifier: 100
+shell_property_key: PKEY_IsFlaggedComplete
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress1Street
+property_identifier: 101
+shell_property_key: PKEY_Contact_HomeAddress1Street
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress1Locality
+property_identifier: 102
+shell_property_key: PKEY_Contact_HomeAddress1Locality
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress1Region
+property_identifier: 103
+shell_property_key: PKEY_Contact_HomeAddress1Region
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress1Country
+property_identifier: 104
+shell_property_key: PKEY_Contact_HomeAddress1Country
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress1PostalCode
+property_identifier: 105
+shell_property_key: PKEY_Contact_HomeAddress1PostalCode
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress2Street
+property_identifier: 106
+shell_property_key: PKEY_Contact_HomeAddress2Street
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress2Locality
+property_identifier: 107
+shell_property_key: PKEY_Contact_HomeAddress2Locality
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress2Region
+property_identifier: 108
+shell_property_key: PKEY_Contact_HomeAddress2Region
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress2Country
+property_identifier: 109
+shell_property_key: PKEY_Contact_HomeAddress2Country
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress2PostalCode
+property_identifier: 110
+shell_property_key: PKEY_Contact_HomeAddress2PostalCode
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress3Street
+property_identifier: 111
+shell_property_key: PKEY_Contact_HomeAddress3Street
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress3Locality
+property_identifier: 112
+shell_property_key: PKEY_Contact_HomeAddress3Locality
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress3Region
+property_identifier: 113
+shell_property_key: PKEY_Contact_HomeAddress3Region
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress3Country
+property_identifier: 114
+shell_property_key: PKEY_Contact_HomeAddress3Country
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.HomeAddress3PostalCode
+property_identifier: 115
+shell_property_key: PKEY_Contact_HomeAddress3PostalCode
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress1Street
+property_identifier: 116
+shell_property_key: PKEY_Contact_BusinessAddress1Street
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress1Locality
+property_identifier: 117
+shell_property_key: PKEY_Contact_BusinessAddress1Locality
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress1Region
+property_identifier: 118
+shell_property_key: PKEY_Contact_BusinessAddress1Region
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress1Country
+property_identifier: 119
+shell_property_key: PKEY_Contact_BusinessAddress1Country
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress1PostalCode
+property_identifier: 120
+shell_property_key: PKEY_Contact_BusinessAddress1PostalCode
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress2Street
+property_identifier: 121
+shell_property_key: PKEY_Contact_BusinessAddress2Street
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress2Locality
+property_identifier: 122
+shell_property_key: PKEY_Contact_BusinessAddress2Locality
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress2Region
+property_identifier: 123
+shell_property_key: PKEY_Contact_BusinessAddress2Region
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress2Country
+property_identifier: 124
+shell_property_key: PKEY_Contact_BusinessAddress2Country
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress2PostalCode
+property_identifier: 125
+shell_property_key: PKEY_Contact_BusinessAddress2PostalCode
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress3Street
+property_identifier: 126
+shell_property_key: PKEY_Contact_BusinessAddress3Street
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress3Locality
+property_identifier: 127
+shell_property_key: PKEY_Contact_BusinessAddress3Locality
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress3Region
+property_identifier: 128
+shell_property_key: PKEY_Contact_BusinessAddress3Region
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress3Country
+property_identifier: 129
+shell_property_key: PKEY_Contact_BusinessAddress3Country
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.BusinessAddress3PostalCode
+property_identifier: 130
+shell_property_key: PKEY_Contact_BusinessAddress3PostalCode
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress1Street
+property_identifier: 131
+shell_property_key: PKEY_Contact_OtherAddress1Street
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress1Locality
+property_identifier: 132
+shell_property_key: PKEY_Contact_OtherAddress1Locality
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress1Region
+property_identifier: 133
+shell_property_key: PKEY_Contact_OtherAddress1Region
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress1Country
+property_identifier: 134
+shell_property_key: PKEY_Contact_OtherAddress1Country
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress1PostalCode
+property_identifier: 135
+shell_property_key: PKEY_Contact_OtherAddress1PostalCode
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress2Street
+property_identifier: 136
+shell_property_key: PKEY_Contact_OtherAddress2Street
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress2Locality
+property_identifier: 137
+shell_property_key: PKEY_Contact_OtherAddress2Locality
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress2Region
+property_identifier: 138
+shell_property_key: PKEY_Contact_OtherAddress2Region
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress2Country
+property_identifier: 139
+shell_property_key: PKEY_Contact_OtherAddress2Country
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress2PostalCode
+property_identifier: 140
+shell_property_key: PKEY_Contact_OtherAddress2PostalCode
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress3Street
+property_identifier: 141
+shell_property_key: PKEY_Contact_OtherAddress3Street
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress3Locality
+property_identifier: 142
+shell_property_key: PKEY_Contact_OtherAddress3Locality
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress3Region
+property_identifier: 143
+shell_property_key: PKEY_Contact_OtherAddress3Region
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress3Country
+property_identifier: 144
+shell_property_key: PKEY_Contact_OtherAddress3Country
+---
+format_identifier: a7b6f596-d678-4bc1-b05f-0203d27e8aa1
+name: System.Contact.OtherAddress3PostalCode
+property_identifier: 145
+shell_property_key: PKEY_Contact_OtherAddress3PostalCode
+---
+format_identifier: a7fe0840-1344-46f0-8d37-52ed712a4bf9
+name: System.ParentalRatingsOrganization
+property_identifier: 100
+shell_property_key: PKEY_ParentalRatingsOrganization
+---
+format_identifier: a82d9ee7-ca67-4312-965e-226bcea85023
+name: System.Message.Flags
+property_identifier: 100
+shell_property_key: PKEY_Message_Flags
+---
+format_identifier: a8a74b92-361b-4e9a-b722-7c4a7330a312
+name: System.Identity.ProviderData
+property_identifier: 100
+shell_property_key: PKEY_Identity_ProviderData
+---
+format_identifier: a93eae04-6804-4f24-ac81-09b266452118
+name: System.GPS.DestDistance
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestDistance
+---
+format_identifier: a94688b6-7d9f-4570-a648-e3dfc0ab2b3f
+name: System.OfflineAvailability
+property_identifier: 100
+shell_property_key: PKEY_OfflineAvailability
+---
+format_identifier: a9ea193c-c511-498a-a06b-58e2776dcc28
+name: System.Photo.OrientationText
+property_identifier: 100
+shell_property_key: PKEY_Photo_OrientationText
+---
+format_identifier: aaa660f9-9865-458e-b484-01bc7fe3973e
+name: System.Calendar.OrganizerName
+property_identifier: 100
+shell_property_key: PKEY_Calendar_OrganizerName
+---
+format_identifier: aabaf6c9-e0c5-4719-8585-57b103e584fe
+name: System.Photo.FlashManufacturer
+property_identifier: 100
+shell_property_key: PKEY_Photo_FlashManufacturer
+---
+format_identifier: aaf16bac-2b55-45e6-9f6d-415eb94910df
+name: System.Contact.TTYTDDTelephone
+property_identifier: 100
+shell_property_key: PKEY_Contact_TTYTDDTelephone
+---
+format_identifier: aaf4ee25-bd3b-4dd7-bfc4-47f77bb00f6d
+name: System.GPS.Differential
+property_identifier: 100
+shell_property_key: PKEY_GPS_Differential
+---
+format_identifier: ab205e50-04b7-461c-a18c-2f233836e627
+name: System.Photo.ExposureBiasDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ExposureBiasDenominator
+---
+format_identifier: acc9ce3d-c213-4942-8b48-6d0820f21c6d
+name: System.GPS.SpeedNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_SpeedNumerator
+---
+format_identifier: aeac19e4-89ae-4508-b9b7-bb867abee2ed
+name: System.DRM.IsProtected
+property_identifier: 2
+shell_property_key: PKEY_DRM_IsProtected
+---
+format_identifier: aeac19e4-89ae-4508-b9b7-bb867abee2ed
+name: System.DRM.Description
+property_identifier: 3
+shell_property_key: PKEY_DRM_Description
+---
+format_identifier: aeac19e4-89ae-4508-b9b7-bb867abee2ed
+name: System.DRM.PlayCount
+property_identifier: 4
+shell_property_key: PKEY_DRM_PlayCount
+---
+format_identifier: aeac19e4-89ae-4508-b9b7-bb867abee2ed
+name: System.DRM.DatePlayStarts
+property_identifier: 5
+shell_property_key: PKEY_DRM_DatePlayStarts
+---
+format_identifier: aeac19e4-89ae-4508-b9b7-bb867abee2ed
+name: System.DRM.DatePlayExpires
+property_identifier: 6
+shell_property_key: PKEY_DRM_DatePlayExpires
+---
+format_identifier: aeac19e4-89ae-4508-b9b7-bb867abee2ed
+name: System.DRM.IsDisabled
+property_identifier: 7
+shell_property_key: PKEY_DRM_IsDisabled
+---
+format_identifier: afc47170-14f5-498c-8f30-b0d19be449c6
+name: System.DeviceInterface.PrinterDriverName
+property_identifier: 11
+shell_property_key: PKEY_DeviceInterface_PrinterDriverName
+---
+format_identifier: afd97640-86a3-4210-b67c-289c41aabe55
+name: System.Devices.SafeRemovalRequired
+property_identifier: 2
+shell_property_key: PKEY_Devices_SafeRemovalRequired
+---
+format_identifier: b0b87314-fcf6-4feb-8dff-a50da6af561c
+name: System.Contact.BusinessAddressCountry
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessAddressCountry
+---
+format_identifier: b2f9b9d6-fec4-4dd5-94d7-8957488c807b
+name: System.FilePlaceholderStatus
+property_identifier: 2
+shell_property_key: PKEY_FilePlaceholderStatus
+---
+format_identifier: b2f9b9d6-fec4-4dd5-94d7-8957488c807b
+name: System.StorageProviderFileIdentifier
+property_identifier: 3
+shell_property_key: PKEY_StorageProviderFileIdentifier
+---
+format_identifier: b2f9b9d6-fec4-4dd5-94d7-8957488c807b
+name: System.StorageProviderFileVersion
+property_identifier: 4
+shell_property_key: PKEY_StorageProviderFileVersion
+---
+format_identifier: b2f9b9d6-fec4-4dd5-94d7-8957488c807b
+name: System.StorageProviderFileChecksum
+property_identifier: 5
+shell_property_key: PKEY_StorageProviderFileChecksum
+---
+format_identifier: b2f9b9d6-fec4-4dd5-94d7-8957488c807b
+name: System.StorageProviderFileVersionWaterline
+property_identifier: 6
+shell_property_key: PKEY_StorageProviderFileVersionWaterline
+---
+format_identifier: b2f9b9d6-fec4-4dd5-94d7-8957488c807b
+name: System.StorageProviderCallerVersionInformation
+property_identifier: 7
+shell_property_key: PKEY_StorageProviderCallerVersionInformation
+---
+format_identifier: b2f9b9d6-fec4-4dd5-94d7-8957488c807b
+property_identifier: 8
+shell_property_key: PKEY_StorageProviderFileFlags
+---
+format_identifier: b33af30b-f552-4584-936c-cb93e5cda29f
+name: System.Calendar.RequiredAttendeeNames
+property_identifier: 100
+shell_property_key: PKEY_Calendar_RequiredAttendeeNames
+---
+format_identifier: b5c84c9e-5927-46b5-a3cc-933c21b78469
+name: System.Contact.ConnectedServiceName
+property_identifier: 100
+shell_property_key: PKEY_Contact_ConnectedServiceName
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemNameDisplay
+property_identifier: 10
+shell_property_key: PKEY_ItemNameDisplay
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.Size
+property_identifier: 12
+shell_property_key: PKEY_Size
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.FileAttributes
+property_identifier: 13
+shell_property_key: PKEY_FileAttributes
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.DateModified
+property_identifier: 14
+shell_property_key: PKEY_DateModified
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.DateCreated
+property_identifier: 15
+shell_property_key: PKEY_DateCreated
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.DateAccessed
+property_identifier: 16
+shell_property_key: PKEY_DateAccessed
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.FileAllocationSize
+property_identifier: 18
+shell_property_key: PKEY_FileAllocationSize
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.Search.Contents
+property_identifier: 19
+shell_property_key: PKEY_Search_Contents
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemFolderNameDisplay
+property_identifier: 2
+shell_property_key: PKEY_ItemFolderNameDisplay
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.FileFRN
+property_identifier: 21
+shell_property_key: PKEY_FileFRN
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemNameSortOverride
+property_identifier: 23
+shell_property_key: PKEY_ItemNameSortOverride
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemNameDisplayWithoutExtension
+property_identifier: 24
+shell_property_key: PKEY_ItemNameDisplayWithoutExtension
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.FolderNameDisplay
+property_identifier: 25
+shell_property_key: PKEY_FolderNameDisplay
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemTypeText
+property_identifier: 4
+shell_property_key: PKEY_ItemTypeText
+---
+format_identifier: b7b4d61c-5a64-4187-a52e-b1539f359099
+name: System.Devices.WinPhone8CameraFlags
+property_identifier: 2
+shell_property_key: PKEY_Devices_WinPhone8CameraFlags
+---
+format_identifier: b812f15d-c2d8-4bbf-bacd-79744346113f
+name: System.Photo.TagViewAggregate
+property_identifier: 100
+shell_property_key: PKEY_Photo_TagViewAggregate
+---
+format_identifier: b96eff7b-35ca-4a35-8607-29e3a54c46ea
+name: System.IdentityProvider.Name
+property_identifier: 100
+shell_property_key: PKEY_IdentityProvider_Name
+---
+format_identifier: b9b4b3fc-2b51-4a42-b5d8-324146afcf25
+name: System.Link.TargetParsingPath
+property_identifier: 2
+shell_property_key: PKEY_Link_TargetParsingPath
+---
+format_identifier: b9b4b3fc-2b51-4a42-b5d8-324146afcf25
+name: System.Link.Status
+property_identifier: 3
+shell_property_key: PKEY_Link_Status
+---
+format_identifier: b9b4b3fc-2b51-4a42-b5d8-324146afcf25
+name: System.Link.Comment
+property_identifier: 5
+shell_property_key: PKEY_Link_Comment
+---
+format_identifier: b9b4b3fc-2b51-4a42-b5d8-324146afcf25
+name: System.Link.TargetSFGAOFlags
+property_identifier: 8
+shell_property_key: PKEY_Link_TargetSFGAOFlags
+---
+format_identifier: ba3b1da9-86ee-4b5d-a2a4-a271a429f0cf
+name: System.GPS.DestBearingNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestBearingNumerator
+---
+format_identifier: bc4e71ce-17f9-48d5-bee9-021df0ea5409
+name: System.Contact.BusinessAddressPostOfficeBox
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessAddressPostOfficeBox
+---
+format_identifier: bccc8a3c-8cef-42e5-9b1c-c69079398bc7
+name: System.Message.ToDoTitle
+property_identifier: 100
+shell_property_key: PKEY_Message_ToDoTitle
+---
+format_identifier: bceee283-35df-4d53-826a-f36a3eefc6be
+name: System.Search.ContainerHash
+property_identifier: 100
+shell_property_key: PKEY_Search_ContainerHash
+---
+format_identifier: be1a72c6-9a1d-46b7-afe7-afaf8cef4999
+name: System.Communication.TaskStatus
+property_identifier: 100
+shell_property_key: PKEY_Communication_TaskStatus
+---
+format_identifier: be6e176c-4534-4d2c-ace5-31dedac1606b
+name: System.GPS.LongitudeDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_LongitudeDenominator
+---
+format_identifier: bebe0920-7671-4c54-a3eb-49fddfc191ee
+name: System.PropGroup.Video
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Video
+---
+format_identifier: bf53d1c3-49e0-4f7f-8567-5a821d8ac542
+name: System.Contact.CallbackTelephone
+property_identifier: 100
+shell_property_key: PKEY_Contact_CallbackTelephone
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.Ttl
+property_identifier: 10
+shell_property_key: PKEY_Devices_Dnssd_Ttl
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.NetworkAdapterId
+property_identifier: 11
+shell_property_key: PKEY_Devices_Dnssd_NetworkAdapterId
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.PortNumber
+property_identifier: 12
+shell_property_key: PKEY_Devices_Dnssd_PortNumber
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.ServiceName
+property_identifier: 2
+shell_property_key: PKEY_Devices_Dnssd_ServiceName
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.Domain
+property_identifier: 3
+shell_property_key: PKEY_Devices_Dnssd_Domain
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.InstanceName
+property_identifier: 4
+shell_property_key: PKEY_Devices_Dnssd_InstanceName
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.FullName
+property_identifier: 5
+shell_property_key: PKEY_Devices_Dnssd_FullName
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.TextAttributes
+property_identifier: 6
+shell_property_key: PKEY_Devices_Dnssd_TextAttributes
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.HostName
+property_identifier: 7
+shell_property_key: PKEY_Devices_Dnssd_HostName
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.Weight
+property_identifier: 8
+shell_property_key: PKEY_Devices_Dnssd_Weight
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.Priority
+property_identifier: 9
+shell_property_key: PKEY_Devices_Dnssd_Priority
+---
+format_identifier: bfee9149-e3e2-49a7-a862-c05988145cec
+name: System.Calendar.IsOnline
+property_identifier: 100
+shell_property_key: PKEY_Calendar_IsOnline
+---
+format_identifier: c06238b2-0bf9-4279-a723-25856715cb9d
+name: System.Photo.GainControlText
+property_identifier: 100
+shell_property_key: PKEY_Photo_GainControlText
+---
+format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+property_identifier: 100
+shell_property_key: PKEY_Address_Country
+---
+format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+property_identifier: 101
+shell_property_key: PKEY_Address_CountryCode
+---
+format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+property_identifier: 102
+shell_property_key: PKEY_Address_Region
+---
+format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+property_identifier: 103
+shell_property_key: PKEY_Address_RegionCode
+---
+format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+property_identifier: 104
+shell_property_key: PKEY_Address_Town
+---
+format_identifier: c0ac206a-827e-4650-95ae-77e2bb74fcc9
+name: System.Contact.MailingAddress
+property_identifier: 100
+shell_property_key: PKEY_Contact_MailingAddress
+---
+format_identifier: c107e191-a459-44c5-9ae6-b952ad4b906d
+name: System.Photo.MaxApertureNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_MaxApertureNumerator
+---
+format_identifier: c2ea046e-033c-4e91-bd5b-d4942f6bbe49
+name: System.CreatorAppId
+property_identifier: 2
+shell_property_key: PKEY_CreatorAppId
+---
+format_identifier: c2ea046e-033c-4e91-bd5b-d4942f6bbe49
+name: System.CreatorOpenWithUIOptions
+property_identifier: 3
+shell_property_key: PKEY_CreatorOpenWithUIOptions
+---
+format_identifier: c4322503-78ca-49c6-9acc-a68e2afd7b6b
+name: System.Identity.UserName
+property_identifier: 100
+shell_property_key: PKEY_Identity_UserName
+---
+format_identifier: c449d5cb-9ea4-4809-82e8-af9d59ded6d1
+name: System.Music.IsCompilation
+property_identifier: 100
+shell_property_key: PKEY_Music_IsCompilation
+---
+format_identifier: c4c07f2b-8524-4e66-ae3a-a6235f103beb
+name: System.Devices.Notifications.LowBattery
+property_identifier: 2
+shell_property_key: [PKEY_Devices_Notification_LowBattery, PKEY_Devices_Notifications_LowBattery]
+---
+format_identifier: c4c4dbb2-b593-466b-bbda-d03d27d5e43a
+name: System.GPS.Longitude
+property_identifier: 100
+shell_property_key: PKEY_GPS_Longitude
+---
+format_identifier: c554493c-c1f7-40c1-a76c-ef8c0614003e
+name: System.Contact.TelexNumber
+property_identifier: 100
+shell_property_key: PKEY_Contact_TelexNumber
+---
+format_identifier: c66d4b3c-e888-47cc-b99f-9dca3ee34dea
+name: System.GPS.DestBearing
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestBearing
+---
+format_identifier: c75faa05-96fd-49e7-9cb4-9f601082d553
+name: System.EndDate
+property_identifier: 100
+shell_property_key: PKEY_EndDate
+---
+format_identifier: c77724d4-601f-46c5-9b89-c53f93bceb77
+name: System.Photo.MaxApertureDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_MaxApertureDenominator
+---
+format_identifier: c89a23d0-7d6d-4eb8-87d4-776a82d493e5
+name: System.Contact.HomeAddressState
+property_identifier: 100
+shell_property_key: PKEY_Contact_HomeAddressState
+---
+format_identifier: c8d1920c-01f6-40c0-ac86-2f3a4ad00770
+name: System.GPS.TrackDenominator
+property_identifier: 100
+shell_property_key: PKEY_GPS_TrackDenominator
+---
+format_identifier: c8ea94f0-a9e3-4969-a94b-9c62a95324e0
+name: System.Contact.PrimaryAddressCity
+property_identifier: 100
+shell_property_key: PKEY_Contact_PrimaryAddressCity
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.FileOperationPrompt
+property_identifier: 10
+shell_property_key: PKEY_PropList_FileOperationPrompt
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.ConflictPrompt
+property_identifier: 11
+shell_property_key: PKEY_PropList_ConflictPrompt
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.ContentViewModeForBrowse
+property_identifier: 13
+shell_property_key: PKEY_PropList_ContentViewModeForBrowse
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.ContentViewModeForSearch
+property_identifier: 14
+shell_property_key: PKEY_PropList_ContentViewModeForSearch
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.InfoTipText
+property_identifier: 17
+shell_property_key: PKEY_InfoTipText
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.FullDetails
+property_identifier: 2
+shell_property_key: PKEY_PropList_FullDetails
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.TileInfo
+property_identifier: 3
+shell_property_key: PKEY_PropList_TileInfo
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.InfoTip
+property_identifier: 4
+shell_property_key: PKEY_PropList_InfoTip
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.QuickTip
+property_identifier: 5
+shell_property_key: PKEY_PropList_QuickTip
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.LayoutPattern.ContentViewModeForBrowse
+property_identifier: 500
+shell_property_key: PKEY_LayoutPattern_ContentViewModeForBrowse
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.LayoutPattern.ContentViewModeForSearch
+property_identifier: 501
+shell_property_key: PKEY_LayoutPattern_ContentViewModeForSearch
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.PreviewTitle
+property_identifier: 6
+shell_property_key: PKEY_PropList_PreviewTitle
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.PreviewDetails
+property_identifier: 8
+shell_property_key: PKEY_PropList_PreviewDetails
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.ExtendedTileInfo
+property_identifier: 9
+shell_property_key: PKEY_PropList_ExtendedTileInfo
+---
+format_identifier: c9c141a9-1b4c-4f17-a9d1-f298538cadb8
+name: System.Devices.AepService.ServiceId
+property_identifier: 2
+shell_property_key: PKEY_Devices_AepService_ServiceId
+---
+format_identifier: c9c141a9-1b4c-4f17-a9d1-f298538cadb8
+name: System.Devices.AepService.ProtocolId
+property_identifier: 5
+shell_property_key: PKEY_Devices_AepService_ProtocolId
+---
+format_identifier: c9c141a9-1b4c-4f17-a9d1-f298538cadb8
+name: System.Devices.AepService.AepId
+property_identifier: 6
+shell_property_key: PKEY_Devices_AepService_AepId
+---
+format_identifier: c9c141a9-1b4c-4f17-a9d1-f298538cadb8
+name: System.Devices.AepService.ParentAepIsPaired
+property_identifier: 7
+shell_property_key: PKEY_Devices_AepService_ParentAepIsPaired
+---
+format_identifier: c9c34f84-2241-4401-b607-bd20ed75ae7f
+name: System.Communication.HeaderItem
+property_identifier: 100
+shell_property_key: PKEY_Communication_HeaderItem
+---
+format_identifier: cbf38310-4a17-4310-a1eb-247f0b67593b
+name: System.DeviceInterface.Hid.UsagePage
+property_identifier: 2
+shell_property_key: PKEY_DeviceInterface_Hid_UsagePage
+---
+format_identifier: cbf38310-4a17-4310-a1eb-247f0b67593b
+name: System.DeviceInterface.Hid.UsageId
+property_identifier: 3
+shell_property_key: PKEY_DeviceInterface_Hid_UsageId
+---
+format_identifier: cbf38310-4a17-4310-a1eb-247f0b67593b
+name: System.DeviceInterface.Hid.IsReadOnly
+property_identifier: 4
+shell_property_key: PKEY_DeviceInterface_Hid_IsReadOnly
+---
+format_identifier: cbf38310-4a17-4310-a1eb-247f0b67593b
+name: System.DeviceInterface.Hid.VendorId
+property_identifier: 5
+shell_property_key: PKEY_DeviceInterface_Hid_VendorId
+---
+format_identifier: cbf38310-4a17-4310-a1eb-247f0b67593b
+name: System.DeviceInterface.Hid.ProductId
+property_identifier: 6
+shell_property_key: PKEY_DeviceInterface_Hid_ProductId
+---
+format_identifier: cbf38310-4a17-4310-a1eb-247f0b67593b
+name: System.DeviceInterface.Hid.VersionNumber
+property_identifier: 7
+shell_property_key: PKEY_DeviceInterface_Hid_VersionNumber
+---
+format_identifier: cc301630-b192-4c22-b372-9f4c6d338e07
+name: System.PropGroup.General
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_General
+---
+format_identifier: cc6f4f24-6083-4bd4-8754-674d0de87ab8
+name: System.Contact.EmailName
+property_identifier: 100
+shell_property_key: PKEY_Contact_EmailName
+---
+format_identifier: cd102c9c-5540-4a88-a6f6-64e4981c8cd1
+name: System.Contact.AssistantName
+property_identifier: 100
+shell_property_key: PKEY_Contact_AssistantName
+---
+format_identifier: cd9ed458-08ce-418f-a70e-f912c7bb9c5c
+name: System.Message.MessageClass
+property_identifier: 103
+shell_property_key: PKEY_Message_MessageClass
+---
+format_identifier: cdbfc167-337e-41d8-af7c-8c09205429c7
+name: System.ApplicationDefinedProperties
+property_identifier: 100
+shell_property_key: PKEY_ApplicationDefinedProperties
+---
+format_identifier: cdedcf30-8919-44df-8f4c-4eb2ffdb8d89
+name: System.Photo.ExposureIndexNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ExposureIndexNumerator
+---
+format_identifier: ce50c159-2fb8-41fd-be68-d3e042e274bc
+name: System.Sync.HandlerName
+property_identifier: 2
+shell_property_key: PKEY_Sync_HandlerName
+---
+format_identifier: ce50c159-2fb8-41fd-be68-d3e042e274bc
+name: System.Sync.ItemName
+property_identifier: 3
+shell_property_key: PKEY_Sync_ItemName
+---
+format_identifier: ce50c159-2fb8-41fd-be68-d3e042e274bc
+name: System.Sync.ConflictDescription
+property_identifier: 4
+shell_property_key: PKEY_Sync_ConflictDescription
+---
+format_identifier: ce50c159-2fb8-41fd-be68-d3e042e274bc
+name: System.Sync.ConflictFirstLocation
+property_identifier: 6
+shell_property_key: PKEY_Sync_ConflictFirstLocation
+---
+format_identifier: ce50c159-2fb8-41fd-be68-d3e042e274bc
+name: System.Sync.ConflictSecondLocation
+property_identifier: 7
+shell_property_key: PKEY_Sync_ConflictSecondLocation
+---
+format_identifier: cea820b9-ce61-4885-a128-005d9087c192
+name: System.GPS.DestLatitudeRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestLatitudeRef
+---
+format_identifier: cfa31b45-525d-4998-bb44-3f7d81542fa4
+name: System.Media.DlnaProfileID
+property_identifier: 100
+shell_property_key: PKEY_Media_DlnaProfileID
+---
+format_identifier: cfc08d97-c6f7-4484-89dd-ebef4356fe76
+name: System.Photo.FocalPlaneXResolution
+property_identifier: 100
+shell_property_key: PKEY_Photo_FocalPlaneXResolution
+---
+format_identifier: d042d2a1-927e-40b5-a503-6edbd42a517e
+name: System.Contact.PhoneNumbersCanonical
+property_identifier: 100
+shell_property_key: PKEY_Contact_PhoneNumbersCanonical
+---
+format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
+name: System.Devices.PrimaryCategory
+property_identifier: 10
+shell_property_key: PKEY_Devices_PrimaryCategory
+---
+format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
+name: System.Devices.InterfacePaths
+property_identifier: 2
+shell_property_key: PKEY_Devices_InterfacePaths
+---
+format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
+name: System.Devices.Status1
+property_identifier: 257
+shell_property_key: PKEY_Devices_Status1
+---
+format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
+name: System.Devices.Status2
+property_identifier: 258
+shell_property_key: PKEY_Devices_Status2
+---
+format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
+name: System.Devices.Status
+property_identifier: 259
+shell_property_key: PKEY_Devices_Status
+---
+format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
+name: System.Devices.FunctionPaths
+property_identifier: 3
+shell_property_key: PKEY_Devices_FunctionPaths
+---
+format_identifier: d0a04f0a-462a-48a4-bb2f-3706e88dbd7d
+name: System.ItemAuthors
+property_identifier: 100
+shell_property_key: PKEY_ItemAuthors
+---
+format_identifier: d0c7f054-3f72-4725-8527-129a577cb269
+name: System.SensitivityText
+property_identifier: 100
+shell_property_key: PKEY_SensitivityText
+---
+format_identifier: d0dab0ba-368a-4050-a882-6c010fd19a4f
+name: System.PropGroup.Content
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Content
+---
+format_identifier: d21a7148-d32c-4624-8900-277210f79c0f
+name: System.Image.CompressedBitsPerPixelNumerator
+property_identifier: 100
+shell_property_key: PKEY_Image_CompressedBitsPerPixelNumerator
+---
+format_identifier: d35f743a-eb2e-47f2-a286-844132cb1427
+name: System.Photo.EXIFVersion
+property_identifier: 100
+shell_property_key: PKEY_Photo_EXIFVersion
+---
+format_identifier: d37d52c6-261c-4303-82b3-08b926ac6f12
+name: System.Task.BillingInformation
+property_identifier: 100
+shell_property_key: PKEY_Task_BillingInformation
+---
+format_identifier: d4729704-8ef1-43ef-9024-2bd381187fd5
+name: System.Contact.Children
+property_identifier: 100
+shell_property_key: PKEY_Contact_Children
+---
+format_identifier: d4bf61b3-442e-4ada-882d-fa7b70c832d9
+name: System.Devices.Aep.PointOfService.ConnectionTypes
+property_identifier: 6
+shell_property_key: PKEY_Devices_Aep_PointOfService_ConnectionTypes
+---
+format_identifier: d4d0aa16-9948-41a4-aa85-d97ff9646993
+name: System.ItemParticipants
+property_identifier: 100
+shell_property_key: PKEY_ItemParticipants
+---
+format_identifier: d55bae5a-3892-417a-a649-c6ac5aaaeab3
+name: System.Calendar.OptionalAttendeeAddresses
+property_identifier: 100
+shell_property_key: PKEY_Calendar_OptionalAttendeeAddresses
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.MultimediaClipCount
+property_identifier: 10
+shell_property_key: PKEY_Document_MultimediaClipCount
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.Manager
+property_identifier: 14
+shell_property_key: PKEY_Document_Manager
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Company
+property_identifier: 15
+shell_property_key: PKEY_Company
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Category
+property_identifier: 2
+shell_property_key: PKEY_Category
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.ContentType
+property_identifier: 26
+shell_property_key: PKEY_ContentType
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.ContentStatus
+property_identifier: 27
+shell_property_key: PKEY_ContentStatus
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Language
+property_identifier: 28
+shell_property_key: PKEY_Language
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.Version
+property_identifier: 29
+shell_property_key: PKEY_Document_Version
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.PresentationFormat
+property_identifier: 3
+shell_property_key: PKEY_Document_PresentationFormat
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.ByteCount
+property_identifier: 4
+shell_property_key: PKEY_Document_ByteCount
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.LineCount
+property_identifier: 5
+shell_property_key: PKEY_Document_LineCount
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.ParagraphCount
+property_identifier: 6
+shell_property_key: PKEY_Document_ParagraphCount
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.SlideCount
+property_identifier: 7
+shell_property_key: PKEY_Document_SlideCount
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.NoteCount
+property_identifier: 8
+shell_property_key: PKEY_Document_NoteCount
+---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.HiddenSlideCount
+property_identifier: 9
+shell_property_key: PKEY_Document_HiddenSlideCount
+---
+format_identifier: d6304e01-f8f5-4f45-8b15-d024a6296789
+name: System.Contact.PagerTelephone
+property_identifier: 100
+shell_property_key: PKEY_Contact_PagerTelephone
+---
+format_identifier: d68dbd8a-3374-4b81-9972-3ec30682db3d
+name: System.Contact.IMAddress
+property_identifier: 100
+shell_property_key: PKEY_Contact_IMAddress
+---
+format_identifier: d6942081-d53b-443d-ad47-5e059d9cd27a
+name: System.Shell.SFGAOFlagsStrings
+property_identifier: 2
+shell_property_key: PKEY_Shell_SFGAOFlagsStrings
+---
+format_identifier: d6942081-d53b-443d-ad47-5e059d9cd27a
+name: System.Link.TargetSFGAOFlagsStrings
+property_identifier: 3
+shell_property_key: PKEY_Link_TargetSFGAOFlagsStrings
+---
+format_identifier: d6b5b883-18bd-4b4d-b2ec-9e38affeda82
+name: System.Devices.SmartCards.ReaderKind
+property_identifier: 2
+shell_property_key: PKEY_Devices_SmartCards_ReaderKind
+---
+format_identifier: d7313ff1-a77a-401c-8c99-3dbdd68add36
+name: System.ItemNamePrefix
+property_identifier: 100
+shell_property_key: PKEY_ItemNamePrefix
+---
+format_identifier: d7750ee0-c6a4-48ec-b53e-b87b52e6d073
+name: System.ImageParsingName
+property_identifier: 100
+shell_property_key: PKEY_ImageParsingName
+---
+format_identifier: d7b61c70-6323-49cd-a5fc-c84277162c97
+name: System.Photo.FlashEnergyDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FlashEnergyDenominator
+---
+format_identifier: d98be98b-b86b-4095-bf52-9d23b2e0a752
+name: System.PriorityText
+property_identifier: 100
+shell_property_key: PKEY_PriorityText
+---
+format_identifier: da520e51-f4e9-4739-ac82-02e0a95c9030
+name: System.Identity.QualifiedUserName
+property_identifier: 100
+shell_property_key: PKEY_Identity_QualifiedUserName
+---
+format_identifier: da5d0862-6e76-4e1b-babd-70021bd25494
+name: System.GPS.Speed
+property_identifier: 100
+shell_property_key: PKEY_GPS_Speed
+---
+format_identifier: dabd30ed-0043-4789-a7f8-d013a4736622
+name: System.ItemFolderPathDisplayNarrow
+property_identifier: 100
+shell_property_key: PKEY_ItemFolderPathDisplayNarrow
+---
+format_identifier: dc54fd2e-189d-4871-aa01-08c2f57a4abc
+name: System.FlagStatusText
+property_identifier: 100
+shell_property_key: PKEY_FlagStatusText
+---
+format_identifier: dc5877c7-225f-45f7-bac7-e81334b6130a
+name: System.GPS.ImgDirectionNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_ImgDirectionNumerator
+---
+format_identifier: dc8f80bd-af1e-4289-85b6-3dfc1b493992
+name: System.Message.ConversationID
+property_identifier: 100
+shell_property_key: PKEY_Message_ConversationID
+---
+format_identifier: dc8f80bd-af1e-4289-85b6-3dfc1b493992
+name: System.Message.ConversationIndex
+property_identifier: 101
+shell_property_key: PKEY_Message_ConversationIndex
+---
+format_identifier: dccb10af-b4e2-4b88-95f9-031b4d5ab490
+name: System.Photo.FocalPlaneXResolutionNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FocalPlaneXResolutionNumerator
+---
+format_identifier: ddd1460f-c0bf-4553-8ce4-10433c908fb0
+name: System.Contact.BusinessAddressStreet
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessAddressStreet
+---
+format_identifier: de00de32-547e-4981-ad4b-542f2e9007d8
+name: System.PropGroup.Camera
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Camera
+---
+format_identifier: de35258c-c695-4cbc-b982-38b0ad24ced0
+name: System.Shell.OmitFromView
+property_identifier: 2
+shell_property_key: PKEY_Shell_OmitFromView
+---
+format_identifier: de41cc29-6971-4290-b472-f59f2e2f31e2
+name: System.Media.DateReleased
+property_identifier: 100
+shell_property_key: PKEY_Media_DateReleased
+---
+format_identifier: de5ef3c7-46e1-484e-9999-62c5308394c1
+name: System.Contact.PrimaryAddressPostOfficeBox
+property_identifier: 100
+shell_property_key: PKEY_Contact_PrimaryAddressPostOfficeBox
+---
+format_identifier: de621b8f-e125-43a3-a32d-5665446d632a
+name: [System.Security.EncryptionOwners, System.Security.EncryptionOwnersDisplay]
+property_identifier: 25
+shell_property_key: [PKEY_Security_EncryptionOwners, PKEY_Security_EncryptionOwnersDisplay]
+---
+format_identifier: dea7c82c-1d89-4a66-9427-a4e3debabcb1
+name: System.Journal.Contacts
+property_identifier: 100
+shell_property_key: PKEY_Journal_Contacts
+---
+format_identifier: deeb2db5-0696-4ce0-94fe-a01f77a45fb5
+name: System.Music.ArtistSortOverride
+property_identifier: 102
+shell_property_key: PKEY_Music_ArtistSortOverride
+---
+format_identifier: df975fd3-250a-4004-858f-34e29a3e37aa
+name: System.PropGroup.Contact
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Contact
+---
+format_identifier: dfb9a04d-362f-4ca3-b30b-0254b17b5b84
+name: System.ParsingBindContext
+property_identifier: 100
+shell_property_key: PKEY_ParsingBindContext
+---
+format_identifier: e08805c8-e395-40df-80d2-54f0d6c43154
+name: System.Document.DocumentID
+property_identifier: 100
+shell_property_key: PKEY_Document_DocumentID
+---
+format_identifier: e1277516-2b5f-4869-89b1-2e585bd38b7a
+name: System.Photo.LensModel
+property_identifier: 100
+shell_property_key: PKEY_Photo_LensModel
+---
+format_identifier: e13d8975-81c7-4948-ae3f-37cae11e8ff7
+name: System.Photo.ShutterSpeedDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ShutterSpeedDenominator
+---
+format_identifier: e1a9a38b-6685-46bd-875e-570dc7ad7320
+name: System.Photo.ApertureDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_ApertureDenominator
+---
+format_identifier: e1d4a09e-d758-4cd1-b6ec-34a8b5a73f80
+name: System.Contact.BusinessAddressPostalCode
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessAddressPostalCode
+---
+format_identifier: e3690a87-0fa8-4a2a-9a9f-fce8827055ac
+name: System.PropGroup.Image
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_Image
+---
+format_identifier: e3a7d2c1-80fc-4b40-8f34-30ea111bdc2e
+name: System.PropGroup.FileSystem
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_FileSystem
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.IsRead
+property_identifier: 10
+shell_property_key: PKEY_IsRead
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Importance
+property_identifier: 11
+shell_property_key: PKEY_Importance
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.FlagStatus
+property_identifier: 12
+shell_property_key: PKEY_FlagStatus
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.FromAddress
+property_identifier: 13
+shell_property_key: PKEY_Message_FromAddress
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.FromName
+property_identifier: 14
+shell_property_key: PKEY_Message_FromName
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.Store
+property_identifier: 15
+shell_property_key: PKEY_Message_Store
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.ToAddress
+property_identifier: 16
+shell_property_key: PKEY_Message_ToAddress
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.ToName
+property_identifier: 17
+shell_property_key: PKEY_Message_ToName
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Contact.WebPage
+property_identifier: 18
+shell_property_key: PKEY_Contact_WebPage
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.DateSent
+property_identifier: 19
+shell_property_key: PKEY_Message_DateSent
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.BccAddress
+property_identifier: 2
+shell_property_key: PKEY_Message_BccAddress
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.DateReceived
+property_identifier: 20
+shell_property_key: PKEY_Message_DateReceived
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.AttachmentNames
+property_identifier: 21
+shell_property_key: PKEY_Message_AttachmentNames
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.BccName
+property_identifier: 3
+shell_property_key: PKEY_Message_BccName
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.CcAddress
+property_identifier: 4
+shell_property_key: PKEY_Message_CcAddress
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.CcName
+property_identifier: 5
+shell_property_key: PKEY_Message_CcName
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.ItemFolderPathDisplay
+property_identifier: 6
+shell_property_key: PKEY_ItemFolderPathDisplay
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.ItemPathDisplay
+property_identifier: 7
+shell_property_key: PKEY_ItemPathDisplay
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Communication.AccountName
+property_identifier: 9
+shell_property_key: PKEY_Communication_AccountName
+---
+format_identifier: e4f10a3c-49e6-405d-8288-a23bd4eeaa6c
+name: System.FileExtension
+property_identifier: 100
+shell_property_key: PKEY_FileExtension
+---
+format_identifier: e53d799d-0f3f-466e-b2ff-74634a3cb7a4
+name: System.Contact.PrimaryAddressCountry
+property_identifier: 100
+shell_property_key: PKEY_Contact_PrimaryAddressCountry
+---
+format_identifier: e55fc3b0-2b60-4220-918e-b21e8bf16016
+name: System.Identity.UniqueID
+property_identifier: 100
+shell_property_key: PKEY_Identity_UniqueID
+---
+format_identifier: e6822fee-8c17-4d62-823c-8e9cfcbd1d5c
+name: System.Audio.IsVariableBitRate
+property_identifier: 100
+shell_property_key: PKEY_Audio_IsVariableBitRate
+---
+format_identifier: e6ddcaf7-29c5-4f0a-9a68-d19412ec7090
+name: System.Photo.LensManufacturer
+property_identifier: 100
+shell_property_key: PKEY_Photo_LensManufacturer
+---
+format_identifier: e7b33238-6584-4170-a5c0-ac25efd9da56
+name: System.PropGroup.RecordedTV
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_RecordedTV
+---
+format_identifier: e7c3fb29-caa7-4f47-8c8b-be59b330d4c5
+name: System.Devices.Aep.ContainerId
+property_identifier: 2
+shell_property_key: PKEY_Devices_Aep_ContainerId
+---
+format_identifier: e7c3fb29-caa7-4f47-8c8b-be59b330d4c5
+name: System.Devices.Aep.CanPair
+property_identifier: 3
+shell_property_key: PKEY_Devices_Aep_CanPair
+---
+format_identifier: e8309b6e-084c-49b4-b1fc-90a80331b638
+name: System.Photo.PeopleNames
+property_identifier: 100
+shell_property_key: PKEY_Photo_PeopleNames
+---
+format_identifier: e92a2496-223b-4463-a4e3-30eabba79d80
+name: System.Photo.FNumberDenominator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FNumberDenominator
+---
+format_identifier: ec0b4191-ab0b-4c66-90b6-c6637cdebbab
+name: System.Communication.PolicyTag
+property_identifier: 100
+shell_property_key: PKEY_Communication_PolicyTag
+---
+format_identifier: ecf4b6f6-d5a6-433c-bb92-4076650fc890
+name: System.GPS.DestLatitudeNumerator
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestLatitudeNumerator
+---
+format_identifier: ecf7f4c9-544f-4d6d-9d98-8ad79adaf453
+name: System.GPS.SpeedRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_SpeedRef
+---
+format_identifier: ed4df2d3-8695-450b-856f-f5c1c53acb66
+name: System.GPS.DestDistanceRef
+property_identifier: 100
+shell_property_key: PKEY_GPS_DestDistanceRef
+---
+format_identifier: ee3d3d8a-5381-4cfa-b13b-aaf66b5f4ec9
+name: System.Photo.WhiteBalance
+property_identifier: 100
+shell_property_key: PKEY_Photo_WhiteBalance
+---
+format_identifier: eec7b761-6f94-41b1-949f-c729720dd13c
+name: System.DeviceInterface.PrinterPortName
+property_identifier: 12
+shell_property_key: PKEY_DeviceInterface_PrinterPortName
+---
+format_identifier: ef1167eb-cbfc-4341-a568-a7c91a68982c
+name: System.Devices.WiFi.InterfaceGuid
+property_identifier: 2
+shell_property_key: PKEY_Devices_WiFi_InterfaceGuid
+---
+format_identifier: ef884c5b-2bfe-41bb-aae5-76eedf4f9902
+name: System.IsShared
+property_identifier: 100
+shell_property_key: PKEY_IsShared
+---
+format_identifier: ef884c5b-2bfe-41bb-aae5-76eedf4f9902
+name: System.SharedWith
+property_identifier: 200
+shell_property_key: PKEY_SharedWith
+---
+format_identifier: ef884c5b-2bfe-41bb-aae5-76eedf4f9902
+name: System.SharingStatus
+property_identifier: 300
+shell_property_key: PKEY_SharingStatus
+---
+format_identifier: f04bef95-c585-4197-a2b7-df46fdc9ee6d
+name: System.KindText
+property_identifier: 100
+shell_property_key: PKEY_KindText
+---
+format_identifier: f0f7984d-222e-4ad2-82ab-1dd8ea40e57e
+name: System.TitleSortOverride
+property_identifier: 300
+shell_property_key: PKEY_TitleSortOverride
+---
+format_identifier: f1176dfe-7138-4640-8b4c-ae375dc70a6d
+name: System.Contact.PrimaryAddressState
+property_identifier: 100
+shell_property_key: PKEY_Contact_PrimaryAddressState
+---
+format_identifier: f18dedf3-337f-42c0-9e03-cee08708a8c3
+name: System.Identity.LogonStatusString
+property_identifier: 100
+shell_property_key: PKEY_Identity_LogonStatusString
+---
+format_identifier: f1a24aa7-9ca7-40f6-89ec-97def9ffe8db
+name: System.Contact.FileAsName
+property_identifier: 100
+shell_property_key: PKEY_Contact_FileAsName
+---
+format_identifier: f1fdb4af-f78c-466c-bb05-56e92db0b8ec
+name: System.Music.AlbumArtistSortOverride
+property_identifier: 103
+shell_property_key: PKEY_Music_AlbumArtistSortOverride
+---
+format_identifier: f21d9941-81f0-471a-adee-4e74b49217ed
+name: System.ProviderItemID
+property_identifier: 100
+shell_property_key: PKEY_ProviderItemID
+---
+format_identifier: f2275480-f782-4291-bd94-f13693513aec
+name: System.PropList.XPDetailsPanel
+property_identifier: 0
+shell_property_key: PKEY_PropList_XPDetailsPanel
+---
+format_identifier: f23f425c-71a1-4fa8-922f-678ea4a60408
+name: System.IsAttachment
+property_identifier: 100
+shell_property_key: PKEY_IsAttachment
+---
+format_identifier: f271c659-7e5e-471f-ba25-7f77b286f836
+name: System.Contact.BusinessEmailAddresses
+property_identifier: 100
+shell_property_key: PKEY_Contact_BusinessEmailAddresses
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.TotalEditingTime
+property_identifier: 10
+shell_property_key: PKEY_Document_TotalEditingTime
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.DatePrinted
+property_identifier: 11
+shell_property_key: PKEY_Document_DatePrinted
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.DateCreated
+property_identifier: 12
+shell_property_key: PKEY_Document_DateCreated
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.DateSaved
+property_identifier: 13
+shell_property_key: PKEY_Document_DateSaved
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.PageCount
+property_identifier: 14
+shell_property_key: PKEY_Document_PageCount
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.WordCount
+property_identifier: 15
+shell_property_key: PKEY_Document_WordCount
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.CharacterCount
+property_identifier: 16
+shell_property_key: PKEY_Document_CharacterCount
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Thumbnail
+property_identifier: 17
+shell_property_key: PKEY_Thumbnail
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.ApplicationName
+property_identifier: 18
+shell_property_key: PKEY_ApplicationName
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.Security
+property_identifier: 19
+shell_property_key: PKEY_Document_Security
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Title
+property_identifier: 2
+shell_property_key: PKEY_Title
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.HighKeywords
+property_identifier: 24
+shell_property_key: PKEY_HighKeywords
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.LowKeywords
+property_identifier: 25
+shell_property_key: PKEY_LowKeywords
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.MediumKeywords
+property_identifier: 26
+shell_property_key: PKEY_MediumKeywords
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.ThumbnailStream
+property_identifier: 27
+shell_property_key: PKEY_ThumbnailStream
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Subject
+property_identifier: 3
+shell_property_key: PKEY_Subject
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Author
+property_identifier: 4
+shell_property_key: PKEY_Author
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Keywords
+property_identifier: 5
+shell_property_key: PKEY_Keywords
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Comment
+property_identifier: 6
+shell_property_key: PKEY_Comment
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.Template
+property_identifier: 7
+shell_property_key: PKEY_Document_Template
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.LastAuthor
+property_identifier: 8
+shell_property_key: PKEY_Document_LastAuthor
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.RevisionNumber
+property_identifier: 9
+shell_property_key: PKEY_Document_RevisionNumber
+---
+format_identifier: f334115e-da1b-4509-9b3d-119504dc7abb
+name: System.Document.Contributor
+property_identifier: 100
+shell_property_key: PKEY_Document_Contributor
+---
+format_identifier: f3713ada-90e3-4e11-aae5-fdc17685b9be
+name: System.PropGroup.GPS
+property_identifier: 100
+shell_property_key: PKEY_PropGroup_GPS
+---
+format_identifier: f3d8f40d-50cb-44a2-9718-40cb9119495d
+name: System.Contact.Initials
+property_identifier: 100
+shell_property_key: PKEY_Contact_Initials
+---
+format_identifier: f6272d18-cecc-40b1-b26a-3911717aa7bd
+name: System.Calendar.Location
+property_identifier: 100
+shell_property_key: PKEY_Calendar_Location
+---
+format_identifier: f628fd8c-7ba8-465a-a65b-c5aa79263a9e
+name: System.Photo.MeteringModeText
+property_identifier: 100
+shell_property_key: PKEY_Photo_MeteringModeText
+---
+format_identifier: f7db74b4-4287-4103-afba-f1b13dcd75cf
+name: System.ItemDate
+property_identifier: 100
+shell_property_key: PKEY_ItemDate
+---
+format_identifier: f85bf840-a925-4bc2-b0c4-8e36b598679e
+name: System.Photo.DigitalZoom
+property_identifier: 100
+shell_property_key: PKEY_Photo_DigitalZoom
+---
+format_identifier: f8d3f6ac-4874-42cb-be59-ab454b30716a
+name: System.Sensitivity
+property_identifier: 100
+shell_property_key: PKEY_Sensitivity
+---
+format_identifier: f8fa7fa3-d12b-4785-8a4e-691a94f7a3e7
+name: System.Contact.EmailAddress
+property_identifier: 100
+shell_property_key: PKEY_Contact_EmailAddress
+---
+format_identifier: fa303353-b659-4052-85e9-bcac79549b84
+name: System.Photo.MakerNote
+property_identifier: 100
+shell_property_key: PKEY_Photo_MakerNote
+---
+format_identifier: fa304789-00c7-4d80-904a-1e4dcc7265aa
+name: System.Photo.GainControl
+property_identifier: 100
+shell_property_key: PKEY_Photo_GainControl
+---
+format_identifier: fb1de864-e06d-47f4-82a6-8a0aef44493c
+name: System.Devices.AudioDevice.SpeechProcessingSupported
+property_identifier: 2
+shell_property_key: PKEY_Devices_AudioDevice_SpeechProcessingSupported
+---
+format_identifier: fb3842cd-9e2a-4f83-8fcc-4b0761139ae9
+name: System.DeviceInterface.Proximity.SupportsNfc
+property_identifier: 2
+shell_property_key: PKEY_DeviceInterface_Proximity_SupportsNfc
+---
+format_identifier: fc6976db-8349-4970-ae97-b3c5316a08f0
+name: System.Photo.Sharpness
+property_identifier: 100
+shell_property_key: PKEY_Photo_Sharpness
+---
+format_identifier: fc9f7306-ff8f-4d49-9fb6-3ffe5c0951ec
+name: System.Contact.Department
+property_identifier: 100
+shell_property_key: PKEY_Contact_Department
+---
+format_identifier: fcad3d3d-0858-400f-aaa3-2f66cce2a6bc
+name: System.Photo.FlashEnergyNumerator
+property_identifier: 100
+shell_property_key: PKEY_Photo_FlashEnergyNumerator
+---
+format_identifier: fcc16823-baed-4f24-9b32-a0982117f7fa
+name: System.Identity.PrimaryEmailAddress
+property_identifier: 100
+shell_property_key: PKEY_Identity_PrimaryEmailAddress
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.FileOfflineAvailabilityStatus
+property_identifier: 100
+shell_property_key: PKEY_FileOfflineAvailabilityStatus
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.FolderKind
+property_identifier: 101
+shell_property_key: PKEY_FolderKind
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.SyncTransferStatus
+property_identifier: 103
+shell_property_key: PKEY_SyncTransferStatus
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.TransferPosition
+property_identifier: 104
+shell_property_key: PKEY_TransferPosition
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.TransferSize
+property_identifier: 105
+shell_property_key: PKEY_TransferSize
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.TransferOrder
+property_identifier: 106
+shell_property_key: PKEY_TransferOrder
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.LastSyncError
+property_identifier: 107
+shell_property_key: PKEY_LastSyncError
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.StorageProviderId
+property_identifier: 108
+shell_property_key: PKEY_StorageProviderId
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.StorageProviderError
+property_identifier: 109
+shell_property_key: PKEY_StorageProviderError
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.StorageProviderStatus
+property_identifier: 110
+shell_property_key: PKEY_StorageProviderStatus
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.StorageProviderShareStatuses
+property_identifier: 111
+shell_property_key: PKEY_StorageProviderShareStatuses
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.StorageProviderFileRemoteUri
+property_identifier: 112
+shell_property_key: PKEY_StorageProviderFileRemoteUri
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.CachedFileUpdaterContentIdForStream
+property_identifier: 113
+shell_property_key: PKEY_CachedFileUpdaterContentIdForStream
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.CachedFileUpdaterContentIdForConflictResolution
+property_identifier: 114
+shell_property_key: PKEY_CachedFileUpdaterContentIdForConflictResolution
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.RemoteConflictingFile
+property_identifier: 115
+shell_property_key: PKEY_RemoteConflictingFile
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.StorageProviderSharingStatus
+property_identifier: 117
+shell_property_key: PKEY_StorageProviderSharingStatus
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+property_identifier: 128
+shell_property_key: PKEY_LastSyncWarning
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+property_identifier: 131
+shell_property_key: PKEY_ContentUri
+---
+format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+property_identifier: 132
+shell_property_key: PKEY_ContentId
+---
+format_identifier: fd122953-fa93-4ef7-92c3-04c946b2f7c8
+name: System.Music.DisplayArtist
+property_identifier: 100
+shell_property_key: PKEY_Music_DisplayArtist
+---
+format_identifier: fdf84370-031a-4add-9e91-0d775f1c6605
+name: System.MileageInformation
+property_identifier: 100
+shell_property_key: PKEY_MileageInformation
+---
+format_identifier: fe83bb35-4d1a-42e2-916b-06f3e1af719e
+name: System.Photo.FlashModel
+property_identifier: 100
+shell_property_key: PKEY_Photo_FlashModel
+---
+format_identifier: fec690b7-5f30-4646-ae47-4caafba884a3
+name: System.Photo.ExposureProgramText
+property_identifier: 100
+shell_property_key: PKEY_Photo_ExposureProgramText
+---
+format_identifier: ff1167eb-cbfc-4341-a568-a7c91a68982c
+name: System.Devices.Wwan.InterfaceGuid
+property_identifier: 2
+shell_property_key: PKEY_Devices_Wwan_InterfaceGuid
+---
+format_identifier: ff962609-b7d6-4999-862d-95180d529aea
+name: System.Contact.OtherAddressStreet
+property_identifier: 100
+shell_property_key: PKEY_Contact_OtherAddressStreet
+---
+format_identifier: ffae9db7-1c8d-43ff-818c-84403aa3732d
+name: System.SourcePackageFamilyName
+property_identifier: 100
+shell_property_key: PKEY_SourcePackageFamilyName
