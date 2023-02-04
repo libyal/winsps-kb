@@ -1,0 +1,10 @@
+Welcome to the winsps-kb documentation
+========================================
+
+winsps-kb is a project to build a Windows Serialized Property Store (SPS)
+Knowledge Base.
+
+winsps is a Python module part of winsps-kb to allow reuse of Windows Serialized
+Property Store (SPS) Resources.
+
+The source code is available from the `project page <https://github.com/libyal/winsps-kb>`__.

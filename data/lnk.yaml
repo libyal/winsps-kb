@@ -1,0 +1,163 @@
+---
+format_identifier: 0ded77b3-c614-456c-ae5b-285b38d7b01b
+property_identifier: 16
+value_type: 0x0013
+---
+format_identifier: 0ded77b3-c614-456c-ae5b-285b38d7b01b
+property_identifier: 21
+value_type: 0x0013
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ParsingPath
+property_identifier: 30
+shell_property_key: PKEY_ParsingPath
+value_type: 0x001f
+---
+format_identifier: 46588ae2-4cbc-4338-bbfc-139326986dce
+property_identifier: 0
+value_type: 0x0013
+---
+format_identifier: 46588ae2-4cbc-4338-bbfc-139326986dce
+property_identifier: 4
+value_type: 0x001f  # Contains a SID represented as a string
+---
+format_identifier: 841e4f90-ff59-4d16-8947-e81bbffab36d
+property_identifier: 2
+value_type: 0x001f
+---
+format_identifier: 86407db8-9df7-48cd-b986-f999adc19731
+property_identifier: 2
+value_type: 0x001f
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 2
+shell_property_key: PKEY_Tile_SmallLogoPath
+value_type: 0x001f
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 4
+shell_property_key: PKEY_Tile_Background
+value_type: 0x0013
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 5
+shell_property_key: PKEY_Tile_Foreground
+value_type: 0x0013
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 11
+shell_property_key: PKEY_Tile_LongDisplayName
+value_type: 0x001f
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 12
+shell_property_key: PKEY_Tile_Square150x150LogoPath
+value_type: 0x001f
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 13
+shell_property_key: PKEY_Tile_Wide310x150LogoPath
+value_type: 0x001f
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 14
+shell_property_key: PKEY_Tile_Flags
+value_type: 0x0013
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ID
+property_identifier: 5
+shell_property_key: PKEY_AppUserModel_ID
+value_type: [0x0008, 0x001f]
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.PreventPinning
+property_identifier: 9
+shell_property_key: PKEY_AppUserModel_PreventPinning
+value_type: 0x000b
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.IsDualMode
+property_identifier: 11
+shell_property_key: PKEY_AppUserModel_IsDualMode
+value_type: 0x000b
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.StartPinOption
+property_identifier: 12
+shell_property_key: PKEY_AppUserModel_StartPinOption
+value_type: 0x0013
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.HostEnvironment
+property_identifier: 14
+shell_property_key: PKEY_AppUserModel_HostEnvironment
+value_type: 0x0013
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 15
+shell_property_key: PKEY_AppUserModel_PackageInstallPath
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 17
+shell_property_key: PKEY_AppUserModel_PackageFamilyName
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.InstalledBy
+property_identifier: 18
+shell_property_key: PKEY_AppUserModel_InstalledBy
+value_type: 0x0013
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 21
+shell_property_key: PKEY_AppUserModel_PackageFullName
+value_type: 0x001f
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemTypeText
+property_identifier: 4
+shell_property_key: PKEY_ItemTypeText
+value_type: 0x001f
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemNameDisplay
+property_identifier: 10
+shell_property_key: PKEY_ItemNameDisplay
+value_type: 0x001f
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.DateModified
+property_identifier: 14
+shell_property_key: PKEY_DateModified
+value_type: 0x0040
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.DateCreated
+property_identifier: 15
+shell_property_key: PKEY_DateCreated
+value_type: 0x0040
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+property_identifier: 23
+shell_property_key: PKEY_ItemNameSortOverride
+value_type: 0x001f
+---
+format_identifier: dabd30ed-0043-4789-a7f8-d013a4736622
+name: System.ItemFolderPathDisplayNarrow
+property_identifier: 100
+shell_property_key: PKEY_ItemFolderPathDisplayNarrow
+value_type: 0x001f
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Author
+property_identifier: 4
+shell_property_key: PKEY_Author
+value_type: 0x001f
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Comment
+property_identifier: 6
+shell_property_key: PKEY_Comment
+value_type: 0x001f
