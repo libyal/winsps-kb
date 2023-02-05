@@ -9,25 +9,7 @@ import sys
 import uuid
 import yaml
 
-
-class PropertyDefinitions(object):
-  """Windows Serialized Property definition.
-
-  Attributes:
-    format_identifier (str): format class (or property set) identifier.
-    names (set[str]): names that identify the property.
-    property_identifier (int): identifier of the property within the format
-        class (or property set).
-    shell_property_keys (set[str]): keys that identify the property.
-  """
-
-  def __init__(self):
-    """Initializes a Windows Serialized Property definition."""
-    super(PropertyDefinitions, self).__init__()
-    self.format_identifier = None
-    self.names = set()
-    self.property_identifier = None
-    self.shell_property_keys = set()
+from winspsrc import resources
 
 
 def Main():
@@ -69,7 +51,7 @@ def Main():
 
         property_definition = property_definitions.get(lookup_key, None)
         if not property_definition:
-          property_definition = PropertyDefinitions()
+          property_definition = resources.SerializedPropertyDefinition()
           property_definition.format_identifier = format_identifier
           property_definition.property_identifier = property_identifier
 
