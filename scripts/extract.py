@@ -129,18 +129,27 @@ def Main():
   print('Known properties:')
   for lookup_key in sorted(known_serialized_properties):
     property_definition = known_property_definitions.get(lookup_key, None)
-    shell_property_keys = ', '.join(property_definition.shell_property_keys)
-    print(f'\t{lookup_key:s} ({shell_property_keys:s})')
+    if property_definition and property_definition.shell_property_keys:
+      shell_property_keys = ', '.join(property_definition.shell_property_keys)
+      print(f'\t{lookup_key:s} ({shell_property_keys:s})')
+    else:
+      print(f'\t{lookup_key:s}')
 
   print('')
   print('Previously observed properties:')
   for lookup_key in sorted(observed_serialized_properties):
-    print(f'\t{lookup_key:s}')
+    property_definition = observed_property_definitions.get(lookup_key, None)
+    if property_definition and property_definition.shell_property_keys:
+      shell_property_keys = ', '.join(property_definition.shell_property_keys)
+      print(f'\t{lookup_key:s} ({shell_property_keys:s})')
+    else:
+      print(f'\t{lookup_key:s}')
 
   print('')
   print('Unknown properties:')
-  for lookup_key in sorted(unknown_serialized_properties):
-    print(f'\t{lookup_key:s}')
+  for lookup_key, serialized_property in sorted(
+      unknown_serialized_properties.items()):
+    print(f'\t{lookup_key:s} ({serialized_property.origin:s})')
 
   print('')
   return True

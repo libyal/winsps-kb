@@ -16,10 +16,12 @@ class YAMLPropertyDefinitionsFile(object):
   name: System.Null
   property_identifier: 0
   shell_property_key: PKEY_Null
-  value_type: 0x0000
+  value_type: VT_NULL
 
   Where:
-  * format_identifier, defines the format class (or property set) identifier;
+  * alias, defines one or more aliases that identify the property;
+  * format_class, name of the format class (or property set);
+  * format_identifier, identifier of the format class (or property set);
   * name, defines one or more names that identify the property;
   * property_identifier, defines he property within the format class (or
       property set).
@@ -29,7 +31,9 @@ class YAMLPropertyDefinitionsFile(object):
   """
 
   _SUPPORTED_KEYS = frozenset([
+      'alias',
       'format_identifier',
+      'format_class',
       'name',
       'property_identifier',
       'shell_property_key',
@@ -69,21 +73,29 @@ class YAMLPropertyDefinitionsFile(object):
           'Invalid property definition missing property identifier.')
 
     property_definition = resources.SerializedPropertyDefinition()
+    property_definition.format_class = yaml_property_definition.get(
+        'format_class', None)
     property_definition.format_identifier = format_identifier
     property_definition.property_identifier = property_identifier
+
+    alias = yaml_property_definition.get('alias', None)
+    if alias and isinstance(alias, list):
+      property_definition.aliases = set(alias)
+    elif alias:
+      property_definition.aliases = set([alias])
 
     name = yaml_property_definition.get('name', None)
     if name and isinstance(name, list):
       property_definition.names = set(name)
-    else:
-      property_definition.names = set([name] or [])
+    elif name:
+      property_definition.names = set([name])
 
     shell_property_key = yaml_property_definition.get(
         'shell_property_key', None)
     if shell_property_key and isinstance(shell_property_key, list):
       property_definition.shell_property_keys = set(shell_property_key)
-    else:
-      property_definition.shell_property_keys = set([shell_property_key] or [])
+    elif shell_property_key:
+      property_definition.shell_property_keys = set([shell_property_key])
 
     return property_definition
 

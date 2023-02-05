@@ -24,6 +24,7 @@ class SerializedProperty(object):
     format_identifier (str): format class (or property set) identifier.
     property_identifier (int): identifier of the property within the format
         class (or property set).
+    origin (str): path of the file from which the property originates.
   """
 
   def __init__(self):
@@ -31,6 +32,7 @@ class SerializedProperty(object):
     super(SerializedProperty, self).__init__()
     self.format_identifier = None
     self.property_identifier = None
+    self.origin = None
 
   @property
   def lookup_key(self):
@@ -264,10 +266,10 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
       # TODO: add support for jump list formats
       # TODO: add support for shell item formats
-      _ = path_segments
 
       if generator:
         for serialized_property in generator:
+          serialized_property.origin = '\\'.join(path_segments)
           yield serialized_property
 
   def ScanForWindowsVolume(self, source_path, options=None):

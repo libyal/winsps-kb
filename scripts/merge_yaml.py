@@ -39,10 +39,13 @@ def Main():
   for path in glob.glob(os.path.join(options.source, '*.yaml')):
     with open(path, 'r', encoding='utf8') as file_object:
       for yaml_definition in yaml.safe_load_all(file_object):
+        alias = yaml_definition.get('alias', None)
+        format_class = yaml_definition.get('format_class', None)
         format_identifier = yaml_definition.get('format_identifier', None)
         name = yaml_definition.get('name', None)
         property_identifier = yaml_definition.get('property_identifier', None)
         shell_property_key = yaml_definition.get('shell_property_key', None)
+        value_type = yaml_definition.get('value_type', None)
 
         # Test if the format identifier is a GUID value.
         _ = uuid.UUID(format_identifier)
@@ -57,15 +60,35 @@ def Main():
 
           property_definitions[lookup_key] = property_definition
 
+        if format_class and not property_definition.format_class:
+          property_definition.format_class = format_class
+
+        if alias:
+          property_definition.aliases.add(alias)
+
         if name:
           property_definition.names.add(name)
 
         if shell_property_key:
           property_definition.shell_property_keys.add(shell_property_key)
 
+        if value_type and not property_definition.value_type:
+          property_definition.value_type = value_type
+
   print('# winsps-kb property definitions')
   for _, property_definition in sorted(property_definitions.items()):
     print('---')
+
+    if property_definition.aliases:
+      aliases = ', '.join(sorted(property_definition.aliases))
+      if len(property_definition.aliases) == 1:
+        print(f'alias: {aliases:s}')
+      else:
+        print(f'alias: [{aliases:s}]')
+
+    if property_definition.format_class:
+      print(f'format_class: {property_definition.format_class:s}')
+
     print(f'format_identifier: {property_definition.format_identifier:s}')
 
     if property_definition.names:
@@ -84,6 +107,9 @@ def Main():
         print(f'shell_property_key: {shell_property_keys:s}')
       else:
         print(f'shell_property_key: [{shell_property_keys:s}]')
+
+    if property_definition.value_type:
+      print(f'value_type: {property_definition.value_type:s}')
 
   return True
 
