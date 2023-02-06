@@ -1,0 +1,28 @@
+Source: winsps-kb
+Section: python
+Priority: extra
+Maintainer: Joachim Metz <joachim.metz@gmail.com>
+Build-Depends: debhelper (>= 9), dh-python, python3-all (>= 3.6~), python3-setuptools
+Standards-Version: 4.1.4
+X-Python3-Version: >= 3.6
+Homepage: https://github.com/libyal/winsps-kb
+
+Package: winsps-kb-data
+Architecture: all
+Depends: ${misc:Depends}
+Description: Data files for Windows Serialized Property Store (SPS) knowledge base
+ winspsrc is a Python module part of winsps-kb to allow reuse of
+ Windows Serialized Property Store (SPS) resources.
+
+Package: python3-winspsrc
+Architecture: all
+Depends: winsps-kb-data (>= ${binary:Version}), libbde-python3 (>= 20220121), libcreg-python3 (>= 20200725), libewf-python3 (>= 20131210), libexe-python3 (>= 20131229), libfsapfs-python3 (>= 20201107), libfsext-python3 (>= 20220112), libfsfat-python3 (>= 20220816), libfshfs-python3 (>= 20220115), libfsntfs-python3 (>= 20211229), libfsxfs-python3 (>= 20220113), libfvde-python3 (>= 20220121), libfwnt-python3 (>= 20210717), libfwps-python3 (>= 20230131), liblnk-python3 (>= 20230205), libluksde-python3 (>= 20220121), libmodi-python3 (>= 20210405), libolecf-python3, libphdi-python3 (>= 20220110), libqcow-python3 (>= 20201213), libregf-python3 (>= 20201002), libsigscan-python3 (>= 20230109), libsmdev-python3 (>= 20140529), libsmraw-python3 (>= 20140612), libvhdi-python3 (>= 20201014), libvmdk-python3 (>= 20140421), libvsgpt-python3 (>= 20211115), libvshadow-python3 (>= 20160109), libvslvm-python3 (>= 20160109), libwrc-python3 (>= 20220104), python3-acstore (>= 20230101), python3-artifacts (>= 20220219), python3-cffi-backend (>= 1.9.1), python3-cryptography (>= 2.0.2), python3-dfdatetime (>= 20221112), python3-dfimagetools (>= 20220129), python3-dfvfs (>= 20221224), python3-dfwinreg (>= 20211207), python3-dtfabric (>= 20220219), python3-idna (>= 2.5), python3-pytsk3 (>= 20210419), python3-pyxattr (>= 0.7.2), python3-yaml (>= 3.10), ${misc:Depends}
+Description: Python 3 module of Windows Serialized Property Store (SPS) knowledge base resources (winspsrc)
+ winspsrc is a Python module part of winsps-kb to allow reuse of
+ Windows Serialized Property Store (SPS) resources.
+
+Package: winsps-kb-tools
+Architecture: all
+Depends: python3-winspsrc (>= ${binary:Version}), ${misc:Depends}
+Description: Tools for Windows Serialized Property Store (SPS) knowledge base
+ Winsps-kb is a project to build a Windows Serialized Property Store.

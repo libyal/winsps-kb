@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-# Script to extract property descriptions from the propkey.h header file.
+# Script to extract property descriptions from the SystemProperties.cs file
+# from WindowsAPICodePack/WindowsAPICodePack/Shell/PropertySystem/SystemProperties.cs
 
 EXIT_SUCCESS=0;
 EXIT_FAILURE=1;
