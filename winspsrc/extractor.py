@@ -5,6 +5,7 @@ import logging
 
 import pyfwps
 import pylnk
+import pyolecf
 import pysigscan
 
 from dfimagetools import windows_registry
@@ -14,6 +15,8 @@ from dfvfs.resolver import resolver as dfvfs_resolver
 
 from dfwinreg import registry as dfwinreg_registry
 
+from winspsrc import errors
+from winspsrc import jump_list
 from winspsrc import resource_file
 
 
@@ -84,8 +87,24 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     scanner_object = pysigscan.scanner()
     scanner_object.set_scan_buffer_size(65536)
 
+    # Custom Destinations Jump List (.customDestinations-ms) file.
+    scanner_object.add_signature(
+        'custom_destination', 4, b'\xab\xfb\xbf\xba',
+        pysigscan.signature_flags.RELATIVE_FROM_END)
+
+    # Windows Shortcut (LNK) file.
     scanner_object.add_signature(
         'lnk', 4, self._LNK_SIGNATURE,
+        pysigscan.signature_flags.RELATIVE_FROM_START)
+
+    # OLE Compound File (OLECF).
+    scanner_object.add_signature(
+        'olecf', 0, b'\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1',
+        pysigscan.signature_flags.RELATIVE_FROM_START)
+
+    # beta version of OLE Compound File (OLECF).
+    scanner_object.add_signature(
+        'olecf_beta', 0, b'\x0e\x11\xfc\x0d\xd0\xcf\x11\x0e',
         pysigscan.signature_flags.RELATIVE_FROM_START)
 
     self._format_scanner = scanner_object
@@ -213,8 +232,98 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
     return message_file
 
-  def _CollectSerializedProperiesFromLNK(self, file_object):
-    """Retrieves the serialized properties from a Windows Shortcut (LNK).
+  def _CollectSerializedProperiesFromAutomaticDestinationsFile(
+      self, file_object, path_segments):
+    """Retrieves serialized properties from a .automaticDestinations-ms file.
+
+    Args:
+      file_object (dfvfs.FileIO): file-like object.
+      path_segments (str): path segments of the full path of the file entry.
+
+    Yields:
+      SerializedProperty: serialized property.
+    """
+    jump_list_file = jump_list.AutomaticDestinationsFile()
+
+    olecf_file = pyolecf.file()
+    olecf_item = None
+
+    try:
+      olecf_file.open_file_object(file_object)
+      if olecf_file.root_item:  # pylint: disable=using-constant-test
+        olecf_item = olecf_file.root_item.get_sub_item_by_name('DestList')  # pylint: disable=no-member
+    finally:
+      olecf_file.close()
+
+    if olecf_item:
+      try:
+        jump_list_file.Open(file_object)
+        try:
+          for jump_list_entry in jump_list_file.GetJumpListEntries():
+            yield from self._CollectSerializedProperiesFromLNK(
+                jump_list_entry.lnk_file)
+
+        finally:
+          jump_list_file.Close()
+
+      except errors.ParseError as exception:
+        path = '\\'.join(path_segments)
+        logging.warning((f'Unable to parse .automaticDestinations-ms file: '
+                         f'{path:s} with error: {exception!s}'))
+
+  def _CollectSerializedProperiesFromCustomDestinationsFile(
+      self, file_object, path_segments):
+    """Retrieves serialized properties from a .customDestinations-ms file.
+
+    Args:
+      file_object (dfvfs.FileIO): file-like object.
+      path_segments (str): path segments of the full path of the file entry.
+
+    Yields:
+      SerializedProperty: serialized property.
+    """
+    jump_list_file = jump_list.CustomDestinationsFile()
+
+    try:
+      jump_list_file.Open(file_object)
+
+      try:
+        for jump_list_entry in jump_list_file.GetJumpListEntries():
+          yield from self._CollectSerializedProperiesFromLNK(
+              jump_list_entry.lnk_file)
+
+      finally:
+        jump_list_file.Close()
+
+    except errors.ParseError as exception:
+      path = '\\'.join(path_segments)
+      logging.warning((f'Unable to parse .customDestinations-ms file: '
+                       f'{path:s} with error: {exception!s}'))
+
+  def _CollectSerializedProperiesFromLNK(self, lnk_file):
+    """Retrieves serialized properties from a Windows Shortcut (LNK).
+
+    Args:
+      lnk_file (pylnk.file): Windows Shortcut (LNK) file.
+
+    Yields:
+      SerializedProperty: serialized property.
+    """
+    for lnk_data_block in iter(lnk_file.data_blocks):
+      if lnk_data_block.signature == 0xa0000009:
+        fwps_store = pyfwps.store()
+        fwps_store.copy_from_byte_stream(lnk_data_block.data)
+
+        for fwps_set in iter(fwps_store.sets):
+          for fwps_record in iter(fwps_set.records):
+            serialized_property = SerializedProperty()
+            serialized_property.format_identifier = fwps_set.identifier
+            serialized_property.property_identifier = fwps_record.entry_type
+
+            yield serialized_property
+
+  def _CollectSerializedProperiesFromLNKFile(self, file_object):
+    """Retrieves serialized properties from a Windows Shortcut (LNK) file.
 
     Args:
       file_object (dfvfs.FileIO): file-like object.
@@ -222,26 +331,17 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     Yields:
       SerializedProperty: serialized property.
     """
-    pylnk_file = pylnk.file()
-    pylnk_file.open_file_object(file_object)
+    lnk_file = pylnk.file()
+    lnk_file.open_file_object(file_object)
 
-    for data_block in iter(pylnk_file.data_blocks):
-      if data_block.signature == 0xa0000009:
-        pyfwps_store = pyfwps.store()
-        pyfwps_store.copy_from_byte_stream(data_block.data)
+    try:
+      yield from self._CollectSerializedProperiesFromLNK(lnk_file)
 
-        for pyfwps_set in iter(pyfwps_store.sets):
-          for pyfwps_record in iter(pyfwps_set.records):
-            serialized_property = SerializedProperty()
-            serialized_property.format_identifier = pyfwps_set.identifier
-            serialized_property.property_identifier = pyfwps_record.entry_type
-
-            yield serialized_property
-
-    pylnk_file.close()
+    finally:
+      lnk_file.close()
 
   def CollectSerializedProperies(self):
-    """Retrieves the serialized properties.
+    """Retrieves serialized properties.
 
     Yields:
       SerializedProperty: serialized property.
@@ -261,10 +361,18 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
             for scan_result in iter(scan_state.scan_results)]
 
       generator = None
-      if scan_results == ['lnk']:
-        generator = self._CollectSerializedProperiesFromLNK(file_object)
+      if 'custom_destination' in scan_results:
+        generator = self._CollectSerializedProperiesFromCustomDestinationsFile(
+            file_object, path_segments)
 
-      # TODO: add support for jump list formats
+      elif 'lnk' in scan_results:
+        generator = self._CollectSerializedProperiesFromLNKFile(file_object)
+
+      elif 'olecf' in scan_results:
+        generator = (
+            self._CollectSerializedProperiesFromAutomaticDestinationsFile(
+                file_object, path_segments))
+
       # TODO: add support for shell item formats
 
       if generator:

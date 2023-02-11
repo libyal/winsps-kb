@@ -22,6 +22,11 @@ try:
 except ImportError:
   bdist_rpm = None
 
+try:
+  from setuptools.commands.sdist import sdist
+except ImportError:
+  from distutils.command.sdist import sdist
+
 version_tuple = (sys.version_info[0], sys.version_info[1])
 if version_tuple < (3, 7):
   print(f'Unsupported Python version: {sys.version:s}, version 3.7 or higher '
@@ -119,6 +124,7 @@ else:
 
           lines.extend([
               '%{python3_sitelib}/winspsrc/*.py',
+              '%{python3_sitelib}/winspsrc/*.yaml',
               '%{python3_sitelib}/winspsrc*.egg-info/*',
               '',
               '%exclude %{_prefix}/share/doc/*',
@@ -208,7 +214,7 @@ winspsrc_long_description = (
     'winspsrc is a Python module part of winsps-kb to allow reuse of Windows '
     'Serialized Property Store (SPS) resources.')
 
-command_classes = {}
+command_classes = {'sdist_test_data': sdist}
 if BdistMSICommand:
   command_classes['bdist_msi'] = BdistMSICommand
 if BdistRPMCommand:
@@ -236,6 +242,11 @@ setup(
     package_dir={
         'winspsrc': 'winspsrc'
     },
+    include_package_data=True,
+    package_data={
+        'winspsrc': ['*.yaml']
+    },
+    zip_safe=False,
     scripts=glob.glob(os.path.join('scripts', '[a-z]*.py')),
     data_files=[
         ('share/winsps-kb/data', glob.glob(

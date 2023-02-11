@@ -1,3 +1,4 @@
+# winsps-kb property definitions observed.
 ---
 format_identifier: 0ded77b3-c614-456c-ae5b-285b38d7b01b
 property_identifier: 16
@@ -64,11 +65,31 @@ property_identifier: 14
 shell_property_key: PKEY_Tile_Flags
 value_type: 0x0013
 ---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 15
+shell_property_key: PKEY_Tile_BadgeLogoPath
+value_type: 0x001f
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 19
+shell_property_key: PKEY_Tile_Square310x310LogoPath
+value_type: 0x001f
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 20
+shell_property_key: PKEY_Tile_Square70x70LogoPath
+value_type: 0x001f
+---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 name: System.AppUserModel.ID
 property_identifier: 5
 shell_property_key: PKEY_AppUserModel_ID
 value_type: [0x0008, 0x001f]
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 7
+shell_property_key: PKEY_AppUserModel_IsDestListLink
+value_type: 0x000b
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 name: System.AppUserModel.PreventPinning
@@ -151,6 +172,12 @@ shell_property_key: PKEY_ItemFolderPathDisplayNarrow
 value_type: 0x001f
 ---
 format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Title
+property_identifier: 2
+shell_property_key: PKEY_Title
+value_type: 0x001f
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
 name: System.Author
 property_identifier: 4
 shell_property_key: PKEY_Author
@@ -161,3 +188,8 @@ name: System.Comment
 property_identifier: 6
 shell_property_key: PKEY_Comment
 value_type: 0x001f
+---
+format_identifier: fb8d2d7b-90d1-4e34-bf60-6eac09922bbf
+property_identifier: 2
+shell_property_key: PKEY_Winx_Hash
+value_type: 0x0013

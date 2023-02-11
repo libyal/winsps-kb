@@ -53,12 +53,12 @@ def Main():
 
   definitions_file = yaml_definitions_file.YAMLPropertyDefinitionsFile()
 
-  path = os.path.join('data', 'known_properties.yaml')
-  known_property_definitions = {}
+  path = os.path.join('data', 'defined_properties.yaml')
+  defined_property_definitions = {}
   for property_definition in definitions_file.ReadFromFile(path):
     lookup_key = property_definition.lookup_key
-    if lookup_key not in known_property_definitions:
-      known_property_definitions[lookup_key] = property_definition
+    if lookup_key not in defined_property_definitions:
+      defined_property_definitions[lookup_key] = property_definition
 
   path = os.path.join('data', 'observed_properties.yaml')
   observed_property_definitions = {}
@@ -66,6 +66,13 @@ def Main():
     lookup_key = property_definition.lookup_key
     if lookup_key not in observed_property_definitions:
       observed_property_definitions[lookup_key] = property_definition
+
+  path = os.path.join('data', 'third_party_properties.yaml')
+  third_party_property_definitions = {}
+  for property_definition in definitions_file.ReadFromFile(path):
+    lookup_key = property_definition.lookup_key
+    if lookup_key not in third_party_property_definitions:
+      third_party_property_definitions[lookup_key] = property_definition
 
   mediator = dfvfs_command_line.CLIVolumeScannerMediator()
   extractor_object = extractor.SerializedPropertyExtractor(
@@ -104,8 +111,9 @@ def Main():
       f'Detected Windows version: {extractor_object.windows_version:s}')
 
   serialized_properties = {}
-  known_serialized_properties = {}
+  defined_serialized_properties = {}
   observed_serialized_properties = {}
+  third_party_serialized_properties = {}
   unknown_serialized_properties = {}
   for serialized_property in extractor_object.CollectSerializedProperies():
     lookup_key = serialized_property.lookup_key
@@ -114,44 +122,68 @@ def Main():
 
     serialized_properties[lookup_key] = serialized_property
 
-    property_definition = known_property_definitions.get(lookup_key, None)
-    if property_definition:
-      known_serialized_properties[lookup_key] = serialized_property
-      continue
-
     property_definition = observed_property_definitions.get(lookup_key, None)
     if property_definition:
       observed_serialized_properties[lookup_key] = serialized_property
       continue
 
+    property_definition = defined_property_definitions.get(lookup_key, None)
+    if property_definition:
+      defined_serialized_properties[lookup_key] = serialized_property
+      continue
+
+    property_definition = third_party_property_definitions.get(lookup_key, None)
+    if property_definition:
+      third_party_serialized_properties[lookup_key] = serialized_property
+      continue
+
     unknown_serialized_properties[lookup_key] = serialized_property
 
-  print('Known properties:')
-  for lookup_key in sorted(known_serialized_properties):
-    property_definition = known_property_definitions.get(lookup_key, None)
-    if property_definition and property_definition.shell_property_keys:
-      shell_property_keys = ', '.join(property_definition.shell_property_keys)
-      print(f'\t{lookup_key:s} ({shell_property_keys:s})')
-    else:
-      print(f'\t{lookup_key:s}')
+  if observed_serialized_properties:
+    print('Observed properties:')
+    for lookup_key in sorted(observed_serialized_properties):
+      property_definition = observed_property_definitions.get(lookup_key, None)
+      if property_definition and property_definition.shell_property_keys:
+        shell_property_keys = ', '.join(property_definition.shell_property_keys)
+        print(f'\t{lookup_key:s} ({shell_property_keys:s})')
+      else:
+        print(f'\t{lookup_key:s}')
 
-  print('')
-  print('Previously observed properties:')
-  for lookup_key in sorted(observed_serialized_properties):
-    property_definition = observed_property_definitions.get(lookup_key, None)
-    if property_definition and property_definition.shell_property_keys:
-      shell_property_keys = ', '.join(property_definition.shell_property_keys)
-      print(f'\t{lookup_key:s} ({shell_property_keys:s})')
-    else:
-      print(f'\t{lookup_key:s}')
+    print('')
 
-  print('')
-  print('Unknown properties:')
-  for lookup_key, serialized_property in sorted(
-      unknown_serialized_properties.items()):
-    print(f'\t{lookup_key:s} ({serialized_property.origin:s})')
+  if defined_serialized_properties:
+    print('Defined properties:')
+    for lookup_key in sorted(defined_serialized_properties):
+      property_definition = defined_property_definitions.get(lookup_key, None)
+      if property_definition and property_definition.shell_property_keys:
+        shell_property_keys = ', '.join(property_definition.shell_property_keys)
+        print(f'\t{lookup_key:s} ({shell_property_keys:s})')
+      else:
+        print(f'\t{lookup_key:s}')
 
-  print('')
+    print('')
+
+  if third_party_serialized_properties:
+    print('Third party properties:')
+    for lookup_key in sorted(third_party_serialized_properties):
+      property_definition = third_party_property_definitions.get(
+          lookup_key, None)
+      if property_definition and property_definition.shell_property_keys:
+        shell_property_keys = ', '.join(property_definition.shell_property_keys)
+        print(f'\t{lookup_key:s} ({shell_property_keys:s})')
+      else:
+        print(f'\t{lookup_key:s}')
+
+    print('')
+
+  if unknown_serialized_properties:
+    print('Unknown properties:')
+    for lookup_key, serialized_property in sorted(
+        unknown_serialized_properties.items()):
+      print(f'\t{lookup_key:s} ({serialized_property.origin:s})')
+
+    print('')
+
   return True
 
 
