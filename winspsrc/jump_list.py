@@ -83,13 +83,15 @@ class AutomaticDestinationsFile(data_format.BinaryDataFile):
     if not olecf_item:
       raise errors.ParseError('Missing DestList stream.')
 
-    self._ReadDestListHeader(olecf_item)
+    # The DestList stream can be of size 0 if the Jump List is empty.
+    if olecf_item.size > 0:
+      self._ReadDestListHeader(olecf_item)
 
-    stream_offset = olecf_item.get_offset()
-    stream_size = olecf_item.get_size()
-    while stream_offset < stream_size:
-      entry_size = self._ReadDestListEntry(olecf_item, stream_offset)
-      stream_offset += entry_size
+      stream_offset = olecf_item.get_offset()
+      stream_size = olecf_item.get_size()
+      while stream_offset < stream_size:
+        entry_size = self._ReadDestListEntry(olecf_item, stream_offset)
+        stream_offset += entry_size
 
   def _ReadDestListEntry(self, olecf_item, stream_offset):
     """Reads a DestList stream entry.
