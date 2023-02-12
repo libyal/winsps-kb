@@ -252,10 +252,15 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
     try:
       olecf_file.open_file_object(file_object)
-      if olecf_file.root_item:  # pylint: disable=using-constant-test
-        olecf_item = olecf_file.root_item.get_sub_item_by_name('DestList')  # pylint: disable=no-member
-    finally:
-      olecf_file.close()
+      try:
+        if olecf_file.root_item:  # pylint: disable=using-constant-test
+          olecf_item = olecf_file.root_item.get_sub_item_by_name('DestList')  # pylint: disable=no-member
+      finally:
+        olecf_file.close()
+
+    except IOError as exception:
+      path = '\\'.join(path_segments)
+      logging.warning(f'Unable to open: {path:s} with error: {exception!s}')
 
     if olecf_item:
       try:
@@ -358,10 +363,15 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
       scan_results = []
       if file_object:
         scan_state = pysigscan.scan_state()
-        self._format_scanner.scan_file_object(scan_state, file_object)
-        scan_results = [
-            scan_result.identifier
-            for scan_result in iter(scan_state.scan_results)]
+
+        try:
+          self._format_scanner.scan_file_object(scan_state, file_object)
+          scan_results = [
+              scan_result.identifier
+              for scan_result in iter(scan_state.scan_results)]
+        except IOError as exception:
+          path = '\\'.join(path_segments)
+          logging.warning(f'Unable to open: {path:s} with error: {exception!s}')
 
       generator = None
       if 'custom_destination' in scan_results:

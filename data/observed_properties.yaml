@@ -1,6 +1,10 @@
 # winsps-kb property definitions observed.
 ---
 format_identifier: 0ded77b3-c614-456c-ae5b-285b38d7b01b
+property_identifier: 13
+value_type: 0x0040
+---
+format_identifier: 0ded77b3-c614-456c-ae5b-285b38d7b01b
 property_identifier: 16
 value_type: 0x0013
 ---
@@ -27,6 +31,10 @@ value_type: 0x0013
 format_identifier: 46588ae2-4cbc-4338-bbfc-139326986dce
 property_identifier: 4
 value_type: 0x001f  # Contains a SID represented as a string
+---
+format_identifier: 79486778-4c6f-4dde-bc53-cd594311af99
+property_identifier: 2
+value_type: 0x001f
 ---
 format_identifier: 841e4f90-ff59-4d16-8947-e81bbffab36d
 property_identifier: 2
@@ -93,6 +101,12 @@ shell_property_key: PKEY_AppUserModel_ID
 value_type: [0x0008, 0x001f]
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.IsDestListSeparator
+property_identifier: 6
+shell_property_key: PKEY_AppUserModel_IsDestListSeparator
+value_type: 0x000b
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 property_identifier: 7
 shell_property_key: PKEY_AppUserModel_IsDestListLink
 value_type: 0x000b
@@ -144,6 +158,17 @@ shell_property_key: PKEY_AppUserModel_InstalledBy
 value_type: 0x0013
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 19
+shell_property_key: PKEY_AppUserModel_ParentID
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ActivationContext
+property_identifier: 20
+shell_property_key: PKEY_AppUserModel_ActivationContext
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 property_identifier: 21
 shell_property_key: PKEY_AppUserModel_PackageFullName
 value_type: 0x001f
@@ -158,6 +183,10 @@ name: System.AppUserModel.ToastActivatorCLSID
 property_identifier: 26
 shell_property_key: PKEY_AppUserModel_ToastActivatorCLSID
 value_type: 0x0048
+---
+format_identifier: b6578b39-11f9-449b-8438-cb5cf03b7d9c
+property_identifier: 4
+value_type: 0x0013
 ---
 format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
 name: System.ItemTypeText
