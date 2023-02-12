@@ -4226,6 +4226,70 @@ name: System.Communication.SecurityFlags
 property_identifier: 100
 value_type: Int32
 ---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 11
+shell_property_key: PKEY_Tile_LongDisplayName
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 12
+shell_property_key: PKEY_Tile_Square150x150LogoPath
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 13
+shell_property_key: PKEY_Tile_Wide310x150LogoPath
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 14
+shell_property_key: PKEY_Tile_Flags
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 15
+shell_property_key: PKEY_Tile_BadgeLogoPath
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 16
+shell_property_key: PKEY_Tile_SuiteDisplayName
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 17
+shell_property_key: PKEY_Tile_SuiteSortName
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 18
+shell_property_key: PKEY_Tile_DisplayNameLanguage
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 19
+shell_property_key: PKEY_Tile_Square310x310LogoPath
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 2
+shell_property_key: PKEY_Tile_SmallLogoPath
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 20
+shell_property_key: PKEY_Tile_Square70x70LogoPath
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 21
+shell_property_key: PKEY_Tile_FencePost
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 22
+shell_property_key: PKEY_Tile_InstallProgress
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 23
+shell_property_key: PKEY_Tile_EncodedTargetPath
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 4
+shell_property_key: PKEY_Tile_Background
+---
+format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+property_identifier: 5
+shell_property_key: PKEY_Tile_Foreground
+---
 format_identifier: 8727cfff-4868-4ec6-ad5b-81b98521d1ab
 property_identifier: 100
 shell_property_key: PKEY_GPS_Latitude
@@ -4713,6 +4777,118 @@ property_identifier: 7
 format_identifier: 9e7d118f-b314-45a0-8cfb-d654b917c9e9
 property_identifier: 100
 shell_property_key: PKEY_Photo_BrightnessNumerator
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 10
+shell_property_key: PKEY_AppUserModel_BestShortcut
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 11
+shell_property_key: PKEY_AppUserModel_IsDualMode
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 12
+shell_property_key: PKEY_AppUserModel_StartPinOption
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 13
+shell_property_key: PKEY_AppUserModel_Relevance
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 14
+shell_property_key: PKEY_AppUserModel_HostEnvironment
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 15
+shell_property_key: PKEY_AppUserModel_PackageInstallPath
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 16
+shell_property_key: PKEY_AppUserModel_RecordState
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 17
+shell_property_key: PKEY_AppUserModel_PackageFamilyName
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 18
+shell_property_key: PKEY_AppUserModel_InstalledBy
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 19
+shell_property_key: PKEY_AppUserModel_ParentID
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 2
+shell_property_key: PKEY_AppUserModel_RelaunchCommand
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 20
+shell_property_key: PKEY_AppUserModel_ActivationContext
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 21
+shell_property_key: PKEY_AppUserModel_PackageFullName
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 22
+shell_property_key: PKEY_AppUserModel_PackageRelativeApplicationID
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 23
+shell_property_key: PKEY_AppUserModel_ExcludedFromLauncher
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 25
+shell_property_key: PKEY_AppUserModel_RunFlags
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 26
+shell_property_key: PKEY_AppUserModel_ToastActivatorCLSID
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 27
+shell_property_key: PKEY_AppUserModel_DestListProvidedTitle
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 28
+shell_property_key: PKEY_AppUserModel_DestListProvidedDescription
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 29
+shell_property_key: PKEY_AppUserModel_DestListLogoUri
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 3
+shell_property_key: PKEY_AppUserModel_RelaunchIconResource
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 30
+shell_property_key: PKEY_AppUserModel_DestListProvidedGroupName
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 4
+shell_property_key: PKEY_AppUserModel_RelaunchDisplayNameResource
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 5
+shell_property_key: PKEY_AppUserModel_ID
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 6
+shell_property_key: PKEY_AppUserModel_IsDestListSeparator
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 7
+shell_property_key: PKEY_AppUserModel_IsDestListLink
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 8
+shell_property_key: PKEY_AppUserModel_ExcludeFromShowInNewInstall
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 9
+shell_property_key: PKEY_AppUserModel_PreventPinning
 ---
 format_identifier: a015ed5d-aaea-4d58-8a86-3c586920ea0b
 property_identifier: 100
