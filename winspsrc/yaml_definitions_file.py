@@ -32,8 +32,8 @@ class YAMLPropertyDefinitionsFile(object):
 
   _SUPPORTED_KEYS = frozenset([
       'alias',
-      'format_identifier',
       'format_class',
+      'format_identifier',
       'name',
       'property_identifier',
       'shell_property_key',

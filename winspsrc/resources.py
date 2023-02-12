@@ -31,3 +31,20 @@ class SerializedPropertyDefinition(object):
   def lookup_key(self):
     """str: lookup key."""
     return f'{{{self.format_identifier:s}}}/{self.property_identifier:d}'
+
+  def Merge(self, other):
+    """Merges the values of another property definition into the current one.
+
+    Args:
+      other (SerializedPropertyDefinition): property definition to merge values
+          from.
+    """
+    if not self.format_class and other.format_class:
+      self.format_class = other.format_class
+
+    self.aliases.update(other.aliases)
+    self.names.update(other.names)
+    self.shell_property_keys.update(other.shell_property_keys)
+
+    if not self.value_type and other.value_type:
+      self.value_type = other.value_type

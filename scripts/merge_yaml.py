@@ -70,7 +70,10 @@ def Main():
           property_definition.names.add(name)
 
         if shell_property_key:
-          property_definition.shell_property_keys.add(shell_property_key)
+          if shell_property_key.startswith('PKEY_'):
+            property_definition.shell_property_keys.add(shell_property_key)
+          else:
+            property_definition.aliases.add(shell_property_key)
 
         if value_type and not property_definition.value_type:
           property_definition.value_type = value_type

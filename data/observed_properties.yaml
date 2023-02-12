@@ -14,6 +14,12 @@ property_identifier: 30
 shell_property_key: PKEY_ParsingPath
 value_type: 0x001f
 ---
+format_identifier: 446d16b1-8dad-4870-a748-402ea43d788c
+name: System.VolumeId
+property_identifier: 104
+shell_property_key: PKEY_VolumeId
+value_type: 0x0048
+---
 format_identifier: 46588ae2-4cbc-4338-bbfc-139326986dce
 property_identifier: 0
 value_type: 0x0013
