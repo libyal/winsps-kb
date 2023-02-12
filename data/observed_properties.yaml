@@ -1,5 +1,29 @@
 # winsps-kb property definitions observed.
 ---
+format_identifier: 0c570607-0396-43de-9d61-e321d7df5026
+property_identifier: 1
+value_type: 0x000b
+---
+format_identifier: 0c570607-0396-43de-9d61-e321d7df5026
+property_identifier: 2
+value_type: 0x000b
+---
+format_identifier: 0c570607-0396-43de-9d61-e321d7df5026
+property_identifier: 3
+value_type: 0x000b
+---
+format_identifier: 0c570607-0396-43de-9d61-e321d7df5026
+property_identifier: 4
+value_type: 0x000b
+---
+format_identifier: 0c570607-0396-43de-9d61-e321d7df5026
+property_identifier: 5
+value_type: 0x000b
+---
+format_identifier: 0c570607-0396-43de-9d61-e321d7df5026
+property_identifier: 6
+value_type: 0x0002
+---
 format_identifier: 0ded77b3-c614-456c-ae5b-285b38d7b01b
 property_identifier: 13
 value_type: 0x0040
@@ -184,6 +208,14 @@ property_identifier: 26
 shell_property_key: PKEY_AppUserModel_ToastActivatorCLSID
 value_type: 0x0048
 ---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 34
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 35
+value_type: 0x000b
+---
 format_identifier: b6578b39-11f9-449b-8438-cb5cf03b7d9c
 property_identifier: 4
 value_type: 0x0013
@@ -199,6 +231,12 @@ name: System.ItemNameDisplay
 property_identifier: 10
 shell_property_key: PKEY_ItemNameDisplay
 value_type: 0x001f
+---
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.Size
+property_identifier: 12
+shell_property_key: PKEY_Size
+value_type: 0x0015
 ---
 format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
 name: System.DateModified
