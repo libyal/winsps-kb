@@ -28,6 +28,7 @@ class SerializedProperty(object):
     property_identifier (int): identifier of the property within the format
         class (or property set).
     origin (str): path of the file from which the property originates.
+    value_type (int): value type used by the property.
   """
 
   def __init__(self):
@@ -36,6 +37,7 @@ class SerializedProperty(object):
     self.format_identifier = None
     self.property_identifier = None
     self.origin = None
+    self.value_type = None
 
   @property
   def lookup_key(self):
@@ -319,6 +321,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
             serialized_property = SerializedProperty()
             serialized_property.format_identifier = fwps_set.identifier
             serialized_property.property_identifier = fwps_record.entry_type
+            serialized_property.value_type = fwps_record.value_type
 
             yield serialized_property
 
