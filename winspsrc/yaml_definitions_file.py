@@ -10,7 +10,7 @@ class YAMLPropertyDefinitionsFile(object):
   """YAML-based property definitions file.
 
   A YAML-based property definitions file contains one or more property
-  definitions. An property definition consists of:
+  definitions. A property definition consists of:
 
   format_identifier: 00000000-0000-0000-0000-000000000000
   name: System.Null
@@ -40,7 +40,7 @@ class YAMLPropertyDefinitionsFile(object):
       'value_type'])
 
   def _ReadPropertyDefinition(self, yaml_property_definition):
-    """Reads an event formatter definition from a dictionary.
+    """Reads a property definition from a dictionary.
 
     Args:
       yaml_property_definition (dict[str, object]): YAML property definition
