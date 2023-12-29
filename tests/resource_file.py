@@ -279,6 +279,42 @@ class MessageResourceFileTest(test_lib.BaseTestCase):
 
       message_resource_file.Close()
 
+  def testGetVersionInformationResourceNoWrc(self):
+    """Tests the _GetVersionInformationResource function."""
+    test_file_path = self._GetTestFilePath(['nowrc_test.dll'])
+    self._SkipIfPathNotExists(test_file_path)
+
+    message_resource_file = resource_file.MessageResourceFile(
+        'C:\\Windows\\System32\\nowrc_test.dll')
+
+    with open(test_file_path, 'rb') as file_object:
+      message_resource_file.OpenFileObject(file_object)
+
+      version_information_resource = (
+          message_resource_file._GetVersionInformationResource())
+
+      self.assertIsNone(version_information_resource)
+
+      message_resource_file.Close()
+
+  def testGetVersionInformationResourceWrc(self):
+    """Tests the _GetVersionInformationResource function."""
+    test_file_path = self._GetTestFilePath(['wrc_test.dll'])
+    self._SkipIfPathNotExists(test_file_path)
+
+    message_resource_file = resource_file.MessageResourceFile(
+        'C:\\Windows\\System32\\wrc_test.dll')
+
+    with open(test_file_path, 'rb') as file_object:
+      message_resource_file.OpenFileObject(file_object)
+
+      version_information_resource = (
+          message_resource_file._GetVersionInformationResource())
+
+      self.assertIsNotNone(version_information_resource)
+
+      message_resource_file.Close()
+
   def testProductVersionProperty(self):
     """Tests the product_version property."""
     test_file_path = self._GetTestFilePath(['wrc_test.dll'])
