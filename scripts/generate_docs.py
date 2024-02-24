@@ -7,6 +7,8 @@ import logging
 import os
 import sys
 
+import winspsrc
+
 from winspsrc import yaml_definitions_file
 
 
@@ -134,7 +136,9 @@ def Main():
 
   property_definitions = {}
 
-  path = os.path.join('data', 'defined_properties.yaml')
+  data_path = os.path.join(os.path.dirname(winspsrc.__file__), 'data')
+
+  path = os.path.join(data_path, 'defined_properties.yaml')
   for property_definition in definitions_file.ReadFromFile(path):
     lookup_key = property_definition.lookup_key
     if lookup_key in property_definitions:
@@ -142,7 +146,7 @@ def Main():
     else:
       property_definitions[lookup_key] = property_definition
 
-  path = os.path.join('data', 'observed_properties.yaml')
+  path = os.path.join(data_path, 'observed_properties.yaml')
   for property_definition in definitions_file.ReadFromFile(path):
     lookup_key = property_definition.lookup_key
     if lookup_key in property_definitions:
@@ -150,7 +154,7 @@ def Main():
     else:
       property_definitions[lookup_key] = property_definition
 
-  path = os.path.join('data', 'third_party_properties.yaml')
+  path = os.path.join(data_path, 'third_party_properties.yaml')
   for property_definition in definitions_file.ReadFromFile(path):
     lookup_key = property_definition.lookup_key
     if lookup_key in property_definitions:

@@ -11,6 +11,8 @@ from dfvfs.helpers import command_line as dfvfs_command_line
 from dfvfs.helpers import volume_scanner as dfvfs_volume_scanner
 from dfvfs.lib import errors as dfvfs_errors
 
+import winspsrc
+
 from winspsrc import extractor
 from winspsrc import yaml_definitions_file
 
@@ -53,21 +55,23 @@ def Main():
 
   definitions_file = yaml_definitions_file.YAMLPropertyDefinitionsFile()
 
-  path = os.path.join('data', 'defined_properties.yaml')
+  data_path = os.path.join(os.path.dirname(winspsrc.__file__), 'data')
+
+  path = os.path.join(data_path, 'defined_properties.yaml')
   defined_property_definitions = {}
   for property_definition in definitions_file.ReadFromFile(path):
     lookup_key = property_definition.lookup_key
     if lookup_key not in defined_property_definitions:
       defined_property_definitions[lookup_key] = property_definition
 
-  path = os.path.join('data', 'observed_properties.yaml')
+  path = os.path.join(data_path, 'observed_properties.yaml')
   observed_property_definitions = {}
   for property_definition in definitions_file.ReadFromFile(path):
     lookup_key = property_definition.lookup_key
     if lookup_key not in observed_property_definitions:
       observed_property_definitions[lookup_key] = property_definition
 
-  path = os.path.join('data', 'third_party_properties.yaml')
+  path = os.path.join(data_path, 'third_party_properties.yaml')
   third_party_property_definitions = {}
   for property_definition in definitions_file.ReadFromFile(path):
     lookup_key = property_definition.lookup_key
