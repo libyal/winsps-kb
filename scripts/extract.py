@@ -103,12 +103,6 @@ def Main():
     if not options.windows_version:
       print('Unable to determine Windows version.')
 
-      if options.database:
-        print('Database output requires a Windows version, specify one with '
-              '--windows-version.')
-        print('')
-        return False
-
     extractor_object.windows_version = options.windows_version
 
   logging.info(

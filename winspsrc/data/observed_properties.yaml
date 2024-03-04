@@ -1,5 +1,17 @@
 # winsps-kb property definitions observed.
 ---
+format_identifier: 006fdbaa-864f-4d1c-a8e8-e62772e454fe
+property_identifier: 11
+value_type: 0x0003
+---
+format_identifier: 006fdbaa-864f-4d1c-a8e8-e62772e454fe
+property_identifier: 13
+value_type: 0x0013
+---
+format_identifier: 0ae54373-43be-4fad-85e4-69dc8633986e
+property_identifier: 11
+value_type: 0x000b
+---
 format_identifier: 0c570607-0396-43de-9d61-e321d7df5026
 property_identifier: 1
 value_type: 0x000b
@@ -24,6 +36,10 @@ format_identifier: 0c570607-0396-43de-9d61-e321d7df5026
 property_identifier: 6
 value_type: 0x0002
 ---
+format_identifier: 0cef7d53-fa64-11d1-a203-0000f81fedee
+property_identifier: 5
+value_type: 0x001f
+---
 format_identifier: 0ded77b3-c614-456c-ae5b-285b38d7b01b
 property_identifier: 13
 value_type: 0x0040
@@ -36,11 +52,55 @@ format_identifier: 0ded77b3-c614-456c-ae5b-285b38d7b01b
 property_identifier: 21
 value_type: 0x0013
 ---
+format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+property_identifier: 3
+value_type: 0x101f
+---
+format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+property_identifier: 8
+value_type: 0x001f
+---
+format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+property_identifier: 12
+value_type: 0x0001
+---
+format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+property_identifier: 17
+value_type: 0x001f
+---
+format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+property_identifier: 20
+value_type: 0x0003
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+property_identifier: 11
+value_type: [0x0008, 0x001f]
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+property_identifier: 24
+value_type: [0x0008, 0x001f]
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+property_identifier: 25
+value_type: 0x0013
+---
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
 name: System.ParsingPath
 property_identifier: 30
 shell_property_key: PKEY_ParsingPath
 value_type: 0x001f
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+property_identifier: 31
+value_type: 0x001f
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+property_identifier: 32
+value_type: 0x1011
+---
+format_identifier: 446d16b1-8dad-4870-a748-402ea43d788c
+property_identifier: 100
+value_type: 0x0015
 ---
 format_identifier: 446d16b1-8dad-4870-a748-402ea43d788c
 name: System.VolumeId
@@ -55,6 +115,14 @@ value_type: 0x0013
 format_identifier: 46588ae2-4cbc-4338-bbfc-139326986dce
 property_identifier: 4
 value_type: 0x001f  # Contains a SID represented as a string
+---
+format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
+property_identifier: 3
+value_type: 0x0003
+---
+format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
+property_identifier: 25
+value_type: 0x001f
 ---
 format_identifier: 79486778-4c6f-4dde-bc53-cd594311af99
 property_identifier: 2
@@ -224,7 +292,7 @@ format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
 name: System.ItemTypeText
 property_identifier: 4
 shell_property_key: PKEY_ItemTypeText
-value_type: 0x001f
+value_type: [0x0008, 0x001f]
 ---
 format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
 name: System.ItemNameDisplay
@@ -236,7 +304,7 @@ format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
 name: System.Size
 property_identifier: 12
 shell_property_key: PKEY_Size
-value_type: 0x0015
+value_type: [0x0001, 0x0015]
 ---
 format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
 name: System.DateModified
@@ -255,11 +323,31 @@ property_identifier: 23
 shell_property_key: PKEY_ItemNameSortOverride
 value_type: 0x001f
 ---
+format_identifier: cf5be8c0-236c-4ad3-bace-cd608a2748d7
+property_identifier: 100
+value_type: 0x000b
+---
+format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
+property_identifier: AutoList
+value_type: 0x0042
+---
+format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
+property_identifier: AutolistCacheKey
+value_type: 0x001f
+---
+format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
+property_identifier: AutolistCacheTime
+value_type: 0x0014
+---
 format_identifier: dabd30ed-0043-4789-a7f8-d013a4736622
 name: System.ItemFolderPathDisplayNarrow
 property_identifier: 100
 shell_property_key: PKEY_ItemFolderPathDisplayNarrow
 value_type: 0x001f
+---
+format_identifier: debda43a-37b3-4383-91e7-4498da2995ab
+property_identifier: 3
+value_type: 0x0013
 ---
 format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
 name: System.Title
