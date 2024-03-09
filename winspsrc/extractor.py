@@ -3,9 +3,13 @@
 
 import logging
 
+# TODO: add CREG support
+
 import pyfwps
+import pyfwsi
 import pylnk
 import pyolecf
+import pyregf
 import pysigscan
 
 from dfimagetools import windows_registry
@@ -25,7 +29,7 @@ class SerializedProperty(object):
 
   Attributes:
     format_identifier (str): format class (or property set) identifier.
-    property_identifier (int): identifier of the property within the format
+    property_identifier (str): identifier of the property within the format
         class (or property set).
     origin (str): path of the file from which the property originates.
     value_type (int): value type used by the property.
@@ -42,7 +46,7 @@ class SerializedProperty(object):
   @property
   def lookup_key(self):
     """str: lookup key."""
-    return f'{{{self.format_identifier:s}}}/{self.property_identifier:d}'
+    return f'{{{self.format_identifier:s}}}/{self.property_identifier:s}'
 
 
 class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
@@ -55,6 +59,47 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
   _LNK_SIGNATURE = (
       b'\x01\x14\x02\x00\x00\x00\x00\x00\xc0\x00\x00\x00\x00\x00\x00\x46')
+
+  _SHELL_ITEM_MRU_KEY_PATHS = [
+      '\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\BagMRU',
+      '\\Local Settings\\Software\\Microsoft\\Windows\\ShellNoRoam\\BagMRU',
+      '\\Software\\Microsoft\\Windows\\Shell\\BagMRU',
+      '\\Software\\Microsoft\\Windows\\ShellNoRoam\\BagMRU',
+      ('\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\'
+       'Shell\\BagMRU'),
+      ('\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\'
+       'ShellNoRoam\\BagMRU'),
+      ('\\Software\\Classes\\Wow6432Node\\Local Settings\\Software\\'
+       'Microsoft\\Windows\\Shell\\BagMRU'),
+      ('\\Software\\Classes\\Wow6432Node\\Local Settings\\Software\\'
+       'Microsoft\\Windows\\ShellNoRoam\\BagMRU')]
+
+  _SHELL_ITEM_MRU_KEY_PATHS = [
+      key_path.upper() for key_path in _SHELL_ITEM_MRU_KEY_PATHS]
+
+  _SHELL_ITEM_LIST_MRU_KEY_PATHS = [
+      ('\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\'
+       'DesktopStreamMRU'),
+      ('\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\'
+       'OpenSavePidlMRU'),
+      '\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\StreamMRU']
+
+  _SHELL_ITEM_LIST_MRU_KEY_PATHS = [
+      key_path.upper() for key_path in _SHELL_ITEM_LIST_MRU_KEY_PATHS]
+
+  _STRING_AND_SHELL_ITEM_MRU_KEY_PATHS = [
+      '\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs']
+
+  _STRING_AND_SHELL_ITEM_MRU_KEY_PATHS = [
+      key_path.upper() for key_path in _STRING_AND_SHELL_ITEM_MRU_KEY_PATHS]
+
+  _STRING_AND_SHELL_ITEM_LIST_MRU_KEY_PATHS = [
+      ('\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\'
+       'LastVisitedPidlMRU')]
+
+  _STRING_AND_SHELL_ITEM_LIST_MRU_KEY_PATHS = [
+      key_path.upper()
+      for key_path in _STRING_AND_SHELL_ITEM_LIST_MRU_KEY_PATHS]
 
   def __init__(self, debug=False, mediator=None):
     """Initializes a Windows serialized property extractor.
@@ -108,6 +153,10 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     scanner_object.add_signature(
         'olecf_beta', 0, b'\x0e\x11\xfc\x0d\xd0\xcf\x11\x0e',
         pysigscan.signature_flags.RELATIVE_FROM_START)
+
+    # Windows NT Registry File (REGF).
+    scanner_object.add_signature(
+        'regf', 0, b'regf', pysigscan.signature_flags.RELATIVE_FROM_START)
 
     self._format_scanner = scanner_object
 
@@ -316,19 +365,20 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     Yields:
       SerializedProperty: serialized property.
     """
+    if lnk_file.link_target_identifier_data:
+      fwsi_item_list = pyfwsi.item_list()
+      fwsi_item_list.copy_from_byte_stream(
+          lnk_file.link_target_identifier_data)
+
+      yield from self._CollectSerializedProperiesFromShellItemList(
+          fwsi_item_list)
+
     for lnk_data_block in iter(lnk_file.data_blocks):
       if lnk_data_block.signature == 0xa0000009:
         fwps_store = pyfwps.store()
         fwps_store.copy_from_byte_stream(lnk_data_block.data)
 
-        for fwps_set in iter(fwps_store.sets):
-          for fwps_record in iter(fwps_set.records):
-            serialized_property = SerializedProperty()
-            serialized_property.format_identifier = fwps_set.identifier
-            serialized_property.property_identifier = fwps_record.entry_type
-            serialized_property.value_type = fwps_record.value_type
-
-            yield serialized_property
+        yield from self._CollectSerializedProperiesFromPropertyStore(fwps_store)
 
   def _CollectSerializedProperiesFromLNKFile(self, file_object):
     """Retrieves serialized properties from a Windows Shortcut (LNK) file.
@@ -347,6 +397,178 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
     finally:
       lnk_file.close()
+
+  def _CollectSerializedProperiesFromPropertyStore(self, fwps_store):
+    """Retrieves serialized properties from a property store.
+
+    Args:
+      fwps_store (pyfwps.store): property store.
+
+    Yields:
+      SerializedProperty: serialized property.
+    """
+    for fwps_set in iter(fwps_store.sets):
+      for fwps_record in iter(fwps_set.records):
+
+        if fwps_record.entry_name:
+          property_identifier = fwps_record.entry_name
+        else:
+          property_identifier = f'{fwps_record.entry_type:d}'
+
+        serialized_property = SerializedProperty()
+        serialized_property.format_identifier = fwps_set.identifier
+        serialized_property.property_identifier = property_identifier
+        serialized_property.value_type = fwps_record.value_type
+
+        yield serialized_property
+
+  def _CollectSerializedProperiesFromREGFFile(self, file_object):
+    """Retrieves serialized properties from a Windows NT Registry File (REGF).
+
+    Args:
+      file_object (dfvfs.FileIO): file-like object.
+
+    Yields:
+      SerializedProperty: serialized property.
+    """
+    regf_file = pyregf.file()
+    regf_file.open_file_object(file_object)
+
+    try:
+      regf_root_key = regf_file.get_root_key()
+      if regf_root_key:
+        # Ignore the name of the root key.
+        yield from self._CollectSerializedProperiesFromREGFKey(
+            [''], regf_root_key)
+
+    finally:
+      regf_file.close()
+
+  def _CollectSerializedProperiesFromREGFKey(self, key_path_segments, regf_key):
+    """Retrieves serialized properties from a Windows NT Registry key.
+
+    Args:
+      key_path_segments (list[str]): key path segments.
+      regf_key (pyregf.key): Windows NT Registry key.
+
+    Yields:
+      SerializedProperty: serialized property.
+    """
+    value_names = [regf_value.name for regf_value in regf_key.values]
+
+    if 'MRUList' in value_names or 'MRUListEx' in value_names:
+      yield from self._CollectSerializedProperiesFromREGFKeyWithMRU(
+          key_path_segments, regf_key)
+
+    for regf_sub_key in regf_key.sub_keys:
+      key_path_segments.append(regf_sub_key.name)
+
+      try:
+        yield from self._CollectSerializedProperiesFromREGFKey(
+            key_path_segments, regf_sub_key)
+      finally:
+        key_path_segments.pop(-1)
+
+  def _CollectSerializedProperiesFromREGFKeyWithMRU(
+      self, key_path_segments, regf_key):
+    """Retrieves serialized properties from a Registry key with a MRU.
+
+    Args:
+      key_path_segments (list[str]): key path segments.
+      regf_key (pyregf.key): Windows NT Registry key.
+
+    Yields:
+      SerializedProperty: serialized property.
+    """
+    key_path = '\\'.join(key_path_segments).upper()
+
+    if self._InKeyPaths(key_path, self._SHELL_ITEM_MRU_KEY_PATHS):
+      known_key_type = 'shell-item'
+    elif self._InKeyPaths(key_path, self._SHELL_ITEM_LIST_MRU_KEY_PATHS):
+      known_key_type = 'shell-item-list'
+    elif self._InKeyPaths(key_path, self._STRING_AND_SHELL_ITEM_MRU_KEY_PATHS):
+      known_key_type = 'string-and-shell-item'
+    elif self._InKeyPaths(
+        key_path, self._STRING_AND_SHELL_ITEM_LIST_MRU_KEY_PATHS):
+      known_key_type = 'string-and-shell-item-list'
+    else:
+      known_key_type = None
+
+    if known_key_type:
+      for regf_value in regf_key.values:
+        if not regf_value.data or regf_value.name in (
+            'MRUList', 'MRUListEx', 'NodeSlot', 'NodeSlots'):
+          continue
+
+        data_offset = 0
+        data_size = len(regf_value.data)
+        if known_key_type.startswith('string-and-shell-item'):
+          for data_offset in range(0, data_size, 2):
+            if regf_value.data[data_offset:data_offset + 2] == b'\0\0':
+              data_offset += 2
+              break
+
+        if data_offset >= data_size:
+          continue
+
+        data = regf_value.data[data_offset:]
+
+        if known_key_type.endswith('shell-item'):
+          fwsi_item = pyfwsi.item()
+          fwsi_item.copy_from_byte_stream(data)
+
+          yield from self._CollectSerializedProperiesFromShellItem(fwsi_item)
+
+        elif known_key_type.endswith('shell-item-list'):
+          fwsi_item_list = pyfwsi.item_list()
+          fwsi_item_list.copy_from_byte_stream(data)
+
+          yield from self._CollectSerializedProperiesFromShellItemList(
+              fwsi_item_list)
+
+  def _CollectSerializedProperiesFromShellItem(self, fwsi_item):
+    """Retrieves serialized properties from a shell item.
+
+    Args:
+      fwsi_item (pyfwsi.item): shell item.
+
+    Yields:
+      SerializedProperty: serialized property.
+    """
+    if isinstance(fwsi_item, pyfwsi.users_property_view):
+      if fwsi_item.property_store_data:
+        fwps_store = pyfwps.store()
+        fwps_store.copy_from_byte_stream(fwsi_item.property_store_data)
+
+        yield from self._CollectSerializedProperiesFromPropertyStore(fwps_store)
+
+  def _CollectSerializedProperiesFromShellItemList(self, fwsi_item_list):
+    """Retrieves serialized properties from a shell item list.
+
+    Args:
+      fwsi_item_list (pyfwsi.item_list): shell item list.
+
+    Yields:
+      SerializedProperty: serialized property.
+    """
+    for fwsi_item in fwsi_item_list.items:
+      yield from self._CollectSerializedProperiesFromShellItem(fwsi_item)
+
+  def _InKeyPaths(self, key_path_upper, key_paths):
+    """Checks if a specific key path is defined in a list of key paths.
+
+    Args:
+      key_path_upper (list[str]): key path in upper case.
+      key_paths (list[str]): list of Windows Registry key paths in upper case.
+
+    Returns:
+      bool: True if the key path is defined in the list of key paths.
+    """
+    for matching_key_path in key_paths:
+      if key_path_upper.startswith(matching_key_path):
+        return True
+
+    return False
 
   def CollectSerializedProperies(self):
     """Retrieves serialized properties.
@@ -385,6 +607,9 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
         generator = (
             self._CollectSerializedProperiesFromAutomaticDestinationsFile(
                 file_object, path_segments))
+
+      elif 'regf' in scan_results:
+        generator = self._CollectSerializedProperiesFromREGFFile(file_object)
 
       # TODO: add support for shell item formats
 

@@ -284,6 +284,10 @@ format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 property_identifier: 35
 value_type: 0x000b
 ---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 40
+value_type: 0x000b
+---
 format_identifier: b6578b39-11f9-449b-8438-cb5cf03b7d9c
 property_identifier: 4
 value_type: 0x0013

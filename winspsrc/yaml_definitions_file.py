@@ -97,6 +97,12 @@ class YAMLPropertyDefinitionsFile(object):
     elif shell_property_key:
       property_definition.shell_property_keys = set([shell_property_key])
 
+    value_type = yaml_property_definition.get('value_type', None)
+    if value_type and isinstance(value_type, list):
+      property_definition.value_types = set(value_type)
+    elif value_type:
+      property_definition.value_types = set([value_type])
+
     return property_definition
 
   def _ReadFromFileObject(self, file_object):

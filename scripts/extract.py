@@ -7,8 +7,8 @@ import logging
 import os
 import sys
 
-from dfvfs.helpers import command_line as dfvfs_command_line
-from dfvfs.helpers import volume_scanner as dfvfs_volume_scanner
+from dfimagetools.helpers import command_line as dfimagetools_command_line
+
 from dfvfs.lib import errors as dfvfs_errors
 
 import winspsrc
@@ -18,10 +18,10 @@ from winspsrc import yaml_definitions_file
 
 
 def Main():
-  """The main program function.
+  """Entry point of console script to extract property information.
 
   Returns:
-    bool: True if successful or False if not.
+    int: exit code that is provided to sys.exit().
   """
   argument_parser = argparse.ArgumentParser(description=(
       'Extract Windows serialized property information.'))
@@ -34,6 +34,8 @@ def Main():
       '-w', '--windows_version', '--windows-version',
       dest='windows_version', action='store', metavar='Windows XP',
       default=None, help='string that identifies the Windows version.')
+
+  dfimagetools_command_line.AddStorageMediaImageCLIArguments(argument_parser)
 
   argument_parser.add_argument(
       'source', nargs='?', action='store', metavar='/mnt/c/',
@@ -48,7 +50,7 @@ def Main():
     print('')
     argument_parser.print_help()
     print('')
-    return False
+    return 1
 
   logging.basicConfig(
       level=logging.INFO, format='[%(levelname)s] %(message)s')
@@ -78,14 +80,11 @@ def Main():
     if lookup_key not in third_party_property_definitions:
       third_party_property_definitions[lookup_key] = property_definition
 
-  mediator = dfvfs_command_line.CLIVolumeScannerMediator()
+  mediator, volume_scanner_options = (
+      dfimagetools_command_line.ParseStorageMediaImageCLIArguments(options))
+
   extractor_object = extractor.SerializedPropertyExtractor(
       debug=options.debug, mediator=mediator)
-
-  volume_scanner_options = dfvfs_volume_scanner.VolumeScannerOptions()
-  volume_scanner_options.partitions = ['all']
-  volume_scanner_options.snapshots = ['none']
-  volume_scanner_options.volumes = ['none']
 
   try:
     result = extractor_object.ScanForWindowsVolume(
@@ -97,7 +96,7 @@ def Main():
     print((f'Unable to retrieve the volume with the Windows directory from: '
            f'{options.source:s}.'))
     print('')
-    return False
+    return 1
 
   if not extractor_object.windows_version:
     if not options.windows_version:
@@ -150,6 +149,9 @@ def Main():
 
       if serialized_property.value_type:
         print(f' [0x{serialized_property.value_type:04x}]', end='')
+        if not property_definition or serialized_property.value_type not in (
+            property_definition.value_types):
+          print(' (undefined value type)', end='')
 
       print('')
 
@@ -168,6 +170,9 @@ def Main():
 
       if serialized_property.value_type:
         print(f' [0x{serialized_property.value_type:04x}]', end='')
+        if not property_definition or serialized_property.value_type not in (
+            property_definition.value_types):
+          print(' (undefined value type)', end='')
 
       print('')
 
@@ -187,6 +192,9 @@ def Main():
 
       if serialized_property.value_type:
         print(f' [0x{serialized_property.value_type:04x}]', end='')
+        if not property_definition or serialized_property.value_type not in (
+            property_definition.value_types):
+          print(' (undefined value type)', end='')
 
       print('')
 
@@ -202,11 +210,8 @@ def Main():
 
     print('')
 
-  return True
+  return 0
 
 
 if __name__ == '__main__':
-  if not Main():
-    sys.exit(1)
-  else:
-    sys.exit(0)
+  sys.exit(Main())

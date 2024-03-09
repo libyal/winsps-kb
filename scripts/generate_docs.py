@@ -102,8 +102,12 @@ class MarkdownOutputWriter(object):
 
     for property_definition in sorted(
         property_set, key=lambda definition: definition.property_identifier):
+      property_identifier = property_definition.property_identifier
+      if isinstance(property_identifier, int):
+        property_identifier = f'{property_identifier:d}'
+
       table_row = ' | '.join([
-          f'{property_definition.property_identifier:d}',
+          property_identifier,
           ', '.join(sorted(property_definition.shell_property_keys)),
           ', '.join(sorted(property_definition.names)),
           ', '.join(sorted(property_definition.aliases))])
@@ -119,10 +123,10 @@ class MarkdownOutputWriter(object):
 
 
 def Main():
-  """The main program function.
+  """Entry point of console script to generate property documentation.
 
   Returns:
-    bool: True if successful or False if not.
+    int: exit code that is provided to sys.exit().
   """
   argument_parser = argparse.ArgumentParser(description=(
       'Generated Windows serialized property documentation.'))
@@ -196,11 +200,8 @@ def Main():
 
       index_rst_writer.WritePropertySet(last_format_identifier)
 
-  return True
+  return 0
 
 
 if __name__ == '__main__':
-  if not Main():
-    sys.exit(1)
-  else:
-    sys.exit(0)
+  sys.exit(Main())

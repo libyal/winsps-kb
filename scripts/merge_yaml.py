@@ -13,10 +13,10 @@ from winspsrc import resources
 
 
 def Main():
-  """The main program function.
+  """Entry point of console script to combine winsps-kb YAML files.
 
   Returns:
-    bool: True if successful or False if not.
+    int: exit code that is provided to sys.exit().
   """
   argument_parser = argparse.ArgumentParser(description=(
       'Merges winsps-kb YAML files.'))
@@ -32,7 +32,7 @@ def Main():
     print('')
     argument_parser.print_help()
     print('')
-    return False
+    return 1
 
   property_definitions = {}
 
@@ -114,11 +114,8 @@ def Main():
     if property_definition.value_type:
       print(f'value_type: {property_definition.value_type:s}')
 
-  return True
+  return 0
 
 
 if __name__ == '__main__':
-  if not Main():
-    sys.exit(1)
-  else:
-    sys.exit(0)
+  sys.exit(Main())
