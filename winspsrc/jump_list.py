@@ -277,15 +277,17 @@ class CustomDestinationsFile(data_format.BinaryDataFile):
         break
 
       if entry_header.guid != self._LNK_GUID:
-        error_message = f'Invalid entry header at offset: 0x{file_offset:08x}.'
-
-        if not first_guid_checked:
-          raise errors.ParseError(error_message)
+        if (not first_guid_checked and
+            entry_header.guid[:4] != b'\xab\xfb\xbf\xba'):
+          raise errors.ParseError(
+              f'Invalid entry header at offset: 0x{file_offset:08x}')
 
         self._file_object.seek(-16, os.SEEK_CUR)
         self._ReadFileFooter(self._file_object)
 
         self._file_object.seek(-4, os.SEEK_CUR)
+
+        # TODO: recover entries in trailing data.
         break
 
       first_guid_checked = True

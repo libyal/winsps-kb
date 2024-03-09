@@ -57,7 +57,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     preferred_language_identifier (int): preferred language identifier (LCID).
   """
 
-  _LNK_SIGNATURE = (
+  _LNK_GUID = (
       b'\x01\x14\x02\x00\x00\x00\x00\x00\xc0\x00\x00\x00\x00\x00\x00\x46')
 
   _SHELL_ITEM_MRU_KEY_PATHS = [
@@ -141,8 +141,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
     # Windows Shortcut (LNK) file.
     scanner_object.add_signature(
-        'lnk', 4, self._LNK_SIGNATURE,
-        pysigscan.signature_flags.RELATIVE_FROM_START)
+        'lnk', 4, self._LNK_GUID, pysigscan.signature_flags.RELATIVE_FROM_START)
 
     # OLE Compound File (OLECF).
     scanner_object.add_signature(

@@ -6,6 +6,7 @@ import argparse
 import logging
 import os
 import sys
+import yaml
 
 from dfimagetools.helpers import command_line as dfimagetools_command_line
 
@@ -52,6 +53,14 @@ def Main():
     print('')
     return 1
 
+  try:
+    with open(options.source, 'r', encoding='utf-8') as file_object:
+      source_definitions = list(yaml.safe_load_all(file_object))
+
+  except (SyntaxError, UnicodeDecodeError):
+    source_definitions = [{
+        'source': options.source, 'windows_version': options.windows_version}]
+
   logging.basicConfig(
       level=logging.INFO, format='[%(levelname)s] %(message)s')
 
@@ -83,59 +92,67 @@ def Main():
   mediator, volume_scanner_options = (
       dfimagetools_command_line.ParseStorageMediaImageCLIArguments(options))
 
-  extractor_object = extractor.SerializedPropertyExtractor(
-      debug=options.debug, mediator=mediator)
-
-  try:
-    result = extractor_object.ScanForWindowsVolume(
-        options.source, options=volume_scanner_options)
-  except dfvfs_errors.ScannerError:
-    result = False
-
-  if not result:
-    print((f'Unable to retrieve the volume with the Windows directory from: '
-           f'{options.source:s}.'))
-    print('')
-    return 1
-
-  if not extractor_object.windows_version:
-    if not options.windows_version:
-      print('Unable to determine Windows version.')
-
-    extractor_object.windows_version = options.windows_version
-
-  if extractor_object.windows_version:
-    logging.info(
-        f'Detected Windows version: {extractor_object.windows_version:s}')
-
   serialized_properties = {}
   defined_serialized_properties = {}
   observed_serialized_properties = {}
   third_party_serialized_properties = {}
   unknown_serialized_properties = {}
-  for serialized_property in extractor_object.CollectSerializedProperies():
-    lookup_key = serialized_property.lookup_key
-    if lookup_key in serialized_properties:
-      continue
 
-    serialized_properties[lookup_key] = serialized_property
+  for source_definition in source_definitions:
+    source_path = source_definition['source']
+    logging.info(f'Processing: {source_path:s}')
 
-    property_definition = observed_property_definitions.get(lookup_key, None)
-    if property_definition:
-      observed_serialized_properties[lookup_key] = serialized_property
-      continue
+    extractor_object = extractor.SerializedPropertyExtractor(
+        debug=options.debug, mediator=mediator)
 
-    property_definition = defined_property_definitions.get(lookup_key, None)
-    if property_definition:
-      defined_serialized_properties[lookup_key] = serialized_property
-      continue
+    try:
+      result = extractor_object.ScanForWindowsVolume(
+          source_path, options=volume_scanner_options)
+    except dfvfs_errors.ScannerError:
+      result = False
 
-    property_definition = third_party_property_definitions.get(lookup_key, None)
-    if property_definition:
-      third_party_serialized_properties[lookup_key] = serialized_property
-      continue
+    if not result:
+      print((f'Unable to retrieve the volume with the Windows directory '
+             f'from: {source_path:s}.'))
+      print('')
+      return 1
 
-    unknown_serialized_properties[lookup_key] = serialized_property
+    if extractor_object.windows_version:
+      windows_version = extractor_object.windows_version
+      logging.info(f'Detected Windows version: {windows_version:s}')
+
+      if source_definition['windows_version']:
+        windows_version = source_definition['windows_version']
+
+    else:
+      print('Unable to determine Windows version.')
+
+      windows_version = source_definition['windows_version']
+
+    for serialized_property in extractor_object.CollectSerializedProperies():
+      lookup_key = serialized_property.lookup_key
+      if lookup_key in serialized_properties:
+        continue
+
+      serialized_properties[lookup_key] = serialized_property
+
+      property_definition = observed_property_definitions.get(lookup_key, None)
+      if property_definition:
+        observed_serialized_properties[lookup_key] = serialized_property
+        continue
+
+      property_definition = defined_property_definitions.get(lookup_key, None)
+      if property_definition:
+        defined_serialized_properties[lookup_key] = serialized_property
+        continue
+
+      property_definition = third_party_property_definitions.get(
+          lookup_key, None)
+      if property_definition:
+        third_party_serialized_properties[lookup_key] = serialized_property
+        continue
+
+      unknown_serialized_properties[lookup_key] = serialized_property
 
   if observed_serialized_properties:
     print('Observed properties:')

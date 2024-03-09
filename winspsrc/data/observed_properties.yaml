@@ -58,7 +58,7 @@ value_type: 0x0013
 ---
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
 property_identifier: 3
-value_type: 0x101f
+value_type: [0x0001, 0x101f]
 ---
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
 property_identifier: 8
@@ -102,9 +102,15 @@ format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
 property_identifier: 32
 value_type: 0x1011
 ---
+format_identifier: 41cf5ae0-f75a-4806-bd87-59c7d9248eb9
+name: System.FileName
+property_identifier: 100
+shell_property_key: PKEY_FileName
+value_type: 0x0001
+---
 format_identifier: 446d16b1-8dad-4870-a748-402ea43d788c
 property_identifier: 100
-value_type: 0x0015
+value_type: [0x0001, 0x0015]
 ---
 format_identifier: 446d16b1-8dad-4870-a748-402ea43d788c
 name: System.VolumeId
@@ -146,7 +152,7 @@ value_type: 0x0048
 ---
 format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
 property_identifier: 3
-value_type: 0x001f
+value_type: [0x0001, 0x001f]
 ---
 format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
 property_identifier: 4
@@ -169,6 +175,12 @@ value_type: 0x101f
 format_identifier: 79486778-4c6f-4dde-bc53-cd594311af99
 property_identifier: 2
 value_type: 0x001f
+---
+format_identifier: 7a7d76f4-b630-4bd7-95ff-37cc51a975c9
+name: System.Link.TargetExtension
+property_identifier: 2
+shell_property_key: PKEY_Link_TargetExtension
+value_type: 0x0001
 ---
 format_identifier: 841e4f90-ff59-4d16-8947-e81bbffab36d
 property_identifier: 2
@@ -319,6 +331,26 @@ shell_property_key: PKEY_AppUserModel_ToastActivatorCLSID
 value_type: 0x0048
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 27
+shell_property_key: PKEY_AppUserModel_DestListProvidedTitle
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 28
+shell_property_key: PKEY_AppUserModel_DestListProvidedDescription
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 29
+shell_property_key: PKEY_AppUserModel_DestListLogoUri
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+property_identifier: 30
+shell_property_key: PKEY_AppUserModel_DestListProvidedGroupName
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 property_identifier: 34
 value_type: 0x001f
 ---
@@ -405,7 +437,7 @@ value_type: 0x101f
 ---
 format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
 property_identifier: AutoList
-value_type: 0x0042
+value_type: [0x001f, 0x0042]
 ---
 format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
 property_identifier: AutolistCacheKey
@@ -413,7 +445,7 @@ value_type: 0x001f
 ---
 format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
 property_identifier: AutolistCacheTime
-value_type: 0x0014
+value_type: [0x0014, 0x001f, 0x0040]
 ---
 format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
 property_identifier: pszAppName
@@ -445,13 +477,13 @@ format_identifier: e4f10a3c-49e6-405d-8288-a23bd4eeaa6c
 name: System.FileExtension
 property_identifier: 100
 shell_property_key: PKEY_FileExtension
-value_type: 0x001f
+value_type: [0x0001, 0x001f]
 ---
 format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
 name: System.Title
 property_identifier: 2
 shell_property_key: PKEY_Title
-value_type: 0x001f
+value_type: [0x0008, 0x001f]
 ---
 format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
 name: System.Author
