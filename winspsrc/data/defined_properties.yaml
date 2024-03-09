@@ -1515,11 +1515,6 @@ property_identifier: 100
 shell_property_key: PKEY_Photo_Saturation
 value_type: VT_UI4
 ---
-format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
-name: System.Search.QueryPropertyHits
-property_identifier: 21
-shell_property_key: PKEY_Search_QueryPropertyHits
----
 alias: PROPID_QUERY_RANK
 format_class: FMTID_Query
 format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
@@ -1551,6 +1546,11 @@ name: System.ItemUrl
 property_identifier: 9
 shell_property_key: PKEY_ItemUrl
 value_type: VT_LPWSTR
+---
+format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
+name: System.Search.QueryPropertyHits
+property_identifier: 21
+shell_property_key: PKEY_Search_QueryPropertyHits
 ---
 format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
 name: System.Devices.BatteryLife
@@ -5114,6 +5114,14 @@ property_identifier: 100
 shell_property_key: PKEY_Calendar_OptionalAttendeeAddresses
 value_type: VT_VECTOR | VT_LPWSTR
 ---
+alias: PIDDSI_CATEGORY
+format_class: FMTID_DocumentSummaryInformation
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Category
+property_identifier: 2
+shell_property_key: PKEY_Category
+value_type: VT_VECTOR | VT_LPWSTR
+---
 alias: PIDDSI_MMCLIPCOUNT
 format_class: FMTID_DocumentSummaryInformation
 format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
@@ -5137,14 +5145,6 @@ name: System.Company
 property_identifier: 15
 shell_property_key: PKEY_Company
 value_type: VT_LPWSTR
----
-alias: PIDDSI_CATEGORY
-format_class: FMTID_DocumentSummaryInformation
-format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
-name: System.Category
-property_identifier: 2
-shell_property_key: PKEY_Category
-value_type: VT_VECTOR | VT_LPWSTR
 ---
 format_class: FMTID_DocumentSummaryInformation
 format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
@@ -5431,6 +5431,42 @@ shell_property_key: PKEY_PropGroup_FileSystem
 value_type: VT_NULL
 ---
 format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.BccName
+property_identifier: 3
+shell_property_key: PKEY_Message_BccName
+value_type: VT_VECTOR | VT_LPWSTR
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.CcAddress
+property_identifier: 4
+shell_property_key: PKEY_Message_CcAddress
+value_type: VT_VECTOR | VT_LPWSTR
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.CcName
+property_identifier: 5
+shell_property_key: PKEY_Message_CcName
+value_type: VT_VECTOR | VT_LPWSTR
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.ItemFolderPathDisplay
+property_identifier: 6
+shell_property_key: PKEY_ItemFolderPathDisplay
+value_type: VT_LPWSTR
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.ItemPathDisplay
+property_identifier: 7
+shell_property_key: PKEY_ItemPathDisplay
+value_type: VT_LPWSTR
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Communication.AccountName
+property_identifier: 9
+shell_property_key: PKEY_Communication_AccountName
+value_type: VT_LPWSTR
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
 name: System.IsRead
 property_identifier: 10
 shell_property_key: PKEY_IsRead
@@ -5507,42 +5543,6 @@ name: System.Message.AttachmentNames
 property_identifier: 21
 shell_property_key: PKEY_Message_AttachmentNames
 value_type: VT_VECTOR | VT_LPWSTR
----
-format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
-name: System.Message.BccName
-property_identifier: 3
-shell_property_key: PKEY_Message_BccName
-value_type: VT_VECTOR | VT_LPWSTR
----
-format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
-name: System.Message.CcAddress
-property_identifier: 4
-shell_property_key: PKEY_Message_CcAddress
-value_type: VT_VECTOR | VT_LPWSTR
----
-format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
-name: System.Message.CcName
-property_identifier: 5
-shell_property_key: PKEY_Message_CcName
-value_type: VT_VECTOR | VT_LPWSTR
----
-format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
-name: System.ItemFolderPathDisplay
-property_identifier: 6
-shell_property_key: PKEY_ItemFolderPathDisplay
-value_type: VT_LPWSTR
----
-format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
-name: System.ItemPathDisplay
-property_identifier: 7
-shell_property_key: PKEY_ItemPathDisplay
-value_type: VT_LPWSTR
----
-format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
-name: System.Communication.AccountName
-property_identifier: 9
-shell_property_key: PKEY_Communication_AccountName
-value_type: VT_LPWSTR
 ---
 format_identifier: e4f10a3c-49e6-405d-8288-a23bd4eeaa6c
 name: System.FileExtension

@@ -104,8 +104,9 @@ def Main():
 
     extractor_object.windows_version = options.windows_version
 
-  logging.info(
-      f'Detected Windows version: {extractor_object.windows_version:s}')
+  if extractor_object.windows_version:
+    logging.info(
+        f'Detected Windows version: {extractor_object.windows_version:s}')
 
   serialized_properties = {}
   defined_serialized_properties = {}
