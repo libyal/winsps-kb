@@ -156,7 +156,7 @@ format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
 name: System.Search.QueryPropertyHits
 property_identifier: 21
 shell_property_key: PKEY_Search_QueryPropertyHits
-value_type: 0x0001
+value_type: [0x0001, 0x101f]
 ---
 format_identifier: 560c36c0-503a-11cf-baa1-00004c752a9a
 name: System.Search.AutoSummary

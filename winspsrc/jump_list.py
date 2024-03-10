@@ -242,23 +242,15 @@ class CustomDestinationsFile(data_format.BinaryDataFile):
     file_offset += bytes_read
     total_bytes_read = bytes_read
 
-    if category_header.category_type == 0:
-      data_type_map_name = 'custom_category_header_type_0'
-    else:
-      data_type_map_name = 'custom_category_header_type_1_or_2'
-
-    data_type_map = self._GetDataTypeMap(data_type_map_name)
+    data_type_map = self._GetDataTypeMap(
+        f'custom_category_header_type_{category_header.category_type:d}')
 
     category_header_value, bytes_read = self._ReadStructureFromFileObject(
         file_object, file_offset, data_type_map, 'category header values')
 
-    if category_header.category_type == 0:
-      setattr(category_header, 'number_of_characters',
-              category_header_value.number_of_characters)
-      setattr(category_header, 'title', category_header_value.title)
-
-    setattr(category_header, 'number_of_entries',
-            category_header_value.number_of_entries)
+    if category_header.category_type in (0, 2):
+      setattr(category_header, 'number_of_entries',
+              category_header_value.number_of_entries)
 
     total_bytes_read += bytes_read
 
@@ -313,7 +305,8 @@ class CustomDestinationsFile(data_format.BinaryDataFile):
 
       file_offset += bytes_read
 
-      for entry_index in range(category_header.number_of_entries):
+      number_of_entries = getattr(category_header, 'number_of_entries', 0)
+      for entry_index in range(number_of_entries):
         if self._file_size - file_offset < 16:
           break
 
