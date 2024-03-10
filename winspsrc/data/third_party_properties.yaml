@@ -376,12 +376,12 @@ shell_property_key: PKEY_Contact_HomeAddressStreet
 value_type: String
 ---
 format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
-property_identifier: 12
-shell_property_key: PKEY_Search_UrlToIndexWithModificationTime
----
-format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
 property_identifier: 2
 shell_property_key: PKEY_Search_UrlToIndex
+---
+format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
+property_identifier: 12
+shell_property_key: PKEY_Search_UrlToIndexWithModificationTime
 ---
 format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
 property_identifier: 23

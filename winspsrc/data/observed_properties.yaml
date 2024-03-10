@@ -16,6 +16,10 @@ format_identifier: 0ae54373-43be-4fad-85e4-69dc8633986e
 property_identifier: 11
 value_type: 0x000b
 ---
+format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
+property_identifier: 25
+value_type: 0x001f
+---
 format_identifier: 0c570607-0396-43de-9d61-e321d7df5026
 property_identifier: 1
 value_type: 0x000b
@@ -65,6 +69,10 @@ property_identifier: 8
 value_type: 0x001f
 ---
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+property_identifier: 9
+value_type: 0x0013
+---
+format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
 property_identifier: 12
 value_type: 0x0001
 ---
@@ -75,6 +83,10 @@ value_type: 0x001f
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
 property_identifier: 20
 value_type: 0x0003
+---
+format_identifier: 27b381e0-61dd-449c-b739-815e0f031299
+property_identifier: 100
+value_type: 0x000b
 ---
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
 property_identifier: 11
@@ -87,6 +99,10 @@ value_type: [0x0008, 0x001f]
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
 property_identifier: 25
 value_type: 0x0013
+---
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+property_identifier: 26
+value_type: 0x0003
 ---
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
 name: System.ParsingPath
@@ -131,6 +147,12 @@ property_identifier: 3
 value_type: 0x0003
 ---
 format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
+name: System.ItemUrl
+property_identifier: 9
+shell_property_key: PKEY_ItemUrl
+value_type: [0x001f]
+---
+format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
 name: System.Search.QueryPropertyHits
 property_identifier: 21
 shell_property_key: PKEY_Search_QueryPropertyHits
@@ -141,6 +163,12 @@ name: System.Search.AutoSummary
 property_identifier: 2
 shell_property_key: PKEY_Search_AutoSummary
 value_type: 0x0001
+---
+format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
+name: System.Link.TargetUrl
+property_identifier: 2
+shell_property_key: PKEY_Link_TargetUrl
+value_type: 0x001f
 ---
 format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
 property_identifier: 25
@@ -162,6 +190,10 @@ format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
 property_identifier: 5
 value_type: 0x0001
 ---
+format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
+property_identifier: 6
+value_type: 0x001f
+---
 format_identifier: 5cde9f0e-1de4-4453-96a9-56e8832efa3d
 property_identifier: 2
 value_type: 0x001f
@@ -171,6 +203,12 @@ name: System.Devices.IpAddress
 property_identifier: 12297
 shell_property_key: PKEY_Devices_IpAddress
 value_type: 0x101f
+---
+format_identifier: 6b8da074-3b5c-43bc-886f-0a2cdce00b6f
+name: System.ItemName
+property_identifier: 100
+shell_property_key: PKEY_ItemName
+value_type: 0x001f
 ---
 format_identifier: 79486778-4c6f-4dde-bc53-cd594311af99
 property_identifier: 2
@@ -238,6 +276,12 @@ value_type: 0x001f
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
 property_identifier: 20
 shell_property_key: PKEY_Tile_Square70x70LogoPath
+value_type: 0x001f
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.RelaunchIconResource
+property_identifier: 3
+shell_property_key: PKEY_AppUserModel_RelaunchIconResource
 value_type: 0x001f
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
@@ -362,6 +406,10 @@ format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 property_identifier: 40
 value_type: 0x000b
 ---
+format_identifier: a8a7a412-1927-4a34-b1d4-45f67cc672fb
+property_identifier: 2
+value_type: 0x001f
+---
 format_identifier: b6578b39-11f9-449b-8438-cb5cf03b7d9c
 property_identifier: 4
 value_type: 0x0013
@@ -435,6 +483,12 @@ property_identifier: 2
 shell_property_key: PKEY_Category
 value_type: 0x101f
 ---
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.ContentType
+property_identifier: 26
+shell_property_key: PKEY_ContentType
+value_type: 0x0001
+---
 format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
 property_identifier: AutoList
 value_type: [0x001f, 0x0042]
@@ -446,6 +500,10 @@ value_type: 0x001f
 format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
 property_identifier: AutolistCacheTime
 value_type: [0x0014, 0x001f, 0x0040]
+---
+format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
+property_identifier: keywords
+value_type: 0x001f
 ---
 format_identifier: d5cdd505-2e9c-101b-9397-08002b2cf9ae
 property_identifier: pszAppName
@@ -460,6 +518,38 @@ value_type: 0x001f
 format_identifier: debda43a-37b3-4383-91e7-4498da2995ab
 property_identifier: 3
 value_type: 0x0013
+---
+format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+property_identifier: 2
+value_type: 0x0013
+---
+format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+property_identifier: 5
+value_type: 0x001f
+---
+format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+property_identifier: 6
+value_type: 0x001f
+---
+format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+property_identifier: 11
+value_type: 0x0013
+---
+format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+property_identifier: 12
+value_type: 0x0013
+---
+format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+property_identifier: 13
+value_type: 0x000b
+---
+format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+property_identifier: 14
+value_type: 0x000b
+---
+format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+property_identifier: 27
+value_type: 0x000b
 ---
 format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
 name: System.ItemFolderPathDisplay
@@ -492,10 +582,40 @@ shell_property_key: PKEY_Author
 value_type: 0x001f
 ---
 format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Keywords
+property_identifier: 5
+shell_property_key: PKEY_Keywords
+value_type: 0x0001
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
 name: System.Comment
 property_identifier: 6
 shell_property_key: PKEY_Comment
 value_type: 0x001f
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Thumbnail
+property_identifier: 17
+shell_property_key: PKEY_Thumbnail
+value_type: 0x0001
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.HighKeywords
+property_identifier: 24
+shell_property_key: PKEY_HighKeywords
+value_type: 0x101f
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.LowKeywords
+property_identifier: 25
+shell_property_key: PKEY_LowKeywords
+value_type: 0x0001
+---
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.MediumKeywords
+property_identifier: 26
+shell_property_key: PKEY_MediumKeywords
+value_type: 0x0001
 ---
 format_identifier: f50d2f5d-dda0-48d4-8d2b-e83729fb69a4
 property_identifier: 100

@@ -373,26 +373,38 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
           fwsi_item_list)
 
     for lnk_data_block in iter(lnk_file.data_blocks):
-      if lnk_data_block.signature == 0xa0000009:
+      if lnk_data_block.signature == 0xa0000009 and lnk_data_block.data:
         fwps_store = pyfwps.store()
         fwps_store.copy_from_byte_stream(lnk_data_block.data)
 
         yield from self._CollectSerializedProperiesFromPropertyStore(fwps_store)
 
-  def _CollectSerializedProperiesFromLNKFile(self, file_object):
+  def _CollectSerializedProperiesFromLNKFile(self, file_object, path_segments):
     """Retrieves serialized properties from a Windows Shortcut (LNK) file.
 
     Args:
       file_object (dfvfs.FileIO): file-like object.
+      path_segments (str): path segments of the full path of the file entry.
 
     Yields:
       SerializedProperty: serialized property.
     """
     lnk_file = pylnk.file()
-    lnk_file.open_file_object(file_object)
+
+    try:
+      lnk_file.open_file_object(file_object)
+    except IOError as exception:
+      path = '\\'.join(path_segments)
+      logging.warning(f'Unable to open: {path:s} with error: {exception!s}')
 
     try:
       yield from self._CollectSerializedProperiesFromLNK(lnk_file)
+
+    except IOError as exception:
+      path = '\\'.join(path_segments)
+      logging.warning((
+          f'Unable to collect serialized properties from: {path:s} with '
+          f'error: {exception!s}'))
 
     finally:
       lnk_file.close()
@@ -421,17 +433,23 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
         yield serialized_property
 
-  def _CollectSerializedProperiesFromREGFFile(self, file_object):
+  def _CollectSerializedProperiesFromREGFFile(self, file_object, path_segments):
     """Retrieves serialized properties from a Windows NT Registry File (REGF).
 
     Args:
       file_object (dfvfs.FileIO): file-like object.
+      path_segments (str): path segments of the full path of the file entry.
 
     Yields:
       SerializedProperty: serialized property.
     """
     regf_file = pyregf.file()
-    regf_file.open_file_object(file_object)
+
+    try:
+      regf_file.open_file_object(file_object)
+    except IOError as exception:
+      path = '\\'.join(path_segments)
+      logging.warning(f'Unable to open: {path:s} with error: {exception!s}')
 
     try:
       regf_root_key = regf_file.get_root_key()
@@ -439,6 +457,12 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
         # Ignore the name of the root key.
         yield from self._CollectSerializedProperiesFromREGFKey(
             [''], regf_root_key)
+
+    except IOError as exception:
+      path = '\\'.join(path_segments)
+      logging.warning((
+          f'Unable to collect serialized properties from: {path:s} with '
+          f'error: {exception!s}'))
 
     finally:
       regf_file.close()
@@ -496,7 +520,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     if known_key_type:
       for regf_value in regf_key.values:
         if not regf_value.data or regf_value.name in (
-            'MRUList', 'MRUListEx', 'NodeSlot', 'NodeSlots'):
+            'MRUList', 'MRUListEx', 'NodeSlot', 'NodeSlots', 'ViewStream'):
           continue
 
         data_offset = 0
@@ -600,7 +624,8 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
             file_object, path_segments)
 
       elif 'lnk' in scan_results:
-        generator = self._CollectSerializedProperiesFromLNKFile(file_object)
+        generator = self._CollectSerializedProperiesFromLNKFile(
+            file_object, path_segments)
 
       elif 'olecf' in scan_results:
         generator = (
@@ -608,7 +633,8 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
                 file_object, path_segments))
 
       elif 'regf' in scan_results:
-        generator = self._CollectSerializedProperiesFromREGFFile(file_object)
+        generator = self._CollectSerializedProperiesFromREGFFile(
+            file_object, path_segments)
 
       # TODO: add support for shell item formats
 

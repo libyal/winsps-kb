@@ -260,16 +260,16 @@ shell_property_key: PKEY_Device_PrinterURL
 value_type: VT_LPWSTR
 ---
 format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
-name: System.Search.UrlToIndexWithModificationTime
-property_identifier: 12
-shell_property_key: PKEY_Search_UrlToIndexWithModificationTime
-value_type: VT_VECTOR | VT_NULL
----
-format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
 name: System.Search.UrlToIndex
 property_identifier: 2
 shell_property_key: PKEY_Search_UrlToIndex
 value_type: VT_LPWSTR
+---
+format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
+name: System.Search.UrlToIndexWithModificationTime
+property_identifier: 12
+shell_property_key: PKEY_Search_UrlToIndexWithModificationTime
+value_type: VT_VECTOR | VT_NULL
 ---
 format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
 name: System.Search.IsClosedDirectory
@@ -1932,6 +1932,11 @@ shell_property_key: PKEY_Link_TargetUrl
 value_type: VT_LPWSTR
 ---
 format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
+name: System.History.VisitCount
+property_identifier: 7
+shell_property_key: PKEY_History_VisitCount
+---
+format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
 name: System.Link.Description
 property_identifier: 21
 shell_property_key: PKEY_Link_Description
@@ -1942,11 +1947,6 @@ name: System.Link.DateVisited
 property_identifier: 23
 shell_property_key: PKEY_Link_DateVisited
 value_type: VT_FILETIME
----
-format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
-name: System.History.VisitCount
-property_identifier: 7
-shell_property_key: PKEY_History_VisitCount
 ---
 format_identifier: 5cda5fc8-33ee-4ff3-9094-ae7bd8868c4d
 name: System.IsDeleted
@@ -3746,32 +3746,6 @@ shell_property_key: PKEY_Photo_BrightnessNumerator
 value_type: VT_UI4
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
-name: System.AppUserModel.IsDualMode
-property_identifier: 11
-shell_property_key: PKEY_AppUserModel_IsDualMode
----
-format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
-name: System.AppUserModel.StartPinOption
-property_identifier: 12
-shell_property_key: PKEY_AppUserModel_StartPinOption
----
-format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
-name: System.AppUserModel.RelaunchCommand
-property_identifier: 2
-shell_property_key: PKEY_AppUserModel_RelaunchCommand
-value_type: VT_LPWSTR
----
-format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
-name: System.AppUserModel.ActivationContext
-property_identifier: 20
-shell_property_key: PKEY_AppUserModel_ActivationContext
----
-format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
-name: System.AppUserModel.ToastActivatorCLSID
-property_identifier: 26
-shell_property_key: PKEY_AppUserModel_ToastActivatorCLSID
----
-format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 name: System.AppUserModel.RelaunchIconResource
 property_identifier: 3
 shell_property_key: PKEY_AppUserModel_RelaunchIconResource
@@ -3806,6 +3780,32 @@ name: System.AppUserModel.PreventPinning
 property_identifier: 9
 shell_property_key: PKEY_AppUserModel_PreventPinning
 value_type: VT_BOOL
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.IsDualMode
+property_identifier: 11
+shell_property_key: PKEY_AppUserModel_IsDualMode
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.StartPinOption
+property_identifier: 12
+shell_property_key: PKEY_AppUserModel_StartPinOption
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.RelaunchCommand
+property_identifier: 2
+shell_property_key: PKEY_AppUserModel_RelaunchCommand
+value_type: VT_LPWSTR
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ActivationContext
+property_identifier: 20
+shell_property_key: PKEY_AppUserModel_ActivationContext
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ToastActivatorCLSID
+property_identifier: 26
+shell_property_key: PKEY_AppUserModel_ToastActivatorCLSID
 ---
 format_identifier: a00742a1-cd8c-4b37-95ab-70755587767a
 name: System.DeviceInterface.PrinterEnumerationFlag
@@ -5719,6 +5719,70 @@ name: System.Contact.BusinessEmailAddresses
 property_identifier: 100
 shell_property_key: PKEY_Contact_BusinessEmailAddresses
 ---
+alias: PIDSI_TITLE
+format_class: FMTID_SummaryInformation
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Title
+property_identifier: 2
+shell_property_key: PKEY_Title
+value_type: VT_LPWSTR
+---
+alias: PIDSI_SUBJECT
+format_class: FMTID_SummaryInformation
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Subject
+property_identifier: 3
+shell_property_key: PKEY_Subject
+value_type: VT_LPWSTR
+---
+alias: PIDSI_AUTHOR
+format_class: FMTID_SummaryInformation
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Author
+property_identifier: 4
+shell_property_key: PKEY_Author
+value_type: VT_VECTOR | VT_LPWSTR
+---
+alias: PIDSI_KEYWORDS
+format_class: FMTID_SummaryInformation
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Keywords
+property_identifier: 5
+shell_property_key: PKEY_Keywords
+value_type: VT_VECTOR | VT_LPWSTR
+---
+alias: PIDSI_COMMENTS
+format_class: FMTID_SummaryInformation
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Comment
+property_identifier: 6
+shell_property_key: PKEY_Comment
+value_type: VT_LPWSTR
+---
+alias: PIDSI_TEMPLATE
+format_class: FMTID_SummaryInformation
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.Template
+property_identifier: 7
+shell_property_key: PKEY_Document_Template
+value_type: VT_LPWSTR
+---
+alias: PIDSI_LASTAUTHOR
+format_class: FMTID_SummaryInformation
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.LastAuthor
+property_identifier: 8
+shell_property_key: PKEY_Document_LastAuthor
+value_type: VT_LPWSTR
+---
+alias: PIDSI_REVNUMBER
+format_class: FMTID_SummaryInformation
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Document.RevisionNumber
+property_identifier: 9
+shell_property_key: PKEY_Document_RevisionNumber
+value_type: VT_LPWSTR
+---
 alias: PIDSI_EDITTIME
 format_class: FMTID_SummaryInformation
 format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
@@ -5798,14 +5862,6 @@ property_identifier: 19
 shell_property_key: PKEY_Document_Security
 value_type: VT_I4
 ---
-alias: PIDSI_TITLE
-format_class: FMTID_SummaryInformation
-format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
-name: System.Title
-property_identifier: 2
-shell_property_key: PKEY_Title
-value_type: VT_LPWSTR
----
 format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
 name: System.HighKeywords
 property_identifier: 24
@@ -5827,62 +5883,6 @@ name: System.ThumbnailStream
 property_identifier: 27
 shell_property_key: PKEY_ThumbnailStream
 value_type: VT_STREAM
----
-alias: PIDSI_SUBJECT
-format_class: FMTID_SummaryInformation
-format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
-name: System.Subject
-property_identifier: 3
-shell_property_key: PKEY_Subject
-value_type: VT_LPWSTR
----
-alias: PIDSI_AUTHOR
-format_class: FMTID_SummaryInformation
-format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
-name: System.Author
-property_identifier: 4
-shell_property_key: PKEY_Author
-value_type: VT_VECTOR | VT_LPWSTR
----
-alias: PIDSI_KEYWORDS
-format_class: FMTID_SummaryInformation
-format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
-name: System.Keywords
-property_identifier: 5
-shell_property_key: PKEY_Keywords
-value_type: VT_VECTOR | VT_LPWSTR
----
-alias: PIDSI_COMMENTS
-format_class: FMTID_SummaryInformation
-format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
-name: System.Comment
-property_identifier: 6
-shell_property_key: PKEY_Comment
-value_type: VT_LPWSTR
----
-alias: PIDSI_TEMPLATE
-format_class: FMTID_SummaryInformation
-format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
-name: System.Document.Template
-property_identifier: 7
-shell_property_key: PKEY_Document_Template
-value_type: VT_LPWSTR
----
-alias: PIDSI_LASTAUTHOR
-format_class: FMTID_SummaryInformation
-format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
-name: System.Document.LastAuthor
-property_identifier: 8
-shell_property_key: PKEY_Document_LastAuthor
-value_type: VT_LPWSTR
----
-alias: PIDSI_REVNUMBER
-format_class: FMTID_SummaryInformation
-format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
-name: System.Document.RevisionNumber
-property_identifier: 9
-shell_property_key: PKEY_Document_RevisionNumber
-value_type: VT_LPWSTR
 ---
 format_identifier: f334115e-da1b-4509-9b3d-119504dc7abb
 name: System.Document.Contributor
