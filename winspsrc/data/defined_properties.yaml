@@ -155,6 +155,7 @@ property_identifier: 6
 shell_property_key: PKEY_Devices_RestrictedInterface
 ---
 format_identifier: 026e516e-b814-414b-83cd-856d6fef4822
+name: System.Devices.SchematicName
 property_identifier: 9
 shell_property_key: PKEY_Devices_SchematicName
 ---
@@ -317,21 +318,6 @@ shell_property_key: PKEY_Calendar_RequiredAttendeeAddresses
 value_type: VT_VECTOR | VT_LPWSTR
 ---
 format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
-name: System.Devices.AepContainer.IsPresent
-property_identifier: 11
-shell_property_key: PKEY_Devices_AepContainer_IsPresent
----
-format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
-name: System.Devices.AepContainer.ContainerId
-property_identifier: 12
-shell_property_key: PKEY_Devices_AepContainer_ContainerId
----
-format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
-name: System.Devices.AepContainer.ProtocolIds
-property_identifier: 13
-shell_property_key: PKEY_Devices_AepContainer_ProtocolIds
----
-format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
 name: System.Devices.AepContainer.Children
 property_identifier: 2
 shell_property_key: PKEY_Devices_AepContainer_Children
@@ -365,6 +351,21 @@ format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
 name: System.Devices.AepContainer.Categories
 property_identifier: 9
 shell_property_key: PKEY_Devices_AepContainer_Categories
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.IsPresent
+property_identifier: 11
+shell_property_key: PKEY_Devices_AepContainer_IsPresent
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.ContainerId
+property_identifier: 12
+shell_property_key: PKEY_Devices_AepContainer_ContainerId
+---
+format_identifier: 0bba1ede-7566-4f47-90ec-25fc567ced2a
+name: System.Devices.AepContainer.ProtocolIds
+property_identifier: 13
+shell_property_key: PKEY_Devices_AepContainer_ProtocolIds
 ---
 format_identifier: 0be1c8e7-1981-4676-ae14-fdd78f05a6e7
 name: System.Message.SenderAddress
@@ -510,20 +511,6 @@ value_type: VT_BOOL
 ---
 format_class: FMTID_ImageProperties
 format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
-name: System.Photo.Event
-property_identifier: 18248
-shell_property_key: PKEY_Photo_Event
-value_type: VT_VECTOR | VT_LPWSTR
----
-format_class: FMTID_ImageProperties
-format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
-name: System.DateImported
-property_identifier: 18258
-shell_property_key: PKEY_DateImported
-value_type: VT_FILETIME
----
-format_class: FMTID_ImageProperties
-format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
 name: System.Image.Compression
 property_identifier: 259
 shell_property_key: PKEY_Image_Compression
@@ -563,6 +550,20 @@ name: System.SoftwareUsed
 property_identifier: 305
 shell_property_key: PKEY_SoftwareUsed
 value_type: VT_LPWSTR
+---
+format_class: FMTID_ImageProperties
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.Photo.Event
+property_identifier: 18248
+shell_property_key: PKEY_Photo_Event
+value_type: VT_VECTOR | VT_LPWSTR
+---
+format_class: FMTID_ImageProperties
+format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
+name: System.DateImported
+property_identifier: 18258
+shell_property_key: PKEY_DateImported
+value_type: VT_FILETIME
 ---
 format_class: FMTID_ImageProperties
 format_identifier: 14b81da1-0135-4d31-96d9-6cbfc9671a99
@@ -670,26 +671,6 @@ shell_property_key: PKEY_Photo_FlashEnergy
 value_type: VT_R8
 ---
 format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
-name: System.Devices.WiFiDirect.Services
-property_identifier: 10
-shell_property_key: PKEY_Devices_WiFiDirect_Services
----
-format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
-name: System.Devices.WiFiDirect.SupportedChannelList
-property_identifier: 11
-shell_property_key: PKEY_Devices_WiFiDirect_SupportedChannelList
----
-format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
-name: System.Devices.WiFiDirect.InformationElements
-property_identifier: 12
-shell_property_key: PKEY_Devices_WiFiDirect_InformationElements
----
-format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
-name: System.Devices.WiFiDirect.DeviceAddress
-property_identifier: 13
-shell_property_key: PKEY_Devices_WiFiDirect_DeviceAddress
----
-format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
 name: System.Devices.WiFiDirect.InterfaceAddress
 property_identifier: 2
 shell_property_key: PKEY_Devices_WiFiDirect_InterfaceAddress
@@ -729,6 +710,26 @@ name: System.Devices.WiFiDirect.IsMiracastLcpSupported
 property_identifier: 9
 shell_property_key: PKEY_Devices_WiFiDirect_IsMiracastLcpSupported
 ---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.Services
+property_identifier: 10
+shell_property_key: PKEY_Devices_WiFiDirect_Services
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.SupportedChannelList
+property_identifier: 11
+shell_property_key: PKEY_Devices_WiFiDirect_SupportedChannelList
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.InformationElements
+property_identifier: 12
+shell_property_key: PKEY_Devices_WiFiDirect_InformationElements
+---
+format_identifier: 1506935d-e3e7-450f-8637-82233ebe5f6e
+name: System.Devices.WiFiDirect.DeviceAddress
+property_identifier: 13
+shell_property_key: PKEY_Devices_WiFiDirect_DeviceAddress
+---
 format_identifier: 16473c91-d017-4ed9-ba4d-b6baa55dbcf8
 name: System.GPS.ImgDirection
 property_identifier: 100
@@ -752,6 +753,18 @@ name: System.Photo.ShutterSpeedNumerator
 property_identifier: 100
 shell_property_key: PKEY_Photo_ShutterSpeedNumerator
 value_type: VT_I4
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.JobTitle
+property_identifier: 6
+shell_property_key: PKEY_Contact_JobTitle
+value_type: VT_LPWSTR
+---
+format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
+name: System.Contact.OfficeLocation
+property_identifier: 7
+shell_property_key: PKEY_Contact_OfficeLocation
+value_type: VT_LPWSTR
 ---
 format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
 name: System.Contact.HomeTelephone
@@ -784,12 +797,6 @@ shell_property_key: PKEY_Contact_PrimaryEmailAddress
 value_type: VT_LPWSTR
 ---
 format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
-name: System.Contact.JobTitle
-property_identifier: 6
-shell_property_key: PKEY_Contact_JobTitle
-value_type: VT_LPWSTR
----
-format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
 name: System.Contact.HomeAddressCity
 property_identifier: 65
 shell_property_key: PKEY_Contact_HomeAddressCity
@@ -799,12 +806,6 @@ format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
 name: System.Contact.PersonalTitle
 property_identifier: 69
 shell_property_key: PKEY_Contact_PersonalTitle
-value_type: VT_LPWSTR
----
-format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
-name: System.Contact.OfficeLocation
-property_identifier: 7
-shell_property_key: PKEY_Contact_OfficeLocation
 value_type: VT_LPWSTR
 ---
 format_identifier: 176dc63c-2688-4e89-8143-a347800f25e9
@@ -988,6 +989,43 @@ property_identifier: 0
 shell_property_key: PKEY_FindData
 value_type: VT_VECTOR | VT_UI1
 ---
+alias: PID_DESCRIPTIONID
+format_class: FMTID_ShellDetails
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.DescriptionID
+property_identifier: 2
+shell_property_key: PKEY_DescriptionID
+value_type: VT_VECTOR | VT_UI1
+---
+alias: PID_COMPUTERNAME
+format_class: FMTID_ShellDetails
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ComputerName
+property_identifier: 5
+shell_property_key: PKEY_ComputerName
+value_type: VT_LPWSTR
+---
+format_class: FMTID_ShellDetails
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.NamespaceCLSID
+property_identifier: 6
+shell_property_key: PKEY_NamespaceCLSID
+value_type: VT_CLSID
+---
+format_class: FMTID_ShellDetails
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ItemPathDisplayNarrow
+property_identifier: 8
+shell_property_key: PKEY_ItemPathDisplayNarrow
+value_type: VT_LPWSTR
+---
+format_class: FMTID_ShellDetails
+format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.PerceivedType
+property_identifier: 9
+shell_property_key: PKEY_PerceivedType
+value_type: VT_I4
+---
 format_class: FMTID_ShellDetails
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
 name: System.ItemType
@@ -1008,14 +1046,6 @@ name: System.TotalFileSize
 property_identifier: 14
 shell_property_key: PKEY_TotalFileSize
 value_type: VT_UI8
----
-alias: PID_DESCRIPTIONID
-format_class: FMTID_ShellDetails
-format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
-name: System.DescriptionID
-property_identifier: 2
-shell_property_key: PKEY_DescriptionID
-value_type: VT_VECTOR | VT_UI1
 ---
 format_class: FMTID_ShellDetails
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
@@ -1057,35 +1087,6 @@ name: System.ItemSubType
 property_identifier: 37
 shell_property_key: PKEY_ItemSubType
 ---
-alias: PID_COMPUTERNAME
-format_class: FMTID_ShellDetails
-format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
-name: System.ComputerName
-property_identifier: 5
-shell_property_key: PKEY_ComputerName
-value_type: VT_LPWSTR
----
-format_class: FMTID_ShellDetails
-format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
-name: System.NamespaceCLSID
-property_identifier: 6
-shell_property_key: PKEY_NamespaceCLSID
-value_type: VT_CLSID
----
-format_class: FMTID_ShellDetails
-format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
-name: System.ItemPathDisplayNarrow
-property_identifier: 8
-shell_property_key: PKEY_ItemPathDisplayNarrow
-value_type: VT_LPWSTR
----
-format_class: FMTID_ShellDetails
-format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
-name: System.PerceivedType
-property_identifier: 9
-shell_property_key: PKEY_PerceivedType
-value_type: VT_I4
----
 format_identifier: 293ca35a-09aa-4dd2-b180-1fe245728a52
 name: System.Calendar.Duration
 property_identifier: 100
@@ -1107,15 +1108,6 @@ format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
 name: System.DeviceInterface.Bluetooth.DeviceAddress
 property_identifier: 1
 shell_property_key: PKEY_DeviceInterface_Bluetooth_DeviceAddress
----
-format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
-name: System.DeviceInterface.Bluetooth.LastConnectedTime
-property_identifier: 11
-shell_property_key: PKEY_DeviceInterface_Bluetooth_LastConnectedTime
----
-format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
-property_identifier: 12
-shell_property_key: PKEY_Devices_Aep_Bluetooth_LastSeenTime
 ---
 format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
 name: System.DeviceInterface.Bluetooth.ServiceGuid
@@ -1156,6 +1148,16 @@ format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
 name: System.DeviceInterface.Bluetooth.ProductVersion
 property_identifier: 9
 shell_property_key: PKEY_DeviceInterface_Bluetooth_ProductVersion
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.DeviceInterface.Bluetooth.LastConnectedTime
+property_identifier: 11
+shell_property_key: PKEY_DeviceInterface_Bluetooth_LastConnectedTime
+---
+format_identifier: 2bd67d8b-8beb-48d5-87e0-6cda3428040a
+name: System.Devices.Aep.Bluetooth.LastSeenTime
+property_identifier: 12
+shell_property_key: PKEY_Devices_Aep_Bluetooth_LastSeenTime
 ---
 format_identifier: 2bda47da-08c6-4fe1-80bc-a72fc517c5d0
 name: System.GPS.DestDistanceNumerator
@@ -1553,52 +1555,10 @@ property_identifier: 21
 shell_property_key: PKEY_Search_QueryPropertyHits
 ---
 format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
-name: System.Devices.BatteryLife
-property_identifier: 10
-shell_property_key: PKEY_Devices_BatteryLife
-value_type: VT_UI1
----
-format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
-name: System.Devices.ChargingState
-property_identifier: 11
-shell_property_key: PKEY_Devices_ChargingState
-value_type: VT_UI1
----
-format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
-name: System.Devices.StorageCapacity
-property_identifier: 12
-shell_property_key: PKEY_Devices_StorageCapacity
-value_type: VT_UI8
----
-format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
-name: System.Devices.StorageFreeSpace
-property_identifier: 13
-shell_property_key: PKEY_Devices_StorageFreeSpace
-value_type: VT_UI8
----
-format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
-name: System.Devices.StorageFreeSpacePercent
-property_identifier: 14
-shell_property_key: PKEY_Devices_StorageFreeSpacePercent
-value_type: VT_UI4
----
-format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
 name: System.Devices.SignalStrength
 property_identifier: 2
 shell_property_key: PKEY_Devices_SignalStrength
 value_type: VT_UI1
----
-format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
-name: System.Devices.BatteryPlusCharging
-property_identifier: 22
-shell_property_key: PKEY_Devices_BatteryPlusCharging
-value_type: VT_UI1
----
-format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
-name: System.Devices.BatteryPlusChargingText
-property_identifier: 23
-shell_property_key: PKEY_Devices_BatteryPlusChargingText
-value_type: VT_LPWSTR
 ---
 format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
 name: System.Devices.TextMessages
@@ -1641,6 +1601,48 @@ name: System.Devices.Roaming
 property_identifier: 9
 shell_property_key: PKEY_Devices_Roaming
 value_type: VT_UI1
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.BatteryLife
+property_identifier: 10
+shell_property_key: PKEY_Devices_BatteryLife
+value_type: VT_UI1
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.ChargingState
+property_identifier: 11
+shell_property_key: PKEY_Devices_ChargingState
+value_type: VT_UI1
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.StorageCapacity
+property_identifier: 12
+shell_property_key: PKEY_Devices_StorageCapacity
+value_type: VT_UI8
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.StorageFreeSpace
+property_identifier: 13
+shell_property_key: PKEY_Devices_StorageFreeSpace
+value_type: VT_UI8
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.StorageFreeSpacePercent
+property_identifier: 14
+shell_property_key: PKEY_Devices_StorageFreeSpacePercent
+value_type: VT_UI4
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.BatteryPlusCharging
+property_identifier: 22
+shell_property_key: PKEY_Devices_BatteryPlusCharging
+value_type: VT_UI1
+---
+format_identifier: 49cd1f76-5626-4b17-a4e8-18b4aa1a2213
+name: System.Devices.BatteryPlusChargingText
+property_identifier: 23
+shell_property_key: PKEY_Devices_BatteryPlusChargingText
+value_type: VT_LPWSTR
 ---
 format_identifier: 49d1091f-082e-493f-b23f-d2308aa9668c
 name: System.PropList.NonPersonal
@@ -1777,12 +1779,37 @@ property_identifier: 100
 shell_property_key: PKEY_Contact_BusinessHomePage
 value_type: VT_LPWSTR
 ---
+alias: PIDSI_MUSIC_ARTIST
 format_class: FMTID_MUSIC
 format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
-name: System.Music.AlbumID
-property_identifier: 100
-shell_property_key: PKEY_Music_AlbumID
+name: System.Music.Artist
+property_identifier: 2
+shell_property_key: PKEY_Music_Artist
+value_type: VT_VECTOR | VT_LPWSTR
+---
+alias: PIDSI_MUSIC_ALBUM
+format_class: FMTID_MUSIC
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.AlbumTitle
+property_identifier: 4
+shell_property_key: PKEY_Music_AlbumTitle
 value_type: VT_LPWSTR
+---
+alias: PIDSI_MUSIC_YEAR
+format_class: FMTID_MUSIC
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Media.Year
+property_identifier: 5
+shell_property_key: PKEY_Media_Year
+value_type: VT_UI4
+---
+alias: PIDSI_MUSIC_TRACK
+format_class: FMTID_MUSIC
+format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
+name: System.Music.TrackNumber
+property_identifier: 7
+shell_property_key: PKEY_Music_TrackNumber
+value_type: VT_UI4
 ---
 alias: PIDSI_MUSIC_GENRE
 format_class: FMTID_MUSIC
@@ -1807,14 +1834,6 @@ name: System.Music.AlbumArtist
 property_identifier: 13
 shell_property_key: PKEY_Music_AlbumArtist
 value_type: VT_LPWSTR
----
-alias: PIDSI_MUSIC_ARTIST
-format_class: FMTID_MUSIC
-format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
-name: System.Music.Artist
-property_identifier: 2
-shell_property_key: PKEY_Music_Artist
-value_type: VT_VECTOR | VT_LPWSTR
 ---
 alias: PIDSI_MUSIC_CONTENT_GROUP_DESCRIPTION
 format_class: FMTID_MUSIC
@@ -1872,29 +1891,12 @@ property_identifier: 39
 shell_property_key: PKEY_Music_Mood
 value_type: VT_LPWSTR
 ---
-alias: PIDSI_MUSIC_ALBUM
 format_class: FMTID_MUSIC
 format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
-name: System.Music.AlbumTitle
-property_identifier: 4
-shell_property_key: PKEY_Music_AlbumTitle
+name: System.Music.AlbumID
+property_identifier: 100
+shell_property_key: PKEY_Music_AlbumID
 value_type: VT_LPWSTR
----
-alias: PIDSI_MUSIC_YEAR
-format_class: FMTID_MUSIC
-format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
-name: System.Media.Year
-property_identifier: 5
-shell_property_key: PKEY_Media_Year
-value_type: VT_UI4
----
-alias: PIDSI_MUSIC_TRACK
-format_class: FMTID_MUSIC
-format_identifier: 56a3372e-ce9c-11d2-9f0e-006097c686f6
-name: System.Music.TrackNumber
-property_identifier: 7
-shell_property_key: PKEY_Music_TrackNumber
-value_type: VT_UI4
 ---
 format_identifier: 56c90e9d-9d46-4963-886f-2e1cd9a694ef
 name: System.Contact.HomeEmailAddresses
@@ -1955,11 +1957,6 @@ shell_property_key: PKEY_IsDeleted
 value_type: VT_BOOL
 ---
 format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
-name: System.DefaultSaveLocationDisplay
-property_identifier: 10
-shell_property_key: PKEY_DefaultSaveLocationDisplay
----
-format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
 name: System.IsPinnedToNameSpaceTree
 property_identifier: 2
 shell_property_key: PKEY_IsPinnedToNameSpaceTree
@@ -1995,6 +1992,11 @@ property_identifier: 8
 shell_property_key: PKEY_IsLocationSupported
 value_type: VT_BOOL
 ---
+format_identifier: 5d76b67f-9b3d-44bb-b6ae-25da4f638a67
+name: System.DefaultSaveLocationDisplay
+property_identifier: 10
+shell_property_key: PKEY_DefaultSaveLocationDisplay
+---
 format_identifier: 5da84765-e3ff-4278-86b0-a27967fbdd03
 name: System.IsFlagged
 property_identifier: 100
@@ -2011,21 +2013,6 @@ format_identifier: 5f5aff6a-37e5-4780-97ea-80c7565cf535
 name: System.Security.EncryptionOwners
 property_identifier: 34
 shell_property_key: PKEY_Security_EncryptionOwners
----
-format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
-name: System.Devices.Aep.Bluetooth.Cod.Services.Audio
-property_identifier: 10
-shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Audio
----
-format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
-name: System.Devices.Aep.Bluetooth.Cod.Services.Telephony
-property_identifier: 11
-shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Telephony
----
-format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
-name: System.Devices.Aep.Bluetooth.Cod.Services.Information
-property_identifier: 12
-shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Information
 ---
 format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
 name: System.Devices.Aep.Bluetooth.Cod.Major
@@ -2067,6 +2054,21 @@ name: System.Devices.Aep.Bluetooth.Cod.Services.ObjectXfer
 property_identifier: 9
 shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_ObjectXfer
 ---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Audio
+property_identifier: 10
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Audio
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Telephony
+property_identifier: 11
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Telephony
+---
+format_identifier: 5fbd34cd-561a-412e-ba98-478a6b0fef1d
+name: System.Devices.Aep.Bluetooth.Cod.Services.Information
+property_identifier: 12
+shell_property_key: PKEY_Devices_Aep_Bluetooth_Cod_Services_Information
+---
 format_identifier: 61478c08-b600-4a84-bbe4-e99c45f0a072
 name: System.Photo.SaturationText
 property_identifier: 100
@@ -2095,22 +2097,6 @@ format_identifier: 63c25b20-96be-488f-8788-c09c407ad812
 name: System.Contact.PrimaryAddressStreet
 property_identifier: 100
 shell_property_key: PKEY_Contact_PrimaryAddressStreet
-value_type: VT_LPWSTR
----
-alias: PIDISI_FRAMECOUNT
-format_class: PSGUID_IMAGESUMMARYINFORMATION
-format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
-name: System.Media.FrameCount
-property_identifier: 12
-shell_property_key: PKEY_Media_FrameCount
-value_type: VT_UI4
----
-alias: PIDISI_DIMENSIONS
-format_class: PSGUID_IMAGESUMMARYINFORMATION
-format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
-name: System.Image.Dimensions
-property_identifier: 13
-shell_property_key: PKEY_Image_Dimensions
 value_type: VT_LPWSTR
 ---
 alias: PIDISI_CX
@@ -2153,12 +2139,20 @@ property_identifier: 7
 shell_property_key: PKEY_Image_BitDepth
 value_type: VT_UI4
 ---
-alias: PIDASI_COMPRESSION
-format_class: FMTID_AudioSummaryInformation
-format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
-name: System.Audio.Compression
-property_identifier: 10
-shell_property_key: PKEY_Audio_Compression
+alias: PIDISI_FRAMECOUNT
+format_class: PSGUID_IMAGESUMMARYINFORMATION
+format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
+name: System.Media.FrameCount
+property_identifier: 12
+shell_property_key: PKEY_Media_FrameCount
+value_type: VT_UI4
+---
+alias: PIDISI_DIMENSIONS
+format_class: PSGUID_IMAGESUMMARYINFORMATION
+format_identifier: 6444048f-4c8b-11d1-8b70-080036b11a03
+name: System.Image.Dimensions
+property_identifier: 13
+shell_property_key: PKEY_Image_Dimensions
 value_type: VT_LPWSTR
 ---
 alias: PIDASI_FORMAT
@@ -2225,26 +2219,13 @@ property_identifier: 9
 shell_property_key: PKEY_Audio_StreamName
 value_type: VT_LPWSTR
 ---
-alias: PIDVSI_COMPRESSION
-format_class: FMTID_VideoSummaryInformation
-format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
-name: System.Video.Compression
+alias: PIDASI_COMPRESSION
+format_class: FMTID_AudioSummaryInformation
+format_identifier: 64440490-4c8b-11d1-8b70-080036b11a03
+name: System.Audio.Compression
 property_identifier: 10
-shell_property_key: PKEY_Video_Compression
+shell_property_key: PKEY_Audio_Compression
 value_type: VT_LPWSTR
----
-format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
-name: System.Video.IsSpherical
-property_identifier: 100
-shell_property_key: PKEY_Video_IsSpherical
----
-alias: PIDVSI_STREAM_NUMBER
-format_class: FMTID_VideoSummaryInformation
-format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
-name: System.Video.StreamNumber
-property_identifier: 11
-shell_property_key: PKEY_Video_StreamNumber
-value_type: VT_UI2
 ---
 alias: PIDVSI_STREAM_NAME
 format_class: FMTID_VideoSummaryInformation
@@ -2267,6 +2248,46 @@ name: System.Video.FrameHeight
 property_identifier: 4
 shell_property_key: PKEY_Video_FrameHeight
 value_type: VT_UI4
+---
+alias: PIDVSI_FRAME_RATE
+format_class: FMTID_VideoSummaryInformation
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.FrameRate
+property_identifier: 6
+shell_property_key: PKEY_Video_FrameRate
+value_type: VT_UI4
+---
+alias: PIDVSI_DATA_RATE
+format_class: FMTID_VideoSummaryInformation
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.EncodingBitrate
+property_identifier: 8
+shell_property_key: PKEY_Video_EncodingBitrate
+value_type: VT_UI4
+---
+alias: PIDVSI_SAMPLE_SIZE
+format_class: FMTID_VideoSummaryInformation
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.SampleSize
+property_identifier: 9
+shell_property_key: PKEY_Video_SampleSize
+value_type: VT_UI4
+---
+alias: PIDVSI_COMPRESSION
+format_class: FMTID_VideoSummaryInformation
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.Compression
+property_identifier: 10
+shell_property_key: PKEY_Video_Compression
+value_type: VT_LPWSTR
+---
+alias: PIDVSI_STREAM_NUMBER
+format_class: FMTID_VideoSummaryInformation
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.StreamNumber
+property_identifier: 11
+shell_property_key: PKEY_Video_StreamNumber
+value_type: VT_UI2
 ---
 format_class: FMTID_VideoSummaryInformation
 format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
@@ -2304,30 +2325,6 @@ property_identifier: 46
 shell_property_key: PKEY_Video_TranscodedForSync
 value_type: VT_BOOL
 ---
-alias: PIDVSI_FRAME_RATE
-format_class: FMTID_VideoSummaryInformation
-format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
-name: System.Video.FrameRate
-property_identifier: 6
-shell_property_key: PKEY_Video_FrameRate
-value_type: VT_UI4
----
-alias: PIDVSI_DATA_RATE
-format_class: FMTID_VideoSummaryInformation
-format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
-name: System.Video.EncodingBitrate
-property_identifier: 8
-shell_property_key: PKEY_Video_EncodingBitrate
-value_type: VT_UI4
----
-alias: PIDVSI_SAMPLE_SIZE
-format_class: FMTID_VideoSummaryInformation
-format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
-name: System.Video.SampleSize
-property_identifier: 9
-shell_property_key: PKEY_Video_SampleSize
-value_type: VT_UI4
----
 format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
 name: System.Video.IsStereo
 property_identifier: 98
@@ -2338,15 +2335,18 @@ name: System.Video.Orientation
 property_identifier: 99
 shell_property_key: PKEY_Video_Orientation
 ---
-format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
-name: System.Media.EpisodeNumber
+format_identifier: 64440491-4c8b-11d1-8b70-080036b11a03
+name: System.Video.IsSpherical
 property_identifier: 100
-shell_property_key: PKEY_Media_EpisodeNumber
+shell_property_key: PKEY_Video_IsSpherical
 ---
+alias: PIDMSI_RATING
+format_class: PSGUID_MEDIAFILESUMMARYINFORMATION
 format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
-name: System.Media.SeasonNumber
-property_identifier: 101
-shell_property_key: PKEY_Media_SeasonNumber
+name: System.Rating
+property_identifier: 9
+shell_property_key: PKEY_Rating
+value_type: VT_UI4
 ---
 alias: PIDMSI_COPYRIGHT
 format_class: PSGUID_MEDIAFILESUMMARYINFORMATION
@@ -2609,40 +2609,21 @@ name: System.Media.ThumbnailSmallUri
 property_identifier: 50
 shell_property_key: PKEY_Media_ThumbnailSmallUri
 ---
-alias: PIDMSI_RATING
-format_class: PSGUID_MEDIAFILESUMMARYINFORMATION
 format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
-name: System.Rating
-property_identifier: 9
-shell_property_key: PKEY_Rating
-value_type: VT_UI4
+name: System.Media.EpisodeNumber
+property_identifier: 100
+shell_property_key: PKEY_Media_EpisodeNumber
+---
+format_identifier: 64440492-4c8b-11d1-8b70-080036b11a03
+name: System.Media.SeasonNumber
+property_identifier: 101
+shell_property_key: PKEY_Media_SeasonNumber
 ---
 format_identifier: 644d37b4-e1b3-4bad-b099-7e7c04966aca
 name: System.Contact.EmailAddress3
 property_identifier: 100
 shell_property_key: PKEY_Contact_EmailAddress3
 value_type: VT_LPWSTR
----
-format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
-name: System.Devices.FriendlyName
-property_identifier: 12288
-shell_property_key: PKEY_Devices_FriendlyName
-value_type: VT_LPWSTR
----
-format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
-name: System.Devices.IpAddress
-property_identifier: 12297
-shell_property_key: PKEY_Devices_IpAddress
----
-format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
-name: System.Devices.ServiceAddress
-property_identifier: 16384
-shell_property_key: PKEY_Devices_ServiceAddress
----
-format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
-name: System.Devices.ServiceId
-property_identifier: 16385
-shell_property_key: PKEY_Devices_ServiceId
 ---
 format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
 name: System.Devices.Manufacturer
@@ -2666,6 +2647,27 @@ format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
 name: System.Devices.PresentationUrl
 property_identifier: 8198
 shell_property_key: PKEY_Devices_PresentationUrl
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.FriendlyName
+property_identifier: 12288
+shell_property_key: PKEY_Devices_FriendlyName
+value_type: VT_LPWSTR
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.IpAddress
+property_identifier: 12297
+shell_property_key: PKEY_Devices_IpAddress
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.ServiceAddress
+property_identifier: 16384
+shell_property_key: PKEY_Devices_ServiceAddress
+---
+format_identifier: 656a3bb3-ecc0-43fd-8477-4ae0404a96cd
+name: System.Devices.ServiceId
+property_identifier: 16385
+shell_property_key: PKEY_Devices_ServiceId
 ---
 format_identifier: 65a98875-3c80-40ab-abbc-efdaf77dbee2
 name: System.AcquisitionID
@@ -2715,31 +2717,6 @@ shell_property_key: PKEY_Contact_BusinessTelephone
 value_type: VT_LPWSTR
 ---
 format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
-name: System.Devices.AepContainer.SupportsRendering
-property_identifier: 10
-shell_property_key: PKEY_Devices_AepContainer_SupportsRendering
----
-format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
-name: System.Devices.AepContainer.SupportsCapturing
-property_identifier: 11
-shell_property_key: PKEY_Devices_AepContainer_SupportsCapturing
----
-format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
-name: System.Devices.AepContainer.SupportsObjectTransfer
-property_identifier: 12
-shell_property_key: PKEY_Devices_AepContainer_SupportsObjectTransfer
----
-format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
-name: System.Devices.AepContainer.SupportsTelephony
-property_identifier: 13
-shell_property_key: PKEY_Devices_AepContainer_SupportsTelephony
----
-format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
-name: System.Devices.AepContainer.SupportsInformation
-property_identifier: 14
-shell_property_key: PKEY_Devices_AepContainer_SupportsInformation
----
-format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
 name: System.Devices.AepContainer.SupportsAudio
 property_identifier: 2
 shell_property_key: PKEY_Devices_AepContainer_SupportsAudio
@@ -2778,6 +2755,31 @@ format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
 name: System.Devices.AepContainer.SupportsNetworking
 property_identifier: 9
 shell_property_key: PKEY_Devices_AepContainer_SupportsNetworking
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsRendering
+property_identifier: 10
+shell_property_key: PKEY_Devices_AepContainer_SupportsRendering
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsCapturing
+property_identifier: 11
+shell_property_key: PKEY_Devices_AepContainer_SupportsCapturing
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsObjectTransfer
+property_identifier: 12
+shell_property_key: PKEY_Devices_AepContainer_SupportsObjectTransfer
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsTelephony
+property_identifier: 13
+shell_property_key: PKEY_Devices_AepContainer_SupportsTelephony
+---
+format_identifier: 6af55d45-38db-4495-acb0-d4728a3b8314
+name: System.Devices.AepContainer.SupportsInformation
+property_identifier: 14
+shell_property_key: PKEY_Devices_AepContainer_SupportsInformation
 ---
 format_identifier: 6afe7437-9bcd-49c7-80fe-4a5c65fa5874
 name: System.Music.DiscNumber
@@ -2825,6 +2827,36 @@ property_identifier: 100
 shell_property_key: PKEY_Identity_InternetSid
 ---
 format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.EpisodeName
+property_identifier: 2
+shell_property_key: PKEY_RecordedTV_EpisodeName
+value_type: VT_LPWSTR
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.ProgramDescription
+property_identifier: 3
+shell_property_key: PKEY_RecordedTV_ProgramDescription
+value_type: VT_LPWSTR
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.Credits
+property_identifier: 4
+shell_property_key: PKEY_RecordedTV_Credits
+value_type: VT_LPWSTR
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.StationCallSign
+property_identifier: 5
+shell_property_key: PKEY_RecordedTV_StationCallSign
+value_type: VT_LPWSTR
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
+name: System.RecordedTV.ChannelNumber
+property_identifier: 7
+shell_property_key: PKEY_RecordedTV_ChannelNumber
+value_type: VT_UI4
+---
+format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
 name: System.RecordedTV.IsClosedCaptioningAvailable
 property_identifier: 12
 shell_property_key: PKEY_RecordedTV_IsClosedCaptioningAvailable
@@ -2865,36 +2897,6 @@ name: System.RecordedTV.IsHDContent
 property_identifier: 18
 shell_property_key: PKEY_RecordedTV_IsHDContent
 value_type: VT_BOOL
----
-format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
-name: System.RecordedTV.EpisodeName
-property_identifier: 2
-shell_property_key: PKEY_RecordedTV_EpisodeName
-value_type: VT_LPWSTR
----
-format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
-name: System.RecordedTV.ProgramDescription
-property_identifier: 3
-shell_property_key: PKEY_RecordedTV_ProgramDescription
-value_type: VT_LPWSTR
----
-format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
-name: System.RecordedTV.Credits
-property_identifier: 4
-shell_property_key: PKEY_RecordedTV_Credits
-value_type: VT_LPWSTR
----
-format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
-name: System.RecordedTV.StationCallSign
-property_identifier: 5
-shell_property_key: PKEY_RecordedTV_StationCallSign
-value_type: VT_LPWSTR
----
-format_identifier: 6d748de2-8d38-4cc3-ac60-f009b057c557
-name: System.RecordedTV.ChannelNumber
-property_identifier: 7
-shell_property_key: PKEY_RecordedTV_ChannelNumber
-value_type: VT_UI4
 ---
 format_identifier: 6e682923-7f7b-4f0c-a337-cfca296687bf
 name: System.Contact.OtherAddressCity
@@ -3007,11 +3009,6 @@ shell_property_key: PKEY_GPS_AltitudeDenominator
 value_type: VT_UI4
 ---
 format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
-name: System.Devices.DeviceInstanceId
-property_identifier: 256
-shell_property_key: PKEY_Devices_DeviceInstanceId
----
-format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
 name: System.Devices.DiscoveryMethod
 property_identifier: 52
 shell_property_key: PKEY_Devices_DiscoveryMethod
@@ -3110,6 +3107,11 @@ property_identifier: 94
 shell_property_key: [PKEY_Devices_CategoryGroup, PKEY_Devices_CategoryGroup_Desc]
 value_type: VT_VECTOR | VT_LPWSTR
 ---
+format_identifier: 78c34fc8-104a-4aca-9ea4-524d52996e57
+name: System.Devices.DeviceInstanceId
+property_identifier: 256
+shell_property_key: PKEY_Devices_DeviceInstanceId
+---
 format_identifier: 79d94e82-4d79-45aa-821a-74858b4e4ca6
 name: System.Devices.AepService.IoT.ServiceInterfaces
 property_identifier: 2
@@ -3140,34 +3142,10 @@ shell_property_key: PKEY_Contact_HomeAddressPostOfficeBox
 value_type: VT_LPWSTR
 ---
 format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
-name: System.Sync.Status
-property_identifier: 10
-shell_property_key: PKEY_Sync_Status
-value_type: VT_LPWSTR
----
-format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
-name: System.Sync.Comments
-property_identifier: 13
-shell_property_key: PKEY_Sync_Comments
-value_type: VT_LPWSTR
----
-format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
 name: System.Sync.HandlerCollectionID
 property_identifier: 2
 shell_property_key: PKEY_Sync_HandlerCollectionID
 value_type: VT_CLSID
----
-format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
-name: System.Sync.ProgressPercentage
-property_identifier: 23
-shell_property_key: PKEY_Sync_ProgressPercentage
-value_type: VT_UI4
----
-format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
-name: System.Sync.State
-property_identifier: 24
-shell_property_key: PKEY_Sync_State
-value_type: VT_UI4
 ---
 format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
 name: System.Sync.HandlerID
@@ -3192,6 +3170,30 @@ name: System.Sync.HandlerTypeLabel
 property_identifier: 9
 shell_property_key: PKEY_Sync_HandlerTypeLabel
 value_type: VT_LPWSTR
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.Status
+property_identifier: 10
+shell_property_key: PKEY_Sync_Status
+value_type: VT_LPWSTR
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.Comments
+property_identifier: 13
+shell_property_key: PKEY_Sync_Comments
+value_type: VT_LPWSTR
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.ProgressPercentage
+property_identifier: 23
+shell_property_key: PKEY_Sync_ProgressPercentage
+value_type: VT_UI4
+---
+format_identifier: 7bd5533e-af15-44db-b8c8-bd6624e1d032
+name: System.Sync.State
+property_identifier: 24
+shell_property_key: PKEY_Sync_State
+value_type: VT_UI4
 ---
 format_identifier: 7d122d5a-ae5e-4335-8841-d71e7ce72f53
 name: System.GPS.SpeedDenominator
@@ -3659,13 +3661,6 @@ property_identifier: 4
 shell_property_key: PKEY_FileOwner
 value_type: VT_LPWSTR
 ---
-format_class: FMTID_Volume
-format_identifier: 9b174b35-40ff-11d2-a27e-00c04fc30871
-name: System.Volume.IsRoot
-property_identifier: 10
-shell_property_key: PKEY_Volume_IsRoot
-value_type: VT_BOOL
----
 alias: PID_VOLUME_FREE
 format_class: FMTID_Volume
 format_identifier: 9b174b35-40ff-11d2-a27e-00c04fc30871
@@ -3703,6 +3698,13 @@ name: System.Computer.DecoratedFreeSpace
 property_identifier: 7
 shell_property_key: PKEY_Computer_DecoratedFreeSpace
 value_type: VT_VECTOR | VT_UI8
+---
+format_class: FMTID_Volume
+format_identifier: 9b174b35-40ff-11d2-a27e-00c04fc30871
+name: System.Volume.IsRoot
+property_identifier: 10
+shell_property_key: PKEY_Volume_IsRoot
+value_type: VT_BOOL
 ---
 format_identifier: 9bc2c99b-ac71-4127-9d1c-2596d0d7dcb7
 name: System.GPS.DestDistanceDenominator
@@ -3744,6 +3746,12 @@ name: System.Photo.BrightnessNumerator
 property_identifier: 100
 shell_property_key: PKEY_Photo_BrightnessNumerator
 value_type: VT_UI4
+---
+format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.RelaunchCommand
+property_identifier: 2
+shell_property_key: PKEY_AppUserModel_RelaunchCommand
+value_type: VT_LPWSTR
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 name: System.AppUserModel.RelaunchIconResource
@@ -3790,12 +3798,6 @@ format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 name: System.AppUserModel.StartPinOption
 property_identifier: 12
 shell_property_key: PKEY_AppUserModel_StartPinOption
----
-format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
-name: System.AppUserModel.RelaunchCommand
-property_identifier: 2
-shell_property_key: PKEY_AppUserModel_RelaunchCommand
-value_type: VT_LPWSTR
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
 name: System.AppUserModel.ActivationContext
@@ -3865,12 +3867,6 @@ property_identifier: 100
 shell_property_key: PKEY_Contact_ConnectedServiceSupportedActions
 ---
 format_identifier: a26f4afc-7346-4299-be47-eb1ae613139f
-name: System.Identity
-property_identifier: 100
-shell_property_key: PKEY_Identity
-value_type: VT_LPWSTR
----
-format_identifier: a26f4afc-7346-4299-be47-eb1ae613139f
 name: System.Identity.KeyProviderName
 property_identifier: 16
 shell_property_key: PKEY_Identity_KeyProviderName
@@ -3879,6 +3875,12 @@ format_identifier: a26f4afc-7346-4299-be47-eb1ae613139f
 name: System.Identity.KeyProviderContext
 property_identifier: 17
 shell_property_key: PKEY_Identity_KeyProviderContext
+---
+format_identifier: a26f4afc-7346-4299-be47-eb1ae613139f
+name: System.Identity
+property_identifier: 100
+shell_property_key: PKEY_Identity
+value_type: VT_LPWSTR
 ---
 format_identifier: a2e541c5-4440-4ba8-867e-75cfc06828cd
 name: System.Photo.FocalPlaneYResolutionNumerator
@@ -3891,21 +3893,6 @@ name: System.GPS.DestLongitudeNumerator
 property_identifier: 100
 shell_property_key: PKEY_GPS_DestLongitudeNumerator
 value_type: VT_VECTOR | VT_UI4
----
-format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
-name: System.Devices.Aep.DeviceAddress
-property_identifier: 12
-shell_property_key: PKEY_Devices_Aep_DeviceAddress
----
-format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
-name: System.Devices.Aep.IsPaired
-property_identifier: 16
-shell_property_key: PKEY_Devices_Aep_IsPaired
----
-format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
-name: System.Devices.Aep.Category
-property_identifier: 17
-shell_property_key: PKEY_Devices_Aep_Category
 ---
 format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
 name: System.Devices.Aep.ModelName
@@ -3937,6 +3924,21 @@ name: System.Devices.Aep.IsPresent
 property_identifier: 9
 shell_property_key: PKEY_Devices_Aep_IsPresent
 ---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.DeviceAddress
+property_identifier: 12
+shell_property_key: PKEY_Devices_Aep_DeviceAddress
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.IsPaired
+property_identifier: 16
+shell_property_key: PKEY_Devices_Aep_IsPaired
+---
+format_identifier: a35996ab-11cf-4935-8b61-a6761081ecdf
+name: System.Devices.Aep.Category
+property_identifier: 17
+shell_property_key: PKEY_Devices_Aep_Category
+---
 format_identifier: a399aac7-c265-474e-b073-ffce57721716
 name: System.Devices.AepService.Bluetooth.ServiceGuid
 property_identifier: 2
@@ -3953,6 +3955,16 @@ name: System.Identity.IsMeIdentity
 property_identifier: 100
 shell_property_key: PKEY_Identity_IsMeIdentity
 value_type: VT_BOOL
+---
+format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
+name: System.Devices.HardwareIds
+property_identifier: 3
+shell_property_key: PKEY_Devices_HardwareIds
+---
+format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
+name: System.Devices.CompatibleIds
+property_identifier: 4
+shell_property_key: PKEY_Devices_CompatibleIds
 ---
 format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
 name: System.Devices.ClassGuid
@@ -3975,19 +3987,9 @@ property_identifier: 29
 shell_property_key: PKEY_Devices_DeviceCharacteristics
 ---
 format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
-name: System.Devices.HardwareIds
-property_identifier: 3
-shell_property_key: PKEY_Devices_HardwareIds
----
-format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
 name: System.Devices.LocationPaths
 property_identifier: 37
 shell_property_key: PKEY_Devices_LocationPaths
----
-format_identifier: a45c254e-df1c-4efd-8020-67d146a850e0
-name: System.Devices.CompatibleIds
-property_identifier: 4
-shell_property_key: PKEY_Devices_CompatibleIds
 ---
 format_identifier: a4aaa5b7-1ad0-445f-811a-0f8f6e67f6b5
 name: System.GPS.ImgDirectionRef
@@ -4403,6 +4405,7 @@ property_identifier: 7
 shell_property_key: PKEY_StorageProviderCallerVersionInformation
 ---
 format_identifier: b2f9b9d6-fec4-4dd5-94d7-8957488c807b
+name: System.StorageProviderFileFlags
 property_identifier: 8
 shell_property_key: PKEY_StorageProviderFileFlags
 ---
@@ -4416,6 +4419,22 @@ format_identifier: b5c84c9e-5927-46b5-a3cc-933c21b78469
 name: System.Contact.ConnectedServiceName
 property_identifier: 100
 shell_property_key: PKEY_Contact_ConnectedServiceName
+---
+alias: PID_STG_DIRECTORY
+format_class: FMTID_Storage
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemFolderNameDisplay
+property_identifier: 2
+shell_property_key: PKEY_ItemFolderNameDisplay
+value_type: VT_LPWSTR
+---
+alias: PID_STG_STORAGETYPE
+format_class: FMTID_Storage
+format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemTypeText
+property_identifier: 4
+shell_property_key: PKEY_ItemTypeText
+value_type: VT_LPWSTR
 ---
 alias: PID_STG_NAME
 format_class: FMTID_Storage
@@ -4481,14 +4500,6 @@ property_identifier: 19
 shell_property_key: PKEY_Search_Contents
 value_type: VT_LPWSTR
 ---
-alias: PID_STG_DIRECTORY
-format_class: FMTID_Storage
-format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
-name: System.ItemFolderNameDisplay
-property_identifier: 2
-shell_property_key: PKEY_ItemFolderNameDisplay
-value_type: VT_LPWSTR
----
 alias: PID_STG_FRN
 format_class: FMTID_Storage
 format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
@@ -4511,14 +4522,6 @@ format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
 name: System.FolderNameDisplay
 property_identifier: 25
 shell_property_key: PKEY_FolderNameDisplay
----
-alias: PID_STG_STORAGETYPE
-format_class: FMTID_Storage
-format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
-name: System.ItemTypeText
-property_identifier: 4
-shell_property_key: PKEY_ItemTypeText
-value_type: VT_LPWSTR
 ---
 format_identifier: b7b4d61c-5a64-4187-a52e-b1539f359099
 name: System.Devices.WinPhone8CameraFlags
@@ -4616,21 +4619,6 @@ shell_property_key: PKEY_Contact_CallbackTelephone
 value_type: VT_LPWSTR
 ---
 format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
-name: System.Devices.Dnssd.Ttl
-property_identifier: 10
-shell_property_key: PKEY_Devices_Dnssd_Ttl
----
-format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
-name: System.Devices.Dnssd.NetworkAdapterId
-property_identifier: 11
-shell_property_key: PKEY_Devices_Dnssd_NetworkAdapterId
----
-format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
-name: System.Devices.Dnssd.PortNumber
-property_identifier: 12
-shell_property_key: PKEY_Devices_Dnssd_PortNumber
----
-format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
 name: System.Devices.Dnssd.ServiceName
 property_identifier: 2
 shell_property_key: PKEY_Devices_Dnssd_ServiceName
@@ -4670,6 +4658,21 @@ name: System.Devices.Dnssd.Priority
 property_identifier: 9
 shell_property_key: PKEY_Devices_Dnssd_Priority
 ---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.Ttl
+property_identifier: 10
+shell_property_key: PKEY_Devices_Dnssd_Ttl
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.NetworkAdapterId
+property_identifier: 11
+shell_property_key: PKEY_Devices_Dnssd_NetworkAdapterId
+---
+format_identifier: bf79c0ab-bb74-4cee-b070-470b5ae202ea
+name: System.Devices.Dnssd.PortNumber
+property_identifier: 12
+shell_property_key: PKEY_Devices_Dnssd_PortNumber
+---
 format_identifier: bfee9149-e3e2-49a7-a862-c05988145cec
 name: System.Calendar.IsOnline
 property_identifier: 100
@@ -4683,22 +4686,27 @@ shell_property_key: PKEY_Photo_GainControlText
 value_type: VT_LPWSTR
 ---
 format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+name: System.Address.Country
 property_identifier: 100
 shell_property_key: PKEY_Address_Country
 ---
 format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+name: System.Address.CountryCode
 property_identifier: 101
 shell_property_key: PKEY_Address_CountryCode
 ---
 format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+name: System.Address.Region
 property_identifier: 102
 shell_property_key: PKEY_Address_Region
 ---
 format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+name: System.Address.RegionCode
 property_identifier: 103
 shell_property_key: PKEY_Address_RegionCode
 ---
 format_identifier: c07b4199-e1df-4493-b1e1-de5946fb58f8
+name: System.Address.Town
 property_identifier: 104
 shell_property_key: PKEY_Address_Town
 ---
@@ -4791,6 +4799,51 @@ shell_property_key: PKEY_Contact_PrimaryAddressCity
 value_type: VT_LPWSTR
 ---
 format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.FullDetails
+property_identifier: 2
+shell_property_key: PKEY_PropList_FullDetails
+value_type: VT_LPWSTR
+---
+alias: PID_PROPLIST_TILEINFO
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.TileInfo
+property_identifier: 3
+shell_property_key: PKEY_PropList_TileInfo
+value_type: VT_LPWSTR
+---
+alias: PID_PROPLIST_INFOTIP
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.InfoTip
+property_identifier: 4
+shell_property_key: PKEY_PropList_InfoTip
+value_type: VT_LPWSTR
+---
+alias: PID_PROPLIST_QUICKTIP
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.QuickTip
+property_identifier: 5
+shell_property_key: PKEY_PropList_QuickTip
+value_type: VT_LPWSTR
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.PreviewTitle
+property_identifier: 6
+shell_property_key: PKEY_PropList_PreviewTitle
+value_type: VT_LPWSTR
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.PreviewDetails
+property_identifier: 8
+shell_property_key: PKEY_PropList_PreviewDetails
+value_type: VT_LPWSTR
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
+name: System.PropList.ExtendedTileInfo
+property_identifier: 9
+shell_property_key: PKEY_PropList_ExtendedTileInfo
+value_type: VT_LPWSTR
+---
+format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
 name: System.PropList.FileOperationPrompt
 property_identifier: 10
 shell_property_key: PKEY_PropList_FileOperationPrompt
@@ -4821,33 +4874,6 @@ shell_property_key: PKEY_InfoTipText
 value_type: VT_LPWSTR
 ---
 format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
-name: System.PropList.FullDetails
-property_identifier: 2
-shell_property_key: PKEY_PropList_FullDetails
-value_type: VT_LPWSTR
----
-alias: PID_PROPLIST_TILEINFO
-format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
-name: System.PropList.TileInfo
-property_identifier: 3
-shell_property_key: PKEY_PropList_TileInfo
-value_type: VT_LPWSTR
----
-alias: PID_PROPLIST_INFOTIP
-format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
-name: System.PropList.InfoTip
-property_identifier: 4
-shell_property_key: PKEY_PropList_InfoTip
-value_type: VT_LPWSTR
----
-alias: PID_PROPLIST_QUICKTIP
-format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
-name: System.PropList.QuickTip
-property_identifier: 5
-shell_property_key: PKEY_PropList_QuickTip
-value_type: VT_LPWSTR
----
-format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
 name: System.LayoutPattern.ContentViewModeForBrowse
 property_identifier: 500
 shell_property_key: PKEY_LayoutPattern_ContentViewModeForBrowse
@@ -4857,24 +4883,6 @@ format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
 name: System.LayoutPattern.ContentViewModeForSearch
 property_identifier: 501
 shell_property_key: PKEY_LayoutPattern_ContentViewModeForSearch
-value_type: VT_LPWSTR
----
-format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
-name: System.PropList.PreviewTitle
-property_identifier: 6
-shell_property_key: PKEY_PropList_PreviewTitle
-value_type: VT_LPWSTR
----
-format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
-name: System.PropList.PreviewDetails
-property_identifier: 8
-shell_property_key: PKEY_PropList_PreviewDetails
-value_type: VT_LPWSTR
----
-format_identifier: c9944a21-a406-48fe-8225-aec7e24c211b
-name: System.PropList.ExtendedTileInfo
-property_identifier: 9
-shell_property_key: PKEY_PropList_ExtendedTileInfo
 value_type: VT_LPWSTR
 ---
 format_identifier: c9c141a9-1b4c-4f17-a9d1-f298538cadb8
@@ -5021,16 +5029,22 @@ property_identifier: 100
 shell_property_key: PKEY_Contact_PhoneNumbersCanonical
 ---
 format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
-name: System.Devices.PrimaryCategory
-property_identifier: 10
-shell_property_key: PKEY_Devices_PrimaryCategory
-value_type: VT_LPWSTR
----
-format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
 name: System.Devices.InterfacePaths
 property_identifier: 2
 shell_property_key: PKEY_Devices_InterfacePaths
 value_type: VT_VECTOR | VT_LPWSTR
+---
+format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
+name: System.Devices.FunctionPaths
+property_identifier: 3
+shell_property_key: PKEY_Devices_FunctionPaths
+value_type: VT_VECTOR | VT_LPWSTR
+---
+format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
+name: System.Devices.PrimaryCategory
+property_identifier: 10
+shell_property_key: PKEY_Devices_PrimaryCategory
+value_type: VT_LPWSTR
 ---
 format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
 name: System.Devices.Status1
@@ -5048,12 +5062,6 @@ format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
 name: System.Devices.Status
 property_identifier: 259
 shell_property_key: PKEY_Devices_Status
----
-format_identifier: d08dd4c0-3a9e-462e-8290-7b636b2576b9
-name: System.Devices.FunctionPaths
-property_identifier: 3
-shell_property_key: PKEY_Devices_FunctionPaths
-value_type: VT_VECTOR | VT_LPWSTR
 ---
 format_identifier: d0a04f0a-462a-48a4-bb2f-3706e88dbd7d
 name: System.ItemAuthors
@@ -5122,58 +5130,6 @@ property_identifier: 2
 shell_property_key: PKEY_Category
 value_type: VT_VECTOR | VT_LPWSTR
 ---
-alias: PIDDSI_MMCLIPCOUNT
-format_class: FMTID_DocumentSummaryInformation
-format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
-name: System.Document.MultimediaClipCount
-property_identifier: 10
-shell_property_key: PKEY_Document_MultimediaClipCount
-value_type: VT_I4
----
-alias: PIDDSI_MANAGER
-format_class: FMTID_DocumentSummaryInformation
-format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
-name: System.Document.Manager
-property_identifier: 14
-shell_property_key: PKEY_Document_Manager
-value_type: VT_LPWSTR
----
-alias: PIDDSI_COMPANY
-format_class: FMTID_DocumentSummaryInformation
-format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
-name: System.Company
-property_identifier: 15
-shell_property_key: PKEY_Company
-value_type: VT_LPWSTR
----
-format_class: FMTID_DocumentSummaryInformation
-format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
-name: System.ContentType
-property_identifier: 26
-shell_property_key: PKEY_ContentType
-value_type: VT_LPWSTR
----
-format_class: FMTID_DocumentSummaryInformation
-format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
-name: System.ContentStatus
-property_identifier: 27
-shell_property_key: PKEY_ContentStatus
-value_type: VT_LPWSTR
----
-format_class: FMTID_DocumentSummaryInformation
-format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
-name: System.Language
-property_identifier: 28
-shell_property_key: PKEY_Language
-value_type: VT_LPWSTR
----
-format_class: FMTID_DocumentSummaryInformation
-format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
-name: System.Document.Version
-property_identifier: 29
-shell_property_key: PKEY_Document_Version
-value_type: VT_LPWSTR
----
 alias: PIDDSI_PRESFORMAT
 format_class: FMTID_DocumentSummaryInformation
 format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
@@ -5229,6 +5185,58 @@ name: System.Document.HiddenSlideCount
 property_identifier: 9
 shell_property_key: PKEY_Document_HiddenSlideCount
 value_type: VT_I4
+---
+alias: PIDDSI_MMCLIPCOUNT
+format_class: FMTID_DocumentSummaryInformation
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.MultimediaClipCount
+property_identifier: 10
+shell_property_key: PKEY_Document_MultimediaClipCount
+value_type: VT_I4
+---
+alias: PIDDSI_MANAGER
+format_class: FMTID_DocumentSummaryInformation
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.Manager
+property_identifier: 14
+shell_property_key: PKEY_Document_Manager
+value_type: VT_LPWSTR
+---
+alias: PIDDSI_COMPANY
+format_class: FMTID_DocumentSummaryInformation
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Company
+property_identifier: 15
+shell_property_key: PKEY_Company
+value_type: VT_LPWSTR
+---
+format_class: FMTID_DocumentSummaryInformation
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.ContentType
+property_identifier: 26
+shell_property_key: PKEY_ContentType
+value_type: VT_LPWSTR
+---
+format_class: FMTID_DocumentSummaryInformation
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.ContentStatus
+property_identifier: 27
+shell_property_key: PKEY_ContentStatus
+value_type: VT_LPWSTR
+---
+format_class: FMTID_DocumentSummaryInformation
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Language
+property_identifier: 28
+shell_property_key: PKEY_Language
+value_type: VT_LPWSTR
+---
+format_class: FMTID_DocumentSummaryInformation
+format_identifier: d5cdd502-2e9c-101b-9397-08002b2cf9ae
+name: System.Document.Version
+property_identifier: 29
+shell_property_key: PKEY_Document_Version
+value_type: VT_LPWSTR
 ---
 format_identifier: d6304e01-f8f5-4f45-8b15-d024a6296789
 name: System.Contact.PagerTelephone
@@ -5431,6 +5439,12 @@ shell_property_key: PKEY_PropGroup_FileSystem
 value_type: VT_NULL
 ---
 format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
+name: System.Message.BccAddress
+property_identifier: 2
+shell_property_key: PKEY_Message_BccAddress
+value_type: VT_VECTOR | VT_LPWSTR
+---
+format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
 name: System.Message.BccName
 property_identifier: 3
 shell_property_key: PKEY_Message_BccName
@@ -5525,12 +5539,6 @@ name: System.Message.DateSent
 property_identifier: 19
 shell_property_key: PKEY_Message_DateSent
 value_type: VT_FILETIME
----
-format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
-name: System.Message.BccAddress
-property_identifier: 2
-shell_property_key: PKEY_Message_BccAddress
-value_type: VT_VECTOR | VT_LPWSTR
 ---
 format_identifier: e3e0584c-b788-4a5a-bb20-7f5a44c9acdd
 name: System.Message.DateReceived
@@ -6065,14 +6073,17 @@ property_identifier: 117
 shell_property_key: PKEY_StorageProviderSharingStatus
 ---
 format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.LastSyncWarning
 property_identifier: 128
 shell_property_key: PKEY_LastSyncWarning
 ---
 format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.ContentUri
 property_identifier: 131
 shell_property_key: PKEY_ContentUri
 ---
 format_identifier: fceff153-e839-4cf3-a9e7-ea22832094b8
+name: System.ContentId
 property_identifier: 132
 shell_property_key: PKEY_ContentId
 ---

@@ -25,7 +25,9 @@ class YAMLOutputWriter(object):
 
   def __enter__(self):
     """Make this work with the 'with' statement."""
-    self._file_object = open(self._path, 'w', encoding='utf-8')
+    # Set newline to force Windows to generate newline character only.
+    self._file_object = open(
+        self._path, 'w', encoding='utf-8', newline='')
     self._file_object.write('# winsps-kb property definitions\n')
 
     return self
