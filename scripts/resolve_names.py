@@ -7,6 +7,8 @@ import logging
 import os
 import sys
 
+import pywintypes  # pylint:disable=import-error
+
 from win32com.propsys import propsys  # pylint:disable=import-error
 
 import winspsrc
@@ -124,7 +126,14 @@ def Main():
         proprty_key = (
             f'{{{property_definition.format_identifier:s}}}',
             property_definition.property_identifier)
-        name = propsys.PSGetNameFromPropertyKey(proprty_key)
+
+        try:
+          name = propsys.PSGetNameFromPropertyKey(proprty_key)
+        except pywintypes.com_error:
+          logging.warning(
+              f'Unable to resolve: {property_definition.lookup_key}')
+          name = None
+
         if name:
           property_definition.names = set([name])
 
