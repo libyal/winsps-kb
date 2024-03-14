@@ -12,6 +12,61 @@ import yaml
 from winspsrc import resources
 
 
+class YAMLOutputWriter(object):
+  """YAML output writer."""
+
+  def __enter__(self):
+    """Make this work with the 'with' statement."""
+    return self
+
+  def __exit__(self, exception_type, value, traceback):
+    """Make this work with the 'with' statement."""
+
+  def WritePropertyDefinition(self, property_definition):
+    """Writes a property definition in YAML to stdout.
+
+    Args:
+      property_definition (SerializedPropertyDefinition): property definition.
+    """
+    print('---')
+
+    if property_definition.aliases:
+      aliases = ', '.join(sorted(property_definition.aliases))
+      if len(property_definition.aliases) == 1:
+        print(f'alias: {aliases:s}')
+      else:
+        print(f'alias: [{aliases:s}]')
+
+    if property_definition.format_class:
+      print(f'format_class: {property_definition.format_class:s}')
+
+    print(f'format_identifier: {property_definition.format_identifier:s}')
+
+    if property_definition.names:
+      names = ', '.join(sorted(property_definition.names))
+      if len(property_definition.names) == 1:
+        print(f'name: {names:s}')
+      else:
+        print(f'name: [{names:s}]')
+
+    print(f'property_identifier: {property_definition.property_identifier:d}')
+
+    if property_definition.shell_property_keys:
+      shell_property_keys = ', '.join(sorted(
+          property_definition.shell_property_keys))
+      if len(property_definition.shell_property_keys) == 1:
+        print(f'shell_property_key: {shell_property_keys:s}')
+      else:
+        print(f'shell_property_key: [{shell_property_keys:s}]')
+
+    if property_definition.value_types:
+      value_types = ', '.join(sorted(property_definition.value_types))
+      if len(property_definition.value_types) == 1:
+        print(f'value_type: {value_types:s}')
+      else:
+        print(f'value_types: [{value_types:s}]')
+
+
 def Main():
   """Entry point of console script to combine winsps-kb YAML files.
 
@@ -78,41 +133,11 @@ def Main():
         if value_type and not property_definition.value_type:
           property_definition.value_type = value_type
 
-  print('# winsps-kb property definitions')
-  for _, property_definition in sorted(property_definitions.items()):
-    print('---')
-
-    if property_definition.aliases:
-      aliases = ', '.join(sorted(property_definition.aliases))
-      if len(property_definition.aliases) == 1:
-        print(f'alias: {aliases:s}')
-      else:
-        print(f'alias: [{aliases:s}]')
-
-    if property_definition.format_class:
-      print(f'format_class: {property_definition.format_class:s}')
-
-    print(f'format_identifier: {property_definition.format_identifier:s}')
-
-    if property_definition.names:
-      names = ', '.join(sorted(property_definition.names))
-      if len(property_definition.names) == 1:
-        print(f'name: {names:s}')
-      else:
-        print(f'name: [{names:s}]')
-
-    print(f'property_identifier: {property_definition.property_identifier:d}')
-
-    if property_definition.shell_property_keys:
-      shell_property_keys = ', '.join(sorted(
-          property_definition.shell_property_keys))
-      if len(property_definition.shell_property_keys) == 1:
-        print(f'shell_property_key: {shell_property_keys:s}')
-      else:
-        print(f'shell_property_key: [{shell_property_keys:s}]')
-
-    if property_definition.value_type:
-      print(f'value_type: {property_definition.value_type:s}')
+  with YAMLOutputWriter() as yaml_writer:
+    for property_definition in sorted(
+        property_definitions.values(), key=lambda definition: (
+            definition.format_identifier, definition.property_identifier)):
+      yaml_writer.WritePropertyDefinition(property_definition)
 
   return 0
 
