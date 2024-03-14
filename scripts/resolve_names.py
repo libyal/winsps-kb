@@ -69,7 +69,7 @@ class YAMLOutputWriter(object):
         self._file_object.write(f'name: [{names:s}]\n')
 
     self._file_object.write(
-        f'property_identifier: {property_definition.property_identifier:d}\n')
+        f'property_identifier: {property_definition.property_identifier!s}\n')
 
     if property_definition.shell_property_keys:
       shell_property_keys = ', '.join(sorted(
@@ -82,11 +82,17 @@ class YAMLOutputWriter(object):
             f'shell_property_key: [{shell_property_keys:s}]\n')
 
     if property_definition.value_types:
-      value_types = ', '.join(sorted(property_definition.value_types))
+      value_types = []
+      for value_type in property_definition.value_types:
+        if isinstance(value_type, int):
+          value_type = f'0x{value_type:04x}'
+        value_types.append(value_type)
+
+      value_types= ', '.join(sorted(value_types))
       if len(property_definition.value_types) == 1:
         self._file_object.write(f'value_type: {value_types:s}\n')
       else:
-        self._file_object.write(f'value_types: [{value_types:s}]\n')
+        self._file_object.write(f'value_type: [{value_types:s}]\n')
 
 
 def Main():

@@ -49,7 +49,7 @@ class YAMLOutputWriter(object):
       else:
         print(f'name: [{names:s}]')
 
-    print(f'property_identifier: {property_definition.property_identifier:d}')
+    print(f'property_identifier: {property_definition.property_identifier!s}')
 
     if property_definition.shell_property_keys:
       shell_property_keys = ', '.join(sorted(
@@ -60,11 +60,17 @@ class YAMLOutputWriter(object):
         print(f'shell_property_key: [{shell_property_keys:s}]')
 
     if property_definition.value_types:
-      value_types = ', '.join(sorted(property_definition.value_types))
+      value_types = []
+      for value_type in property_definition.value_types:
+        if isinstance(value_type, int):
+          value_type = f'0x{value_type:04x}'
+        value_types.append(value_type)
+
+      value_types= ', '.join(sorted(value_types))
       if len(property_definition.value_types) == 1:
         print(f'value_type: {value_types:s}')
       else:
-        print(f'value_types: [{value_types:s}]')
+        print(f'value_type: [{value_types:s}]')
 
 
 def Main():

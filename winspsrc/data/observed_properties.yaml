@@ -17,6 +17,7 @@ property_identifier: 11
 value_type: 0x000b
 ---
 format_identifier: 0b63e343-9ccc-11d0-bcdb-00805fccce04
+name: System.Search.ProviderClass
 property_identifier: 25
 value_type: 0x001f
 ---
@@ -45,6 +46,7 @@ property_identifier: 6
 value_type: 0x0002
 ---
 format_identifier: 0cef7d53-fa64-11d1-a203-0000f81fedee
+name: System.InternalName
 property_identifier: 5
 value_type: 0x001f
 ---
@@ -57,50 +59,62 @@ property_identifier: 16
 value_type: 0x0013
 ---
 format_identifier: 0ded77b3-c614-456c-ae5b-285b38d7b01b
+name: System.Launcher.WinStoreCategoryId
 property_identifier: 21
 value_type: 0x0013
 ---
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+name: System.Kind
 property_identifier: 3
 value_type: [0x0001, 0x101f]
 ---
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+name: System.ItemId
 property_identifier: 8
 value_type: 0x001f
 ---
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+name: System.DelegationFlags
 property_identifier: 9
 value_type: 0x0013
 ---
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+name: System.Generic.String
 property_identifier: 12
 value_type: 0x0001
 ---
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+name: System.ResultSourceId
 property_identifier: 17
 value_type: 0x001f
 ---
 format_identifier: 1e3ee840-bc2b-476c-8237-2acd1a839b22
+name: System.ResultType
 property_identifier: 20
 value_type: 0x0003
 ---
 format_identifier: 27b381e0-61dd-449c-b739-815e0f031299
+name: System.HasNoAdditionalProperties
 property_identifier: 100
 value_type: 0x000b
 ---
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ItemType
 property_identifier: 11
 value_type: [0x0008, 0x001f]
 ---
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.ParsingName
 property_identifier: 24
 value_type: [0x0008, 0x001f]
 ---
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.SFGAOFlags
 property_identifier: 25
 value_type: 0x0013
 ---
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.Order
 property_identifier: 26
 value_type: 0x0003
 ---
@@ -111,10 +125,12 @@ shell_property_key: PKEY_ParsingPath
 value_type: 0x001f
 ---
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.NetworkProvider
 property_identifier: 31
 value_type: 0x001f
 ---
 format_identifier: 28636aa6-953d-11d2-b5d6-00c04fd918d0
+name: System.DelegateIDList
 property_identifier: 32
 value_type: 0x1011
 ---
@@ -125,6 +141,7 @@ shell_property_key: PKEY_FileName
 value_type: 0x0001
 ---
 format_identifier: 446d16b1-8dad-4870-a748-402ea43d788c
+name: System.ThumbnailCacheId
 property_identifier: 100
 value_type: [0x0001, 0x0015]
 ---
@@ -143,6 +160,7 @@ property_identifier: 4
 value_type: 0x001f  # Contains a SID represented as a string
 ---
 format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
+name: System.Search.Rank
 property_identifier: 3
 value_type: 0x0003
 ---
@@ -150,7 +168,7 @@ format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
 name: System.ItemUrl
 property_identifier: 9
 shell_property_key: PKEY_ItemUrl
-value_type: [0x001f]
+value_type: 0x001f
 ---
 format_identifier: 49691c90-7e17-101a-a91c-08002b2ecda9
 name: System.Search.QueryPropertyHits
@@ -164,6 +182,31 @@ property_identifier: 2
 shell_property_key: PKEY_Search_AutoSummary
 value_type: 0x0001
 ---
+format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
+name: System.Setting.HostID
+property_identifier: 2
+value_type: 0x0048
+---
+format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
+name: System.Setting.SettingID
+property_identifier: 3
+value_type: [0x0001, 0x001f]
+---
+format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
+name: System.Setting.PageID
+property_identifier: 4
+value_type: 0x001f
+---
+format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
+name: System.Setting.GroupID
+property_identifier: 5
+value_type: 0x0001
+---
+format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
+name: System.Setting.Condition
+property_identifier: 6
+value_type: 0x001f
+---
 format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
 name: System.Link.TargetUrl
 property_identifier: 2
@@ -171,30 +214,12 @@ shell_property_key: PKEY_Link_TargetUrl
 value_type: 0x001f
 ---
 format_identifier: 5cbf2787-48cf-4208-b90e-ee5e5d420294
+name: System.IconPath
 property_identifier: 25
 value_type: 0x001f
 ---
-format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
-property_identifier: 2
-value_type: 0x0048
----
-format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
-property_identifier: 3
-value_type: [0x0001, 0x001f]
----
-format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
-property_identifier: 4
-value_type: 0x001f
----
-format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
-property_identifier: 5
-value_type: 0x0001
----
-format_identifier: 5ab5c75f-15e1-4d65-924a-04754567243c
-property_identifier: 6
-value_type: 0x001f
----
 format_identifier: 5cde9f0e-1de4-4453-96a9-56e8832efa3d
+name: System.Computer.Workgroup
 property_identifier: 2
 value_type: 0x001f
 ---
@@ -211,6 +236,7 @@ shell_property_key: PKEY_ItemName
 value_type: 0x001f
 ---
 format_identifier: 79486778-4c6f-4dde-bc53-cd594311af99
+name: System.ConnectedSearch.LocalWeights
 property_identifier: 2
 value_type: 0x001f
 ---
@@ -221,59 +247,71 @@ shell_property_key: PKEY_Link_TargetExtension
 value_type: 0x0001
 ---
 format_identifier: 841e4f90-ff59-4d16-8947-e81bbffab36d
+name: System.Software.Publisher
 property_identifier: 2
 value_type: 0x001f
 ---
 format_identifier: 86407db8-9df7-48cd-b986-f999adc19731
+name: System.ShareTarget.Description
 property_identifier: 2
 value_type: 0x001f
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.SmallLogoPath
 property_identifier: 2
 shell_property_key: PKEY_Tile_SmallLogoPath
 value_type: 0x001f
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.Background
 property_identifier: 4
 shell_property_key: PKEY_Tile_Background
 value_type: 0x0013
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.Foreground
 property_identifier: 5
 shell_property_key: PKEY_Tile_Foreground
 value_type: 0x0013
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.LongDisplayName
 property_identifier: 11
 shell_property_key: PKEY_Tile_LongDisplayName
 value_type: 0x001f
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.Square150x150LogoPath
 property_identifier: 12
 shell_property_key: PKEY_Tile_Square150x150LogoPath
 value_type: 0x001f
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.Wide310x150LogoPath
 property_identifier: 13
 shell_property_key: PKEY_Tile_Wide310x150LogoPath
 value_type: 0x001f
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.Flags
 property_identifier: 14
 shell_property_key: PKEY_Tile_Flags
 value_type: 0x0013
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.BadgeLogoPath
 property_identifier: 15
 shell_property_key: PKEY_Tile_BadgeLogoPath
 value_type: 0x001f
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.Square310x310LogoPath
 property_identifier: 19
 shell_property_key: PKEY_Tile_Square310x310LogoPath
 value_type: 0x001f
 ---
 format_identifier: 86d40b4d-9069-443c-819a-2a54090dccec
+name: System.Tile.Square70x70LogoPath
 property_identifier: 20
 shell_property_key: PKEY_Tile_Square70x70LogoPath
 value_type: 0x001f
@@ -297,6 +335,7 @@ shell_property_key: PKEY_AppUserModel_IsDestListSeparator
 value_type: 0x000b
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.IsDestListLink
 property_identifier: 7
 shell_property_key: PKEY_AppUserModel_IsDestListLink
 value_type: 0x000b
@@ -332,11 +371,13 @@ shell_property_key: PKEY_AppUserModel_HostEnvironment
 value_type: 0x0013
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.PackageInstallPath
 property_identifier: 15
 shell_property_key: PKEY_AppUserModel_PackageInstallPath
 value_type: 0x001f
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.PackageFamilyName
 property_identifier: 17
 shell_property_key: PKEY_AppUserModel_PackageFamilyName
 value_type: 0x001f
@@ -348,6 +389,7 @@ shell_property_key: PKEY_AppUserModel_InstalledBy
 value_type: 0x0013
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ParentID
 property_identifier: 19
 shell_property_key: PKEY_AppUserModel_ParentID
 value_type: 0x001f
@@ -359,11 +401,13 @@ shell_property_key: PKEY_AppUserModel_ActivationContext
 value_type: 0x001f
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.PackageFullName
 property_identifier: 21
 shell_property_key: PKEY_AppUserModel_PackageFullName
 value_type: 0x001f
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.ExcludedFromLauncher
 property_identifier: 23
 shell_property_key: PKEY_AppUserModel_ExcludedFromLauncher
 value_type: 0x0013
@@ -375,38 +419,46 @@ shell_property_key: PKEY_AppUserModel_ToastActivatorCLSID
 value_type: 0x0048
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.DestListProvidedTitle
 property_identifier: 27
 shell_property_key: PKEY_AppUserModel_DestListProvidedTitle
 value_type: 0x001f
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.DestListProvidedDescription
 property_identifier: 28
 shell_property_key: PKEY_AppUserModel_DestListProvidedDescription
 value_type: 0x001f
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.DestListLogoUri
 property_identifier: 29
 shell_property_key: PKEY_AppUserModel_DestListLogoUri
 value_type: 0x001f
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.DestListProvidedGroupName
 property_identifier: 30
 shell_property_key: PKEY_AppUserModel_DestListProvidedGroupName
 value_type: 0x001f
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.PinMigration.PackagedAppId
 property_identifier: 34
 value_type: 0x001f
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.FeatureOnDemand
 property_identifier: 35
 value_type: 0x000b
 ---
 format_identifier: 9f4c2855-9f79-4b39-a8d0-e1d42de1d5f3
+name: System.AppUserModel.IsSystemComponent
 property_identifier: 40
 value_type: 0x000b
 ---
 format_identifier: a8a7a412-1927-4a34-b1d4-45f67cc672fb
+name: System.ConnectedSearch.ReferrerId
 property_identifier: 2
 value_type: 0x001f
 ---
@@ -463,6 +515,7 @@ shell_property_key: PKEY_Search_Contents
 value_type: 0x0001
 ---
 format_identifier: b725f130-47ef-101a-a5f1-02608c9eebac
+name: System.ItemNameSortOverride
 property_identifier: 23
 shell_property_key: PKEY_ItemNameSortOverride
 value_type: 0x001f
@@ -520,34 +573,42 @@ property_identifier: 3
 value_type: 0x0013
 ---
 format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+name: System.ConnectedSearch.Type
 property_identifier: 2
 value_type: 0x0013
 ---
 format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+name: System.ConnectedSearch.TelemetryId
 property_identifier: 5
 value_type: 0x001f
 ---
 format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+name: System.ConnectedSearch.ImpressionId
 property_identifier: 6
 value_type: 0x001f
 ---
 format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+name: System.ConnectedSearch.ChildCount
 property_identifier: 11
 value_type: 0x0013
 ---
 format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+name: System.ConnectedSearch.TopLevelId
 property_identifier: 12
 value_type: 0x0013
 ---
 format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+name: System.ConnectedSearch.IsVisibleByDefault
 property_identifier: 13
 value_type: 0x000b
 ---
 format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+name: System.ConnectedSearch.IsActivatable
 property_identifier: 14
 value_type: 0x000b
 ---
 format_identifier: e1ad4953-a752-443c-93bf-80c7525566c2
+name: System.ConnectedSearch.RequiresConsent
 property_identifier: 27
 value_type: 0x000b
 ---
@@ -618,10 +679,12 @@ shell_property_key: PKEY_MediumKeywords
 value_type: 0x0001
 ---
 format_identifier: f50d2f5d-dda0-48d4-8d2b-e83729fb69a4
+name: System.ItemQueryCondition
 property_identifier: 100
 value_type: 0x0042
 ---
 format_identifier: fb8d2d7b-90d1-4e34-bf60-6eac09922bbf
+name: System.Winx.Hash
 property_identifier: 2
 shell_property_key: PKEY_Winx_Hash
 value_type: 0x0013
