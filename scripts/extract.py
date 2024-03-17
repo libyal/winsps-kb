@@ -133,6 +133,7 @@ def Main():
     for serialized_property in extractor_object.CollectSerializedProperies():
       lookup_key = serialized_property.lookup_key
       if lookup_key in serialized_properties:
+        # TODO: check if property is different from existing
         continue
 
       serialized_properties[lookup_key] = serialized_property
@@ -223,9 +224,9 @@ def Main():
     print('Unknown properties:')
     for lookup_key, serialized_property in sorted(
         unknown_serialized_properties.items()):
-      print(f'\t{lookup_key:s}', end='')
-      print(f' [0x{serialized_property.value_type:04x}]', end='')
-      print(f' ({serialized_property.origin:s})')
+      print((
+          f'\t{lookup_key:s} [0x{serialized_property.value_type:04x}]'
+          f' ({serialized_property.origin:s})'))
 
     print('')
 

@@ -44,7 +44,7 @@ class YAMLPropertiesDefinitionsFile(object):
 
     Args:
       yaml_property_definition (dict[str, object]): YAML property definition
-           values.
+          values.
 
     Returns:
       SerializedPropertyDefinition: property definition.

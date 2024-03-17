@@ -187,21 +187,23 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     """
     system_root = self._GetSystemRoot()
 
-    # Window NT variants.
+    # Windows NT variants.
     kernel_executable_path = '\\'.join([
         system_root, 'System32', 'ntoskrnl.exe'])
-    message_file = self._OpenMessageResourceFile(kernel_executable_path)
+    windows_resource_file = self._OpenWindowsResourceFile(
+        kernel_executable_path)
 
-    if not message_file:
-      # Window 9x variants.
+    if not windows_resource_file:
+      # Windows 9x variants.
       kernel_executable_path = '\\'.join([
           system_root, 'System32', '\\kernel32.dll'])
-      message_file = self._OpenMessageResourceFile(kernel_executable_path)
+      windows_resource_file = self._OpenWindowsResourceFile(
+          kernel_executable_path)
 
-    if not message_file:
+    if not windows_resource_file:
       return None
 
-    return message_file.file_version
+    return windows_resource_file.file_version
 
   def _ListFileEntry(self, file_entry, parent_path_segments):
     """Lists a file entry.
@@ -236,30 +238,30 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     for result in self._ListFileEntry(file_entry, ['']):
       yield result
 
-  def _OpenMessageResourceFile(self, windows_path):
-    """Opens the message resource file specified by the Windows path.
+  def _OpenWindowsResourceFile(self, windows_path):
+    """Opens the Windows resource file specified by the Windows path.
 
     Args:
-      windows_path (str): Windows path containing the message resource
+      windows_path (str): Windows path containing the Windows resource
           filename.
 
     Returns:
-      MessageResourceFile: message resource file or None.
+      WindowsResourceFile: Windows resource file or None.
     """
     path_spec = self._path_resolver.ResolvePath(windows_path)
     if path_spec is None:
       return None
 
-    return self._OpenMessageResourceFileByPathSpec(path_spec)
+    return self._OpenWindowsResourceFileByPathSpec(path_spec)
 
-  def _OpenMessageResourceFileByPathSpec(self, path_spec):
-    """Opens the message resource file specified by the path specification.
+  def _OpenWindowsResourceFileByPathSpec(self, path_spec):
+    """Opens the Windows resource file specified by the path specification.
 
     Args:
       path_spec (dfvfs.PathSpec): path specification.
 
     Returns:
-      MessageResourceFile: message resource file or None.
+      WindowsResourceFile: Windows resource file or None.
     """
     windows_path = self._path_resolver.GetWindowsPath(path_spec)
     if windows_path is None:
@@ -275,12 +277,12 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     if file_object is None:
       return None
 
-    message_file = resource_file.MessageResourceFile(
+    windows_resource_file = resource_file.WindowsResourceFile(
         windows_path, ascii_codepage=self.ascii_codepage,
         preferred_language_identifier=self.preferred_language_identifier)
-    message_file.OpenFileObject(file_object)
+    windows_resource_file.OpenFileObject(file_object)
 
-    return message_file
+    return windows_resource_file
 
   def _CollectSerializedProperiesFromAutomaticDestinationsFile(
       self, file_object, path_segments):
