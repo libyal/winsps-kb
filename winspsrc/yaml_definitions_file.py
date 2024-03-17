@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-"""YAML-based property definitions file."""
+"""YAML-based properties definitions file."""
 
 import yaml
 
 from winspsrc import resources
 
 
-class YAMLPropertyDefinitionsFile(object):
-  """YAML-based property definitions file.
+class YAMLPropertiesDefinitionsFile(object):
+  """YAML-based properties definitions file.
 
-  A YAML-based property definitions file contains one or more property
+  A YAML-based properties definitions file contains one or more property
   definitions. A property definition consists of:
 
   format_identifier: 00000000-0000-0000-0000-000000000000
@@ -68,7 +68,7 @@ class YAMLPropertyDefinitionsFile(object):
 
     property_identifier = yaml_property_definition.get(
         'property_identifier', None)
-    if not format_identifier:
+    if property_identifier is None:
       raise RuntimeError(
           'Invalid property definition missing property identifier.')
 

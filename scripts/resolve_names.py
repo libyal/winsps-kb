@@ -109,7 +109,7 @@ def Main():
   logging.basicConfig(
       level=logging.INFO, format='[%(levelname)s] %(message)s')
 
-  definitions_file = yaml_definitions_file.YAMLPropertyDefinitionsFile()
+  definitions_file = yaml_definitions_file.YAMLPropertiesDefinitionsFile()
 
   property_definitions = {}
 

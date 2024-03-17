@@ -27,7 +27,7 @@ def Main():
 
   options = argument_parser.parse_args()
 
-  if options.format not in ('c', 'python'):
+  if options.format not in ('c_header', 'c_source', 'python'):
     print('Unsupported format.')
     print('')
     argument_parser.print_help()
@@ -37,7 +37,7 @@ def Main():
   logging.basicConfig(
       level=logging.INFO, format='[%(levelname)s] %(message)s')
 
-  definitions_file = yaml_definitions_file.YAMLPropertyDefinitionsFile()
+  definitions_file = yaml_definitions_file.YAMLPropertiesDefinitionsFile()
 
   property_definitions = {}
 

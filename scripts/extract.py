@@ -8,8 +8,8 @@ import os
 import sys
 import yaml
 
-from dfimagetools.helpers import command_line as dfimagetools_command_line
-
+from dfvfs.helpers import command_line as dfvfs_command_line
+from dfvfs.helpers import volume_scanner as dfvfs_volume_scanner
 from dfvfs.lib import errors as dfvfs_errors
 
 import winspsrc
@@ -36,11 +36,8 @@ def Main():
       dest='windows_version', action='store', metavar='Windows XP',
       default=None, help='string that identifies the Windows version.')
 
-  dfimagetools_command_line.AddStorageMediaImageCLIArguments(argument_parser)
-
   argument_parser.add_argument(
-      'source', nargs='?', action='store', metavar='/mnt/c/',
-      default=None, help=(
+      'source', nargs='?', action='store', metavar='PATH', default=None, help=(
           'path of the volume containing C:\\Windows or the filename of '
           'a storage media image containing the C:\\Windows directory.'))
 
@@ -64,7 +61,7 @@ def Main():
   logging.basicConfig(
       level=logging.INFO, format='[%(levelname)s] %(message)s')
 
-  definitions_file = yaml_definitions_file.YAMLPropertyDefinitionsFile()
+  definitions_file = yaml_definitions_file.YAMLPropertiesDefinitionsFile()
 
   data_path = os.path.join(os.path.dirname(winspsrc.__file__), 'data')
 
@@ -89,8 +86,12 @@ def Main():
     if lookup_key not in third_party_property_definitions:
       third_party_property_definitions[lookup_key] = property_definition
 
-  mediator, volume_scanner_options = (
-      dfimagetools_command_line.ParseStorageMediaImageCLIArguments(options))
+  mediator = dfvfs_command_line.CLIVolumeScannerMediator()
+
+  volume_scanner_options = dfvfs_volume_scanner.VolumeScannerOptions()
+  volume_scanner_options.partitions = ['all']
+  volume_scanner_options.snapshots = ['none']
+  volume_scanner_options.volumes = ['none']
 
   serialized_properties = {}
   defined_serialized_properties = {}

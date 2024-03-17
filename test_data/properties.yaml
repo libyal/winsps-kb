@@ -1,0 +1,21 @@
+# winsps-kb property definitions.
+---
+format_identifier: 00000000-0000-0000-0000-000000000000
+name: System.Null
+property_identifier: 0
+shell_property_key: PKEY_Null
+value_type: VT_NULL
+---
+format_identifier: 7d683fc9-d155-45a8-bb1f-89d19bcb792f
+name: System.Identity.DisplayName
+property_identifier: 100
+shell_property_key: PKEY_Identity_DisplayName
+value_type: VT_LPWSTR
+---
+alias: PIDSI_TITLE
+format_class: FMTID_SummaryInformation
+format_identifier: f29f85e0-4ff9-1068-ab91-08002b27b3d9
+name: System.Title
+property_identifier: 2
+shell_property_key: PKEY_Title
+value_type: VT_LPWSTR
