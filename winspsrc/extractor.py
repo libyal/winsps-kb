@@ -242,8 +242,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     """Opens the Windows resource file specified by the Windows path.
 
     Args:
-      windows_path (str): Windows path containing the Windows resource
-          filename.
+      windows_path (str): Windows path of the Windows resource file.
 
     Returns:
       WindowsResourceFile: Windows resource file or None.
