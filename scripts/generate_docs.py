@@ -136,11 +136,11 @@ def Main():
   logging.basicConfig(
       level=logging.INFO, format='[%(levelname)s] %(message)s')
 
+  data_path = os.path.join(os.path.dirname(winspsrc.__file__), 'data')
+
   definitions_file = yaml_definitions_file.YAMLPropertiesDefinitionsFile()
 
   property_definitions = {}
-
-  data_path = os.path.join(os.path.dirname(winspsrc.__file__), 'data')
 
   path = os.path.join(data_path, 'defined_properties.yaml')
   for property_definition in definitions_file.ReadFromFile(path):
