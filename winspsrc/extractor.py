@@ -224,8 +224,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
       yield file_entry, path_segments
 
     for sub_file_entry in file_entry.sub_file_entries:
-      for result in self._ListFileEntry(sub_file_entry, path_segments):
-        yield result
+      yield from self._ListFileEntry(sub_file_entry, path_segments)
 
   def _ListFileEntries(self):
     """Lists file entries.
@@ -235,8 +234,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
     """
     file_entry = self._file_system.GetRootFileEntry()
 
-    for result in self._ListFileEntry(file_entry, ['']):
-      yield result
+    yield from self._ListFileEntry(file_entry, [''])
 
   def _OpenWindowsResourceFile(self, windows_path):
     """Opens the Windows resource file specified by the Windows path.

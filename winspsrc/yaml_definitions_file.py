@@ -129,5 +129,4 @@ class YAMLPropertiesDefinitionsFile(object):
       SerializedPropertyDefinition: property definition.
     """
     with open(path, 'r', encoding='utf-8') as file_object:
-      for yaml_property_definition in self._ReadFromFileObject(file_object):
-        yield yaml_property_definition
+      yield from self._ReadFromFileObject(file_object)
