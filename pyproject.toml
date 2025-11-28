@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "winspsrc"
-version = "20251127"
+version = "20251128"
 description = "Windows Serialized Property Store (SPS) resources (winspsrc)"
 maintainers = [
     { name = "Joachim Metz", email = "joachim.metz@gmail.com" },
@@ -63,6 +63,13 @@ dependencies = [
     "pytsk3 >= 20210419",
     "xattr >= 0.7.2 ; platform_system != \"Windows\"",
 ]
+
+[project.scripts]
+extract = "winspsrc.scripts.extract:Main"
+generate_docs = "winspsrc.scripts.generate_docs:Main"
+generate_source = "winspsrc.scripts.generate_source:Main"
+merge_yaml = "winspsrc.scripts.merge_yaml:Main"
+resolve_names = "winspsrc.scripts.resolve_names:Main"
 
 [project.urls]
 Documentation = "https://winspsrc.readthedocs.io/en/latest"
