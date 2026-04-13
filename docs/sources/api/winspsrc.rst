@@ -1,6 +1,14 @@
 winspsrc package
 ================
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   winspsrc.scripts
+
 Submodules
 ----------
 
