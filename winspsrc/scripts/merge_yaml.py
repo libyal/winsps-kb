@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """Script to combine winsps-kb YAML files."""
 
 import argparse
@@ -12,7 +11,7 @@ import yaml
 from winspsrc import resources
 
 
-class YAMLOutputWriter(object):
+class YAMLOutputWriter:
   """YAML output writer."""
 
   def __enter__(self):

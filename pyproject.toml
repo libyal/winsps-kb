@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "winspsrc"
-version = "20260413"
+version = "20260501"
 description = "Windows Serialized Property Store (SPS) resources (winspsrc)"
 maintainers = [
     { name = "Joachim Metz", email = "joachim.metz@gmail.com" },
@@ -76,13 +76,11 @@ Documentation = "https://winspsrc.readthedocs.io/en/latest"
 Homepage = "https://github.com/libyal/winsps-kb"
 Repository = "https://github.com/libyal/winsps-kb"
 
+[tool.setuptools]
+package-dir = {"winspsrc" = "winspsrc"}
+
 [tool.setuptools.package-data]
 winspsrc = [
     "*.yaml",
     "data/*.yaml",
 ]
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["winspsrc"]
-exclude = ["docs", "tests", "tests.*", "utils"]

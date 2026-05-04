@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """Script to generate Windows serialized property documentation."""
 
 import argparse
@@ -12,12 +11,12 @@ import winspsrc
 from winspsrc import yaml_definitions_file
 
 
-class IndexRstOutputWriter(object):
+class IndexRstOutputWriter:
   """Index.rst output writer."""
 
   def __init__(self, path):
     """Initializes an index.rst output writer."""
-    super(IndexRstOutputWriter, self).__init__()
+    super().__init__()
     self._file_object = None
     self._path = path
 
@@ -53,12 +52,12 @@ class IndexRstOutputWriter(object):
         f'   {format_identifier:s} <{format_identifier:s}>\n')
 
 
-class MarkdownOutputWriter(object):
+class MarkdownOutputWriter:
   """Markdown output writer."""
 
   def __init__(self, path):
     """Initializes a Markdown output writer."""
-    super(MarkdownOutputWriter, self).__init__()
+    super().__init__()
     self._file_object = None
     self._path = path
 

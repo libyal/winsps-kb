@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Binary data format."""
 
 import abc
@@ -11,7 +10,7 @@ from dtfabric.runtime import fabric as dtfabric_fabric
 from winspsrc import errors
 
 
-class BinaryDataFile(object):
+class BinaryDataFile:
   """Binary data file."""
 
   # The dtFabric fabric, which must be set by a subclass using the
@@ -24,7 +23,7 @@ class BinaryDataFile(object):
 
   def __init__(self):
     """Initializes a binary data file."""
-    super(BinaryDataFile, self).__init__()
+    super().__init__()
     self._data_type_maps = {}
     self._file_object = None
     self._file_size = 0

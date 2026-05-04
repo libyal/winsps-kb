@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
 """Windows serialized property resources."""
 
 
-class SerializedPropertyDefinition(object):
+class SerializedPropertyDefinition:
   """Windows serialized property definition.
 
   Attributes:
@@ -18,7 +17,7 @@ class SerializedPropertyDefinition(object):
 
   def __init__(self):
     """Initializes a Windows serialized property definition."""
-    super(SerializedPropertyDefinition, self).__init__()
+    super().__init__()
     self.aliases = set()
     self.format_class = None
     self.format_identifier = None

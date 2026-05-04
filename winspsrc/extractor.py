@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Windows serialized property extractor."""
 
 import logging
@@ -24,7 +23,7 @@ from winspsrc import jump_list
 from winspsrc import resource_file
 
 
-class SerializedProperty(object):
+class SerializedProperty:
   """Windows serialized property.
 
   Attributes:
@@ -37,7 +36,7 @@ class SerializedProperty(object):
 
   def __init__(self):
     """Initializes a Windows serialized property."""
-    super(SerializedProperty, self).__init__()
+    super().__init__()
     self.format_identifier = None
     self.property_identifier = None
     self.origin = None
@@ -108,7 +107,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
       debug (Optional[bool]): True if debug information should be printed.
       mediator (dfvfs.VolumeScannerMediator): a volume scanner mediator or None.
     """
-    super(SerializedPropertyExtractor, self).__init__(mediator=mediator)
+    super().__init__(mediator=mediator)
     self._debug = debug
     self._format_scanner = None
     self._registry = None
@@ -659,7 +658,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
           is not a file or directory, or if the format of or within
           the source file is not supported.
     """
-    result = super(SerializedPropertyExtractor, self).ScanForWindowsVolume(
+    result = super().ScanForWindowsVolume(
         source_path, options=options)
     if not result:
       return False

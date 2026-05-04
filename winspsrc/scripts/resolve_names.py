@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """Script to resolve names of Windows serialized property keys."""
 
 import argparse
@@ -16,12 +15,12 @@ import winspsrc
 from winspsrc import yaml_definitions_file
 
 
-class YAMLOutputWriter(object):
+class YAMLOutputWriter:
   """YAML output writer."""
 
   def __init__(self, path):
     """Initializes a YAML output writer."""
-    super(YAMLOutputWriter, self).__init__()
+    super().__init__()
     self._file_object = None
     self._path = path
 

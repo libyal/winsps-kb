@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """YAML-based properties definitions file."""
 
 import yaml
@@ -6,7 +5,7 @@ import yaml
 from winspsrc import resources
 
 
-class YAMLPropertiesDefinitionsFile(object):
+class YAMLPropertiesDefinitionsFile:
   """YAML-based properties definitions file.
 
   A YAML-based properties definitions file contains one or more property

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Windows Jump List files:
 * .automaticDestinations-ms
 * .customDestinations-ms
@@ -14,7 +13,7 @@ from winspsrc import data_range
 from winspsrc import errors
 
 
-class JumpListEntry(object):
+class JumpListEntry:
   """Jump list entry.
 
   Attributes:
@@ -30,7 +29,7 @@ class JumpListEntry(object):
       file_object (file): file-like object that contains the LNK file
           entry data.
     """
-    super(JumpListEntry, self).__init__()
+    super().__init__()
     self.identifier = identifier
     self.lnk_file = pylnk.file()
     self.lnk_file.open_file_object(file_object)
@@ -50,7 +49,7 @@ class AutomaticDestinationsFile(data_format.BinaryDataFile):
 
   def __init__(self):
     """Initializes an Automatic Destinations Jump List file."""
-    super(AutomaticDestinationsFile, self).__init__()
+    super().__init__()
     self._format_version = None
     self._olecf_file = None
 
@@ -154,7 +153,7 @@ class AutomaticDestinationsFile(data_format.BinaryDataFile):
       self._olecf_file.close()
       self._olecf_file = None
 
-    super(AutomaticDestinationsFile, self).Close()
+    super().Close()
 
   def GetJumpListEntries(self):
     """Retrieves jump list entries.
@@ -197,7 +196,7 @@ class CustomDestinationsFile(data_format.BinaryDataFile):
 
   def __init__(self):
     """Initializes a Custom Destinations Jump List file."""
-    super(CustomDestinationsFile, self).__init__()
+    super().__init__()
     self._entries = []
 
   def _ReadCategoryFooter(self, file_object):
