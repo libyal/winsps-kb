@@ -58,9 +58,9 @@ class YAMLPropertiesDefinitionsFile:
     different_keys = set(yaml_property_definition) - self._SUPPORTED_KEYS
     if different_keys:
       different_keys = ', '.join(different_keys)
-      raise RuntimeError('Undefined keys: {0:s}'.format(different_keys))
+      raise RuntimeError(f'Undefined keys: {different_keys:s}')
 
-    format_identifier = yaml_property_definition.get('format_identifier', None)
+    format_identifier = yaml_property_definition.get('format_identifier')
     if not format_identifier:
       raise RuntimeError(
           'Invalid property definition missing format identifier.')
@@ -77,13 +77,13 @@ class YAMLPropertiesDefinitionsFile:
     property_definition.format_identifier = format_identifier
     property_definition.property_identifier = property_identifier
 
-    alias = yaml_property_definition.get('alias', None)
+    alias = yaml_property_definition.get('alias')
     if alias and isinstance(alias, list):
       property_definition.aliases = set(alias)
     elif alias:
       property_definition.aliases = set([alias])
 
-    name = yaml_property_definition.get('name', None)
+    name = yaml_property_definition.get('name')
     if name and isinstance(name, list):
       property_definition.names = set(name)
     elif name:
@@ -96,7 +96,7 @@ class YAMLPropertiesDefinitionsFile:
     elif shell_property_key:
       property_definition.shell_property_keys = set([shell_property_key])
 
-    value_type = yaml_property_definition.get('value_type', None)
+    value_type = yaml_property_definition.get('value_type')
     if value_type and isinstance(value_type, list):
       property_definition.value_types = set(value_type)
     elif value_type:

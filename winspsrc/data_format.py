@@ -46,7 +46,7 @@ class BinaryDataFile:
     if not getattr(self, '_FABRIC', None):
       raise RuntimeError('Missing _FABRIC value')
 
-    data_type_map = self._data_type_maps.get(name, None)
+    data_type_map = self._data_type_maps.get(name)
     if not data_type_map:
       data_type_map = self._FABRIC.CreateDataTypeMap(name)
       self._data_type_maps[name] = data_type_map
@@ -85,7 +85,7 @@ class BinaryDataFile:
         read_error = (
             f'missing data (read: {read_count:d}, requested: {data_size:d})')
 
-    except IOError as exception:
+    except OSError as exception:
       read_error = f'{exception!s}'
 
     if read_error:
@@ -180,11 +180,10 @@ class BinaryDataFile:
     """Closes a binary data file.
 
     Raises:
-      IOError: if the file is not opened.
       OSError: if the file is not opened.
     """
     if not self._file_object:
-      raise IOError('File not opened')
+      raise OSError('File not opened')
 
     self._file_object = None
     self._file_size = 0
@@ -196,11 +195,10 @@ class BinaryDataFile:
       file_object (file): file-like object.
 
     Raises:
-      IOError: if the file is already opened.
       OSError: if the file is already opened.
     """
     if self._file_object:
-      raise IOError('File already opened')
+      raise OSError('File already opened')
 
     self._file_size = file_object.get_size()
 

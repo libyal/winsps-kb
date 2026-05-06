@@ -265,7 +265,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
     try:
       file_object = dfvfs_resolver.Resolver.OpenFileObject(path_spec)
-    except IOError as exception:
+    except OSError as exception:
       logging.warning(
           f'Unable to open: {path_spec.comparable:s} with error: {exception!s}')
       file_object = None
@@ -304,7 +304,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
       finally:
         olecf_file.close()
 
-    except IOError as exception:
+    except OSError as exception:
       path = '\\'.join(path_segments)
       logging.warning(f'Unable to open: {path:s} with error: {exception!s}')
 
@@ -391,14 +391,14 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
     try:
       lnk_file.open_file_object(file_object)
-    except IOError as exception:
+    except OSError as exception:
       path = '\\'.join(path_segments)
       logging.warning(f'Unable to open: {path:s} with error: {exception!s}')
 
     try:
       yield from self._CollectSerializedProperiesFromLNK(lnk_file)
 
-    except IOError as exception:
+    except OSError as exception:
       path = '\\'.join(path_segments)
       logging.warning((
           f'Unable to collect serialized properties from: {path:s} with '
@@ -445,7 +445,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
     try:
       regf_file.open_file_object(file_object)
-    except IOError as exception:
+    except OSError as exception:
       path = '\\'.join(path_segments)
       logging.warning(f'Unable to open: {path:s} with error: {exception!s}')
 
@@ -456,7 +456,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
         yield from self._CollectSerializedProperiesFromREGFKey(
             [''], regf_root_key)
 
-    except IOError as exception:
+    except OSError as exception:
       path = '\\'.join(path_segments)
       logging.warning((
           f'Unable to collect serialized properties from: {path:s} with '
@@ -612,7 +612,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
           scan_results = [
               scan_result.identifier
               for scan_result in iter(scan_state.scan_results)]
-        except IOError as exception:
+        except OSError as exception:
           path = '\\'.join(path_segments)
           logging.warning(f'Unable to open: {path:s} with error: {exception!s}')
 

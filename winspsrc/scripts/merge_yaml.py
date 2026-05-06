@@ -99,20 +99,20 @@ def Main():
   for path in glob.glob(os.path.join(options.source, '*.yaml')):
     with open(path, 'r', encoding='utf8') as file_object:
       for yaml_definition in yaml.safe_load_all(file_object):
-        alias = yaml_definition.get('alias', None)
-        format_class = yaml_definition.get('format_class', None)
-        format_identifier = yaml_definition.get('format_identifier', None)
-        name = yaml_definition.get('name', None)
-        property_identifier = yaml_definition.get('property_identifier', None)
-        shell_property_key = yaml_definition.get('shell_property_key', None)
-        value_type = yaml_definition.get('value_type', None)
+        alias = yaml_definition.get('alias')
+        format_class = yaml_definition.get('format_class')
+        format_identifier = yaml_definition.get('format_identifier')
+        name = yaml_definition.get('name')
+        property_identifier = yaml_definition.get('property_identifier')
+        shell_property_key = yaml_definition.get('shell_property_key')
+        value_type = yaml_definition.get('value_type')
 
         # Test if the format identifier is a GUID value.
         _ = uuid.UUID(format_identifier)
 
         lookup_key = f'{{{format_identifier:s}}}/{property_identifier:d}'
 
-        property_definition = property_definitions.get(lookup_key, None)
+        property_definition = property_definitions.get(lookup_key)
         if not property_definition:
           property_definition = resources.SerializedPropertyDefinition()
           property_definition.format_identifier = format_identifier

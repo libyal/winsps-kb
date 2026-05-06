@@ -137,12 +137,12 @@ def Main():
 
       serialized_properties[lookup_key] = serialized_property
 
-      property_definition = observed_property_definitions.get(lookup_key, None)
+      property_definition = observed_property_definitions.get(lookup_key)
       if property_definition:
         observed_serialized_properties[lookup_key] = serialized_property
         continue
 
-      property_definition = defined_property_definitions.get(lookup_key, None)
+      property_definition = defined_property_definitions.get(lookup_key)
       if property_definition:
         defined_serialized_properties[lookup_key] = serialized_property
         continue
@@ -159,7 +159,7 @@ def Main():
     print('Observed properties:')
     for lookup_key, serialized_property in sorted(
         observed_serialized_properties.items()):
-      property_definition = observed_property_definitions.get(lookup_key, None)
+      property_definition = observed_property_definitions.get(lookup_key)
 
       print(f'\t{lookup_key:s}', end='')
       if property_definition and property_definition.shell_property_keys:
@@ -180,7 +180,7 @@ def Main():
     print('Defined properties:')
     for lookup_key, serialized_property in sorted(
         defined_serialized_properties.items()):
-      property_definition = defined_property_definitions.get(lookup_key, None)
+      property_definition = defined_property_definitions.get(lookup_key)
 
       print(f'\t{lookup_key:s}', end='')
       if property_definition and property_definition.shell_property_keys:

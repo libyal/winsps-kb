@@ -146,7 +146,6 @@ class AutomaticDestinationsFile(data_format.BinaryDataFile):
     """Closes an Automatic Destinations Jump List file.
 
     Raises:
-      IOError: if the file is not opened.
       OSError: if the file is not opened.
     """
     if self._olecf_file:
