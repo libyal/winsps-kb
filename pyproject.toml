@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "winspsrc"
-version = "20260506"
+version = "20260516"
 description = "Windows Serialized Property Store (SPS) resources (winspsrc)"
 maintainers = [
     { name = "Joachim Metz", email = "joachim.metz@gmail.com" },
@@ -75,6 +75,16 @@ resolve_names = "winspsrc.scripts.resolve_names:Main"
 Documentation = "https://winspsrc.readthedocs.io/en/latest"
 Homepage = "https://github.com/libyal/winsps-kb"
 Repository = "https://github.com/libyal/winsps-kb"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+include = "\\.pyi?$"
+
+[tool.docformatter]
+black = true
+non-cap = ["str:"]
+non-strict = true
 
 [tool.setuptools]
 package-dir = {"winspsrc" = "winspsrc"}
