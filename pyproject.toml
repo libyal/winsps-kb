@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "winspsrc"
-version = "20260516"
+version = "20260704"
 description = "Windows Serialized Property Store (SPS) resources (winspsrc)"
 maintainers = [
     { name = "Joachim Metz", email = "joachim.metz@gmail.com" },
@@ -85,6 +85,14 @@ include = "\\.pyi?$"
 black = true
 non-cap = ["str:"]
 non-strict = true
+
+[tool.l2tdevtools]
+name = "Windows Serialized Property Store (SPS) knowledge base"
+status = "experimental"
+description = """
+winspsrc is a Python module part of winsps-kb to allow reuse of Windows \
+Serialized Property Store (SPS) resources. \
+"""
 
 [tool.setuptools]
 package-dir = {"winspsrc" = "winspsrc"}
