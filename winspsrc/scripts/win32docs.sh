@@ -4,8 +4,8 @@
 # documentation.
 # Requires Linux with git
 
-EXIT_SUCCESS=0;
-EXIT_FAILURE=1;
+EXIT_SUCCESS=0
+EXIT_FAILURE=1
 
 # Checks the availability of a binary and exits if not available.
 #
@@ -14,21 +14,21 @@ EXIT_FAILURE=1;
 #
 assert_availability_binary()
 {
-	local BINARY=$1;
+	local BINARY=$1
 
-	which ${BINARY} > /dev/null 2>&1;
-	if test $? -ne ${EXIT_SUCCESS};
+	which "${BINARY}" > /dev/null 2>&1
+	if test $? -ne ${EXIT_SUCCESS}
 	then
-		echo "Missing binary: ${BINARY}";
-		echo "";
+		echo "Missing binary: ${BINARY}"
+		echo ""
 
-		exit ${EXIT_FAILURE};
+		exit ${EXIT_FAILURE}
 	fi
 }
 
-assert_availability_binary git;
+assert_availability_binary git
 
-set -e;
+set -e
 
 mkdir -p build
 
@@ -36,7 +36,6 @@ git clone https://github.com/MicrosoftDocs/win32.git
 
 (cd win32 && grep -h -re 'propertyDescription$' -A 4 desktop-src/properties/* | grep -A3 'name = ' | sed 's/   name = /name: /;s/   shellPKey = /shell_property_key: /;s/   formatID = \(.*\)/format_identifier: \L\1/;s/   propID = /property_identifier: /;s/--/---/' > ../build/win32docs.yaml)
 
-rm -rf win32;
+rm -rf win32
 
-exit ${EXIT_SUCCESS};
-
+exit ${EXIT_SUCCESS}

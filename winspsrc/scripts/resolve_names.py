@@ -138,13 +138,13 @@ def Main():
             if not property_definition.names and isinstance(
                 property_definition.property_identifier, int
             ):
-                proprty_key = (
+                property_key = (
                     f"{{{property_definition.format_identifier:s}}}",
                     property_definition.property_identifier,
                 )
 
                 try:
-                    name = propsys.PSGetNameFromPropertyKey(proprty_key)
+                    name = propsys.PSGetNameFromPropertyKey(property_key)
                 except pywintypes.com_error:
                     logging.warning(
                         f"Unable to resolve: {property_definition.lookup_key}"

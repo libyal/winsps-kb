@@ -309,7 +309,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
         return windows_resource_file
 
-    def _CollectSerializedProperiesFromAutomaticDestinationsFile(
+    def _CollectSerializedPropertiesFromAutomaticDestinationsFile(
         self, file_object, path_segments
     ):
         """Retrieves serialized properties from a .automaticDestinations-ms file.
@@ -344,7 +344,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
                 jump_list_file.Open(file_object)
                 try:
                     for jump_list_entry in jump_list_file.GetJumpListEntries():
-                        yield from self._CollectSerializedProperiesFromLNK(
+                        yield from self._CollectSerializedPropertiesFromLNK(
                             jump_list_entry.lnk_file
                         )
 
@@ -358,7 +358,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
                     f"{path:s} with error: {exception!s}"
                 )
 
-    def _CollectSerializedProperiesFromCustomDestinationsFile(
+    def _CollectSerializedPropertiesFromCustomDestinationsFile(
         self, file_object, path_segments
     ):
         """Retrieves serialized properties from a .customDestinations-ms file.
@@ -377,7 +377,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
             try:
                 for jump_list_entry in jump_list_file.GetJumpListEntries():
-                    yield from self._CollectSerializedProperiesFromLNK(
+                    yield from self._CollectSerializedPropertiesFromLNK(
                         jump_list_entry.lnk_file
                     )
 
@@ -391,7 +391,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
                 f"{path:s} with error: {exception!s}"
             )
 
-    def _CollectSerializedProperiesFromLNK(self, lnk_file):
+    def _CollectSerializedPropertiesFromLNK(self, lnk_file):
         """Retrieves serialized properties from a Windows Shortcut (LNK).
 
         Args:
@@ -404,16 +404,20 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
             fwsi_item_list = pyfwsi.item_list()
             fwsi_item_list.copy_from_byte_stream(lnk_file.link_target_identifier_data)
 
-            yield from self._CollectSerializedProperiesFromShellItemList(fwsi_item_list)
+            yield from self._CollectSerializedPropertiesFromShellItemList(
+                fwsi_item_list
+            )
 
         for lnk_data_block in iter(lnk_file.data_blocks):
             if lnk_data_block.signature == 0xA0000009 and lnk_data_block.data:
                 fwps_store = pyfwps.store()
                 fwps_store.copy_from_byte_stream(lnk_data_block.data)
 
-                yield from self._CollectSerializedProperiesFromPropertyStore(fwps_store)
+                yield from self._CollectSerializedPropertiesFromPropertyStore(
+                    fwps_store
+                )
 
-    def _CollectSerializedProperiesFromLNKFile(self, file_object, path_segments):
+    def _CollectSerializedPropertiesFromLNKFile(self, file_object, path_segments):
         """Retrieves serialized properties from a Windows Shortcut (LNK) file.
 
         Args:
@@ -432,7 +436,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
             logging.warning(f"Unable to open: {path:s} with error: {exception!s}")
 
         try:
-            yield from self._CollectSerializedProperiesFromLNK(lnk_file)
+            yield from self._CollectSerializedPropertiesFromLNK(lnk_file)
 
         except OSError as exception:
             path = "\\".join(path_segments)
@@ -444,7 +448,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
         finally:
             lnk_file.close()
 
-    def _CollectSerializedProperiesFromPropertyStore(self, fwps_store):
+    def _CollectSerializedPropertiesFromPropertyStore(self, fwps_store):
         """Retrieves serialized properties from a property store.
 
         Args:
@@ -468,7 +472,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
                 yield serialized_property
 
-    def _CollectSerializedProperiesFromREGFFile(self, file_object, path_segments):
+    def _CollectSerializedPropertiesFromREGFFile(self, file_object, path_segments):
         """Retrieves serialized properties from a Windows NT Registry File (REGF).
 
         Args:
@@ -490,7 +494,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
             regf_root_key = regf_file.get_root_key()
             if regf_root_key:
                 # Ignore the name of the root key.
-                yield from self._CollectSerializedProperiesFromREGFKey(
+                yield from self._CollectSerializedPropertiesFromREGFKey(
                     [""], regf_root_key
                 )
 
@@ -504,7 +508,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
         finally:
             regf_file.close()
 
-    def _CollectSerializedProperiesFromREGFKey(self, key_path_segments, regf_key):
+    def _CollectSerializedPropertiesFromREGFKey(self, key_path_segments, regf_key):
         """Retrieves serialized properties from a Windows NT Registry key.
 
         Args:
@@ -517,7 +521,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
         value_names = [regf_value.name for regf_value in regf_key.values]
 
         if "MRUList" in value_names or "MRUListEx" in value_names:
-            yield from self._CollectSerializedProperiesFromREGFKeyWithMRU(
+            yield from self._CollectSerializedPropertiesFromREGFKeyWithMRU(
                 key_path_segments, regf_key
             )
 
@@ -525,13 +529,13 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
             key_path_segments.append(regf_sub_key.name)
 
             try:
-                yield from self._CollectSerializedProperiesFromREGFKey(
+                yield from self._CollectSerializedPropertiesFromREGFKey(
                     key_path_segments, regf_sub_key
                 )
             finally:
                 key_path_segments.pop(-1)
 
-    def _CollectSerializedProperiesFromREGFKeyWithMRU(
+    def _CollectSerializedPropertiesFromREGFKeyWithMRU(
         self, key_path_segments, regf_key
     ):
         """Retrieves serialized properties from a Registry key with a MRU.
@@ -584,17 +588,17 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
                     fwsi_item = pyfwsi.item()
                     fwsi_item.copy_from_byte_stream(data)
 
-                    yield from self._CollectSerializedProperiesFromShellItem(fwsi_item)
+                    yield from self._CollectSerializedPropertiesFromShellItem(fwsi_item)
 
                 elif known_key_type.endswith("shell-item-list"):
                     fwsi_item_list = pyfwsi.item_list()
                     fwsi_item_list.copy_from_byte_stream(data)
 
-                    yield from self._CollectSerializedProperiesFromShellItemList(
+                    yield from self._CollectSerializedPropertiesFromShellItemList(
                         fwsi_item_list
                     )
 
-    def _CollectSerializedProperiesFromShellItem(self, fwsi_item):
+    def _CollectSerializedPropertiesFromShellItem(self, fwsi_item):
         """Retrieves serialized properties from a shell item.
 
         Args:
@@ -608,9 +612,11 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
                 fwps_store = pyfwps.store()
                 fwps_store.copy_from_byte_stream(fwsi_item.property_store_data)
 
-                yield from self._CollectSerializedProperiesFromPropertyStore(fwps_store)
+                yield from self._CollectSerializedPropertiesFromPropertyStore(
+                    fwps_store
+                )
 
-    def _CollectSerializedProperiesFromShellItemList(self, fwsi_item_list):
+    def _CollectSerializedPropertiesFromShellItemList(self, fwsi_item_list):
         """Retrieves serialized properties from a shell item list.
 
         Args:
@@ -620,7 +626,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
           SerializedProperty: serialized property.
         """
         for fwsi_item in fwsi_item_list.items:
-            yield from self._CollectSerializedProperiesFromShellItem(fwsi_item)
+            yield from self._CollectSerializedPropertiesFromShellItem(fwsi_item)
 
     def _InKeyPaths(self, key_path_upper, key_paths):
         """Checks if a specific key path is defined in a list of key paths.
@@ -638,7 +644,7 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
         return False
 
-    def CollectSerializedProperies(self):
+    def CollectSerializedProperties(self):
         """Retrieves serialized properties.
 
         Yields:
@@ -668,21 +674,21 @@ class SerializedPropertyExtractor(dfvfs_volume_scanner.WindowsVolumeScanner):
 
             generator = None
             if "custom_destination" in scan_results:
-                generator = self._CollectSerializedProperiesFromCustomDestinationsFile(
+                generator = self._CollectSerializedPropertiesFromCustomDestinationsFile(
                     file_object, path_segments
                 )
             elif "lnk" in scan_results:
-                generator = self._CollectSerializedProperiesFromLNKFile(
+                generator = self._CollectSerializedPropertiesFromLNKFile(
                     file_object, path_segments
                 )
             elif "olecf" in scan_results:
                 generator = (
-                    self._CollectSerializedProperiesFromAutomaticDestinationsFile(
+                    self._CollectSerializedPropertiesFromAutomaticDestinationsFile(
                         file_object, path_segments
                     )
                 )
             elif "regf" in scan_results:
-                generator = self._CollectSerializedProperiesFromREGFFile(
+                generator = self._CollectSerializedPropertiesFromREGFFile(
                     file_object, path_segments
                 )
 

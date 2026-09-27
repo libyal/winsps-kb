@@ -26,7 +26,6 @@ def Main():
     argument_parser = argparse.ArgumentParser(
         description=("Extract Windows serialized property information.")
     )
-
     argument_parser.add_argument(
         "-d",
         "--debug",
@@ -35,7 +34,6 @@ def Main():
         default=False,
         help="enable debug output.",
     )
-
     argument_parser.add_argument(
         "-w",
         "--windows_version",
@@ -46,7 +44,6 @@ def Main():
         default=None,
         help="string that identifies the Windows version.",
     )
-
     argument_parser.add_argument(
         "source",
         nargs="?",
@@ -58,7 +55,6 @@ def Main():
             "a storage media image containing the C:\\Windows directory."
         ),
     )
-
     options = argument_parser.parse_args()
 
     if not options.source:
@@ -124,7 +120,6 @@ def Main():
         extractor_object = extractor.SerializedPropertyExtractor(
             debug=options.debug, mediator=mediator
         )
-
         try:
             result = extractor_object.ScanForWindowsVolume(
                 source_path, options=volume_scanner_options
@@ -134,10 +129,8 @@ def Main():
 
         if not result:
             print(
-                (
-                    f"Unable to retrieve the volume with the Windows directory "
-                    f"from: {source_path:s}."
-                )
+                f"Unable to retrieve the volume with the Windows directory "
+                f"from: {source_path:s}."
             )
             print("")
             return 1
@@ -154,7 +147,7 @@ def Main():
 
             windows_version = source_definition["windows_version"]
 
-        for serialized_property in extractor_object.CollectSerializedProperies():
+        for serialized_property in extractor_object.CollectSerializedProperties():
             lookup_key = serialized_property.lookup_key
             if lookup_key in serialized_properties:
                 # TODO: check if property is different from existing
@@ -254,10 +247,8 @@ def Main():
             unknown_serialized_properties.items()
         ):
             print(
-                (
-                    f"\t{lookup_key:s} [0x{serialized_property.value_type:04x}]"
-                    f" ({serialized_property.origin:s})"
-                )
+                f"\t{lookup_key:s} [0x{serialized_property.value_type:04x}]"
+                f" ({serialized_property.origin:s})"
             )
 
         print("")
